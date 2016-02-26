@@ -8,7 +8,8 @@ The Tao of Scratch
  * Pacman 
 
 
-* Sharing◦No Merge (for you corporate warriors)
+* Sharing 
+ * No Merge (for you corporate warriors)
 
 
 * Is there a dark scratch?
@@ -23,31 +24,13 @@ The Tao of Scratch
  * (And I still don't care)
 
 
+* Seymour Papert MindStorms
 
-Seymour Papert MindStorms
-
-
-
-
-
-Gratuitous bret victor link re: Seymour Papert
-
+* Gratuitous bret victor link re: Seymour Papert
 http://worrydream.com/MeanwhileAtCodeOrg/
 
 
-
-
-
-
-
-
-
-Gratuitous bret victor link #2
-
-
-
-
-
+* Gratuitous bret victor link #2
 http://worrydream.com/#!/InventingOnPrinciple
 
 
