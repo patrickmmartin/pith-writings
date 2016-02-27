@@ -88,7 +88,7 @@ Footnotes
 ---------
 
 TODO(PMM) - check the wording here carefully
-Bloomberg LP (http://www.blommberg.net) very generously supports my volunteering of time to mentor at an after school club, under the auspices of Code Club (http://codeclub.org.uk) 
+Bloomberg LP (http://www.bloomberg.net) very generously supports my volunteering of time to mentor at an after school club, under the auspices of Code Club (http://codeclub.org.uk) 
 
 
 ---
