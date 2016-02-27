@@ -5,6 +5,7 @@ Abstract
 ====
 
 When I look at Scratch, I see something different.
+
 Let me try to persuade you of this by listing and explaining the magic of the  `Good Points`.
 
 # What is Scratch?
