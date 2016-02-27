@@ -71,6 +71,8 @@ TODO(PMM) Sprites with bounce / direction / touching colour VS explicitly positi
 
 
 * Immediacy
+This goes to the kind of benefits mentioned in the kind of thing Brett Victor talks about
+
  
 * Accessibility
 
