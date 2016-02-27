@@ -14,6 +14,9 @@ http://scatch.mit.edu
 
 _TODO(PMM) something from the web site_
 
+Note also that is now going into a "classroom near you" in the UK in primary to secondary - that's years 3-8! - see the announcment here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
+
+
 ## Inspiration
 
 Seymour Papert 
