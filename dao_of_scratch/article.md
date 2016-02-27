@@ -26,14 +26,19 @@ http://www.goodreads.com/book/show/703532.Mindstorms
 
 ## Examples
 
-I am not going to reference any, instead, just go see for yourself in `Good Point 1: it has a single entry search box`.
+I am not going to reference any.
+instead, just go see for yourself in `Good Point 1: it has a single entry search box`.
 You can even dive straight in and take a look - in `Good Point 2: Scratch has a "See Inside" button`.
-You can then just fork it using `Good Point 3: Scratch has a "Remix" button` - that new project is now available for you to modify, debug and run in any way you see fit.
+You can then just fork it using `Good Point 3: Scratch has a "Remix" button`
+- that new project is now available for you to modify, debug and run in any way you see fit.
 
-Although it ruins my since 3-part list rhetorical flourish, let me just mention `Good Point 4 here: Scratch lets you edit before login *and then* allows you to login and preserve your work later if you wish`.
+Although it ruins my since 3-part list rhetorical flourish, let me just mention
+`Good Point 4 here: Scratch lets you edit before login *and then* allows you to login and save if you wish`.
+
 How many _paid for_ services that we use for generating wealth can say the same?
 
 ### What can be done in Scratch?
+I won't promote individual projects, but instead rely upon `Good Point 1: it has a single entry search box`
 
  * Yorkshire to English dictionary
   * https://scratch.mit.edu/search/google_results/?q=Yorkshire+Dictionary 
