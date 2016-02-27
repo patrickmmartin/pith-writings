@@ -75,20 +75,20 @@ TODO(PMM) Sprites with bounce / direction / touching colour VS explicitly positi
 * Accessibility
 
 
-# Why haven't I mentioned _entirely free to use_ yet?
+## Why haven't I mentioned _entirely free to use_ yet?
 * If you care about diversity and granting access to self improvement to all then this is huge
 
 
 
-# Sharing from `Good Point 3: Scratch has a "Remix" button`
+## Sharing from `Good Point 3: Scratch has a "Remix" button`
 * It exists and works
 * Is this because it of `Good Point 15: Scratch has No Merge Action` (for you corporate warriors)
 
 
-# Deployment - `Good Point 16: Scratch has a "public" checkbox`
+## Deployment - `Good Point 16: Scratch has a "public" checkbox`
 * hahahaa - you press "Share"
 
-# Politeness - `Good Point 17: Scratch seems to be incredibly good natured`
+## Politeness - `Good Point 17: Scratch seems to be incredibly good natured`
 * Is it because they're all under 12? ( or perhaps over 30 ?)
  * what element of self selection of the group, and self policing is going on here?
  * is this in fact a _very interesting outcome_?
@@ -111,7 +111,7 @@ TODO(PMM) Sprites with bounce / direction / touching colour VS explicitly positi
  * And nor do they!
 
 
-# Can it all be lovely in the garden?
+# Can it really all be lovely in the garden?
 * Security concerns will always be with us
 * Is it addictive enough to prevent people progressing?
  * - to HTML (? barf)
