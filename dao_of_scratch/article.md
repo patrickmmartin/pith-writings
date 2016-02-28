@@ -19,24 +19,27 @@ Note also that is now going into a "classroom near you" in the UK in primary to 
 
 ## Inspiration
 
-Seymour Papert 
-http://www.papert.org/
+_TODO(PMM)  précis of route from Mindstorms to Scratch
 
-Mindstorms book
+Seymour Papert http://www.papert.org/
 
-http://www.goodreads.com/book/show/703532.Mindstorms
+Mindstorms book http://www.goodreads.com/book/show/703532.Mindstorms
 
 ## Examples
 
 I am not going to reference any.
-instead, just go see for yourself in `Good Point 1: it has a single entry search box`.
+
+Instead, just go see for yourself by visiting http://scratch.mit.edu, making use of  `Good Point 1: it has a single entry search box`.
 You can even dive straight in and take a look - in `Good Point 2: Scratch has a "See Inside" button`.
 You can then just fork it using `Good Point 3: Scratch has a "Remix" button`
 - that new project is now available for you to modify, debug and run in any way you see fit.
 
 Although it ruins my since 3-part list rhetorical flourish, let me just mention
 `Good Point 4 here: Scratch lets you edit before login *and then* allows you to login and save if you wish`.
+
 How many _paid for_ services that we use for generating wealth can say the same?
+
+For the classroom environment, when dealing with the years where it is a stretch to mandate detailed forward planning, this is a Good Thing.
 
 ### What can be done in Scratch?
 I won't promote individual projects, but instead rely upon `Good Point 1: it has a single entry search box`
@@ -68,10 +71,12 @@ TODO(PMM) Sprites with bounce / direction / touching colour VS explicitly positi
 * Immediacy
 This goes to the kind of benefits mentioned in the kind of thing Brett Victor talks about
 
+TODO(PMM) reference to the Bret Victor demos and the impact they have.
+
 * Accessibility
 
 ## Why haven't I mentioned _entirely free to use_ yet?
-* If you care about diversity and granting access to self improvement to all then this is huge
+* If you care about diversity and granting access to self improvement to all then this is huge.
 
 ## Sharing
 From `Good Point 3: Scratch has a "Remix" button`
@@ -104,8 +109,6 @@ In the Scratch environment, it seems to be a few months from a standing start.
 # TODO(PMM) Space Invaders vs Pacman
 This seems to be one of challenges that sorts the population - the Space Invaders clones tend to be very high quality, whereas for the "deceptively simple Pacman" there tends to be a raft of issues that challenge `Good Point RRRR: some tasks lend themselves to "teachable moments"`
 
-# TODO(PMM) Is there a dark scratch?
-
 * Scratch has some "Magic" features which are well loved 
  * `Good Point OOO: Vector -> bitmap -> Vector!`
  * "Other magic" TOOD(PMM)
@@ -115,6 +118,12 @@ This seems to be one of challenges that sorts the population - the Space Invader
 * It's a flask app ( I didn't know )
  * (And I still don't care)
  * And nor do they!
+
+# Lessons for "Grown ups"
+ TODO(PMM) - think about some "contrast and compares" here.
+
+
+# TODO(PMM) Is there a dark scratch?
 
 # Can it really all be lovely in the garden?
 * Security concerns will always be with us
