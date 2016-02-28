@@ -69,7 +69,11 @@ I'll be up-front here and state my target audience is the "noble corporate toile
   * can _your_  tool do that?
   *  pictures of said?
 
+This is the code blocks being inspected while the code is running
+![The code blocks being run](in.png)
 
+This is the a chunk of code blocks pulled out _while the code is running_
+![The code blocks not being run!](out.png)
 
 
 ## More Good Points
