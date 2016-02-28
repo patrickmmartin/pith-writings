@@ -58,19 +58,6 @@ I won't promote individual projects, but instead rely upon `Good Point 1: it has
 ## Target Audience
 I'll be up-front here and state my target audience is the "noble corporate toiler", it has perhaps been a while since you were introduced / subjected to a teaching tool (a memory from work that causes a shudder is the Computer Based Training that was less than tolerant of where irrelevant spaces were or were not in my answers).
 
-## Whistle Stop tour
-
-TOOD(PMM) - grab of a project?
-
-* TOOD(PMM) Visualisation yes.
- * But scratch desktop has _single step_!
-
- * All versions allow blocks to be dragged in, then dragged out *while running*-
-  * can _your_  tool do that?
-  *  pictures of said?
-
-
-
 ## More Good Points
 
 `Good Points 5-14:`
@@ -165,6 +152,5 @@ http://worrydream.com/MeanwhileAtCodeOrg/
 
 * Gratuitous Bret victor link #2
 http://worrydream.com/#!/InventingOnPrinciple
-
 
 
