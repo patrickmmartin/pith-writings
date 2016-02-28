@@ -6,7 +6,7 @@ Abstract
 
 When I look at Scratch, I see something different.
 
-Let me try to persuade you of this by listing and explaining the magic of the  `Good Points`.
+Let me try to persuade you of this by listing and explaining the magic of the `Good Points`.
 
 # What is Scratch?
 
@@ -14,7 +14,7 @@ http://scatch.mit.edu
 
 _TODO(PMM) something from the web site_
 
-Note also that is now going into a "classroom near you" in the UK in primary to secondary - that's years 3-8! - see the announcment here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
+Note also that is now going into a "classroom near you" in the UK in primary to secondary - that's years 3-8! - see the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
 
 
 ## Inspiration
@@ -102,7 +102,7 @@ When did you, dear reader, love to learn messages passing as a style?
 In the Scratch environment, it seems to be a few months from a standing start.
 
 # TODO(PMM) Space Invaders vs Pacman
-This seems to be one of challenges that sorts the population - the Space Invaders clones tend to be very high quality, whereas for the "deceptively simple Pacman" there tends to be a raft of issues that challenge `Good Point RRRR: some tasks lend themsevles to "teachable moments"`
+This seems to be one of challenges that sorts the population - the Space Invaders clones tend to be very high quality, whereas for the "deceptively simple Pacman" there tends to be a raft of issues that challenge `Good Point RRRR: some tasks lend themselves to "teachable moments"`
 
 # TODO(PMM) Is there a dark scratch?
 
@@ -138,10 +138,10 @@ Bloomberg LP (http://www.bloomberg.net) very generously supports my volunteering
 
 * Seymour Papert MindStorms TODO(PMM)
 
-* Gratuitous bret victor link re: Seymour Papert
+* Gratuitous Bret victor link re: Seymour Papert
 http://worrydream.com/MeanwhileAtCodeOrg/
 
-* Gratuitous bret victor link #2
+* Gratuitous Bret victor link #2
 http://worrydream.com/#!/InventingOnPrinciple
 
 
