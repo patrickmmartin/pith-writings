@@ -69,12 +69,13 @@ I'll be up-front here and state my target audience is the "noble corporate toile
   * can _your_  tool do that?
   *  pictures of said?
 
-This is the code blocks being inspected while the code is running
+### This is a grab the code blocks being inspected while the code is running
 ![The code blocks being run](in.png)
 
-This is the a chunk of code blocks pulled out _while the code is running_
+### This is a grab of a chunk of code blocks pulled out _while the code is running_
 ![The code blocks not being run!](out.png)
 
+You can do this while just using the mouse - the selection extends naturally from your selected block to the end of the enclosing container block - another `Good point SSSS: selection of blocks has some subtle but powerful affordances`
 
 ## More Good Points
 
