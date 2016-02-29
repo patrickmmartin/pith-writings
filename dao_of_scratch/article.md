@@ -4,32 +4,35 @@ The Tao of Scratch
 Abstract
 ====
 
-When I look at Scratch, I see something different.
+When I look at Scratch, I see something different. 
 
-Let me try to persuade you of this by listing and explaining the magic of the `Good Points`.
+I'd like persuade to my viewpoint by going through what I see are the `Good Points`.
+
+## Target Audience
+I'll be up-front here and state my target audience is the "noble corporate toiler".
+It has perhaps been a while since you were introduced / subjected to a teaching tool (a memory from work that causes a shudder is the Computer Based Training that was less than tolerant of where irrelevant spaces were or were not in my answers).
+Scratch is a tool for learning computing based upon many years of thought, and as such is worth some study.   
 
 # What is Scratch?
 
-http://scatch.mit.edu
+The best place to start is their web site: the description of the project is at https://llk.media.mit.edu/projects/783/ and the main portal is http://scatch.mit.edu
 
-_TODO(PMM) something from the web site_
+The Wikipedia page is good on this https://en.wikipedia.org/wiki/Scratch_(programming_language)
 
-Note also that is now going into a "classroom near you" in the UK in primary to secondary - that's years 3-8! - see the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
+It's a visual programming language, available online, that operates on a visual stage with some simple but effective visual components that allows the programmer to construct a range of different visual experiences.  
 
+## Coming a "classroom near you" 
+
+Note also that Scratch is on the way to being taught in the UK in primary and secondary schools - that's years 3-8!.
+See the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
 
 ## Inspiration
 
-_TODO(PMM)  précis of route from Mindstorms to Scratch
-
-Seymour Papert http://www.papert.org/
-
-Mindstorms book http://www.goodreads.com/book/show/703532.Mindstorms
+The Scratch environment is inspired by the work of Seymour Papert http://www.papert.org/ epitomised in the book Mindstorms  http://www.goodreads.com/book/show/703532.Mindstorms
 
 ## Examples
 
-I am not going to reference any.
-
-Instead, just go see for yourself by visiting http://scratch.mit.edu, making use of  `Good Point 1: it has a single entry search box`.
+Go see for yourself by visiting http://scratch.mit.edu, making use of  `Good Point 1: it has a single entry search box`.
 You can even dive straight in and take a look - in `Good Point 2: Scratch has a "See Inside" button`.
 You can then just fork it using `Good Point 3: Scratch has a "Remix" button`
 - that new project is now available for you to modify, debug and run in any way you see fit.
@@ -37,9 +40,8 @@ You can then just fork it using `Good Point 3: Scratch has a "Remix" button`
 Although it ruins my since 3-part list rhetorical flourish, let me just mention
 `Good Point 4 here: Scratch lets you edit before login *and then* allows you to login and save if you wish`.
 
-How many _paid for_ services that we use for generating wealth can say the same?
-
-For the classroom environment, when dealing with the years where it is a stretch to mandate detailed forward planning, this is a Good Thing.
+Question: how many _paid for_ services that we use for generating wealth can say the same?
+For the classroom environment, when dealing with the early years where it is a stretch to require detailed forward planning, this is a Good Thing.
 
 ### What can be done in Scratch?
 I won't promote individual projects, but instead rely upon `Good Point 1: it has a single entry search box`
@@ -55,10 +57,7 @@ I won't promote individual projects, but instead rely upon `Good Point 1: it has
  * Pacman 
   *  https://scratch.mit.edu/search/google_results/?q=pacman
 
-## Target Audience
-I'll be up-front here and state my target audience is the "noble corporate toiler", it has perhaps been a while since you were introduced / subjected to a teaching tool (a memory from work that causes a shudder is the Computer Based Training that was less than tolerant of where irrelevant spaces were or were not in my answers).
-
-### But the users are?
+### Who are the users?
 
 Educationalists and Year 3-8 (at least).
 
@@ -68,17 +67,16 @@ Educationalists and Year 3-8 (at least).
  
  TODO(PMM) - grab of a project?
  
- * TOOD(PMM) Visualisation yes.
+### Visualisation 
  * But scratch desktop has _single step_!
 
- * All versions allow blocks to be dragged in, then dragged out *while running*-
-  * can _your_  tool do that?
-  *  pictures of said?
+### Debugging
+ * All versions allow blocks to be dragged in, then dragged out *while the project is running* - can _your_  tool do that?
 
-### This is a grab the code blocks being inspected while the code is running
+#### This is a grab the code blocks being inspected while the code is running
 ![The code blocks being run](in.png)
 
-### This is a grab of a chunk of code blocks pulled out _while the code is running_
+#### This is a grab of a chunk of code blocks pulled out _while the code is running_
 ![The code blocks not being run!](out.png)
 
 You can do this while just using the mouse - the selection extends naturally from your selected block to the end of the enclosing container block - another `Good point SSSS: selection of blocks has some subtle but powerful affordances`
@@ -91,12 +89,23 @@ Logo like Sprite Primitives, Code Blocks, Message passing, composable mathematic
 
 These are in my personal order of significance TODO(PMM) cherry pick some to illustrate
 
-TODO(PMM) Sprites with bounce / direction / touching colour VS explicitly positioned/drawn objects
+## Development Styles
+
+### Sprites, Backdrops, Costumes
+ * with bounce / direction / touching colour
+
+### Explicit positioning
+ * explicit positioning 
+ * hand crafted drawing of objects
+
+#### It's not like "coding"
+http://worrydream.com/MeanwhileAtCodeOrg/
+
 
 * Immediacy
 This goes to the kind of benefits mentioned in the kind of thing Brett Victor talks about
-
-TODO(PMM) reference to the Bret Victor demos and the impact they have.
+in http://worrydream.com/#!/InventingOnPrinciple
+I still think about the impression that talk had on me.
 
 * Accessibility
 
@@ -127,31 +136,27 @@ From `Good Point 17: Scratch seems to be incredibly good natured`
   `Good Point PPPP: Scratch supports multiple sessions on the same account and concurrent work`
   Given each project has a thumbnail: `Good Point QQQQ: all projects have a thumbnail` it's very easy for a supervisor to see what they're up to: even in the corners.
 
-# TODO(PMM) Big chunks of blocks vs. messages
+## Teachable Moments:  "Big chunks of blocks" vs. Message Passing
 When did you, dear reader, love to learn messages passing as a style?
 In the Scratch environment, it seems to be a few months from a standing start.
+Very quickly, it becomes clear that giant chunks of nested blocks and variables can be replaced by sending the appropriate message. 
 
-# TODO(PMM) Space Invaders vs Pacman
+
+## Teachable Moments: Space Invaders vs Pacman
 This seems to be one of challenges that sorts the population - the Space Invaders clones tend to be very high quality, whereas for the "deceptively simple Pacman" there tends to be a raft of issues that challenge `Good Point RRRR: some tasks lend themselves to "teachable moments"`
 
-* Scratch has some "Magic" features which are well loved 
+# Scratch has some "Magic" features which are well loved 
  * `Good Point OOO: Vector -> bitmap -> Vector!`
- * "Other magic" TOOD(PMM)
-  * concurrency - what sequence are operations run in?
-
-# Technology
-* It's a flask app ( I didn't know )
- * (And I still don't care)
- * And nor do they!
-
-# Lessons for "Grown ups"
- TODO(PMM) - think about some "contrast and compares" here.
+ * Single Step (desktop version) - this highlights the _block being run_ as the program executes 
+ * concurrency 
+  * what sequence are operations run in?
+  * also, do we care?
 
 
-# TODO(PMM) Is there a dark scratch?
 
 # Can it really all be lovely in the garden?
 * Security concerns will always be with us
+*  TODO(PMM) Is there a dark scratch?
 * Is it addictive enough to prevent people progressing?
  * - to HTML (? barf)
  * to python
@@ -162,20 +167,19 @@ This seems to be one of challenges that sorts the population - the Space Invader
    * choose from N, E, W, S to head to Pacman
    * now turn left instead of reversing on the next choice -> delivers the ghost patrolling in circles behaviour for free
 
-Footnotes
+# Lessons for "Grown ups"
+
+Here we come to the punchline: TODO(PMM) - think about some "contrast and compares" here.
+I have joked that some companies should figure out how to deploy their business apps using Scratch of something very like it.
+Though, come to think of it, what would so wrong?
+
+
+
+Acknowledgments
 ---------
 
 TODO(PMM) - check the wording here carefully
 Bloomberg LP (http://www.bloomberg.net) very generously supports my volunteering of time to mentor at an after school club, under the auspices of Code Club (http://codeclub.org.uk) 
 
-### References
-
-* Seymour Papert MindStorms TODO(PMM)
-
-* Gratuitous Bret victor link re: Seymour Papert
-http://worrydream.com/MeanwhileAtCodeOrg/
-
-* Gratuitous Bret victor link #2
-http://worrydream.com/#!/InventingOnPrinciple
 
 
