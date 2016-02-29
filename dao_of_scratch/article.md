@@ -58,6 +58,12 @@ I won't promote individual projects, but instead rely upon `Good Point 1: it has
 ## Target Audience
 I'll be up-front here and state my target audience is the "noble corporate toiler", it has perhaps been a while since you were introduced / subjected to a teaching tool (a memory from work that causes a shudder is the Computer Based Training that was less than tolerant of where irrelevant spaces were or were not in my answers).
 
+### But the users are?
+
+Educationalists and Year 3-8 (at least).
+
+"Everything is broken and they don't particularly mind"
+
 ## Whistle Stop tour
  
  TODO(PMM) - grab of a project?
