@@ -65,7 +65,7 @@ Educationalists and Year 3-8 (at least).
 
 ## Whistle Stop tour
  
- TODO(PMM) - grab of a project?
+ ![A minimal Scratch project](scratch.png)
  
 ### Visualisation 
  * But scratch desktop has _single step_!
