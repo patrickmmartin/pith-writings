@@ -65,7 +65,7 @@ Educationalists and Year 3-8 (at least).
 
 ## Whistle Stop tour
  
- ![A minimal Scratch project](scratch.png)
+ ![A minimal Scratch project](scratch-large.png)
  
 ### Visualisation 
  * But scratch desktop has _single step_!
@@ -74,10 +74,10 @@ Educationalists and Year 3-8 (at least).
  * All versions allow blocks to be dragged in, then dragged out *while the project is running* - can _your_  tool do that?
 
 #### This is a grab the code blocks being inspected while the code is running
-![The code blocks being run](in.png)
+![The code blocks being run](in-large.png)
 
 #### This is a grab of a chunk of code blocks pulled out _while the code is running_
-![The code blocks not being run!](out.png)
+![The code blocks not being run!](out-large.png)
 
 You can do this while just using the mouse - the selection extends naturally from your selected block to the end of the enclosing container block - another `Good point SSSS: selection of blocks has some subtle but powerful affordances`
 
