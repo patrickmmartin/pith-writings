@@ -155,6 +155,21 @@ This seems to be one of challenges that sorts the population - the Space Invader
   * also, do we care?
 
 
+# User Straw Poll
+I decided to get an assessment from the horse's mouth, as it were
+
+The results are for "best thing about Scratch" are:
+ 
+| Thing  | Votes |
+| ------------- | ------------- |
+| You can draw costumes            | 1 |
+| You can use your imagination     | 2 |
+| You can make games               | 4 |
+| It's simple                      | 1 |
+| It's easy to share               | 1 |
+| It's satisfying to finish things | 1 |
+
+
 
 # Can it really all be lovely in the garden?
 * Security concerns will always be with us
