@@ -59,6 +59,8 @@ I won't promote individual projects, but instead rely upon `Good Point 1: it has
 
 ### Who are the users?
 
+TODO(PMM)
+
 Educationalists and Year 3-8 (at least).
 
 "Everything is broken and they don't particularly mind"
@@ -70,10 +72,10 @@ Educationalists and Year 3-8 (at least).
  ![A minimal Scratch project](scratch-large.png)
  
 ### Visualisation 
- * But scratch desktop has _single step_!
+TODO(PMM)
 
 ### Debugging
- * All versions allow blocks to be dragged in, then dragged out *while the project is running* - can _your_  tool do that?
+* All versions allow blocks to be dragged in, then dragged out *while the project is running* - can _your_  tool do that?
 
 This is a grab of the code blocks being inspected while the code is running
 ![The code blocks being run](in-large.png)
@@ -82,6 +84,8 @@ This is a grab of a chunk of code blocks pulled out _while the code is running_
 ![The code blocks not being run!](out-large.png)
 
 You can do this while just using the mouse - the selection extends naturally from your selected block to the end of the enclosing container block - another `Good point SSSS: selection of blocks has some subtle but powerful affordances`
+
+* But scratch desktop has _single step_!
 
 ## More Good Points
 
@@ -96,7 +100,7 @@ These are in my personal order of significance TODO(PMM) cherry pick some to ill
 ### Sprites, Backdrops, Costumes
  * with bounce / direction / touching colour
 
-### Explicit positioning
+### Explicit Positioning / Drawing
  * explicit positioning 
  * hand crafted drawing of objects
 
@@ -189,8 +193,6 @@ The results are for "best thing about Scratch" are:
 Here we come to the punchline: TODO(PMM) - think about some "contrast and compares" here.
 I have joked that some companies should figure out how to deploy their business apps using Scratch of something very like it.
 Though, come to think of it, what would so wrong?
-
-
 
 Acknowledgments
 ---------
