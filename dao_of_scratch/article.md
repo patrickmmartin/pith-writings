@@ -19,9 +19,9 @@ The best place to start is their web site: the description of the project is at 
 
 The Wikipedia page is good on this https://en.wikipedia.org/wiki/Scratch_(programming_language)
 
-It's a visual programming language, available online, that operates on a visual stage with some simple but effective visual components that allows the programmer to construct a range of different visual experiences.  
+It's a visual programming language, available as a web application online, that operates on a visual stage with some simple but effective visual components that allows the programmer to construct a range of different visual experiences.  
 
-## Coming a "classroom near you" 
+## It's coming a "classroom near you" 
 
 Note also that Scratch is on the way to being taught in the UK in primary and secondary schools - that's years 3-8!.
 See the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
@@ -32,12 +32,12 @@ The Scratch environment is inspired by the work of Seymour Papert http://www.pap
 
 ## Examples
 
-Go see for yourself by visiting http://scratch.mit.edu, making use of  `Good Point 1: it has a single entry search box`.
-You can even dive straight in and take a look - in `Good Point 2: Scratch has a "See Inside" button`.
-You can then just fork it using `Good Point 3: Scratch has a "Remix" button`
+You can explore for yourself by visiting http://scratch.mit.edu, making use of `Good Point 1: it has a single entry search box`.
+Having found a project of interest, you can dive straight in and take a look using `Good Point 2: Scratch has a "See Inside" button`.
+If you like what you find you can then just fork it using `Good Point 3: Scratch has a "Remix" button`
 - that new project is now available for you to modify, debug and run in any way you see fit.
 
-Although it ruins my since 3-part list rhetorical flourish, let me just mention
+Now, although it ruins the nice 3-part list rhetorical flourish, let me just mention
 `Good Point 4 here: Scratch lets you edit before login *and then* allows you to login and save if you wish`.
 
 Question: how many _paid for_ services that we use for generating wealth can say the same?
@@ -59,23 +59,30 @@ I won't promote individual projects, but instead rely upon `Good Point 1: it has
 
 ### Who are the users?
 
-TODO(PMM)
+Well, it seems to be primarily educationalists and scholastic years 3-8 (at least); that's around 7 - 12.
 
-Educationalists and Year 3-8 (at least).
-
-"Everything is broken and they don't particularly mind"
-
-## Whistle Stop tour
+## A Whistle Stop tour
  
- TODO(PMM)
+ Scratch operates on a visual stage of 480x360 virtual pixels, and can be viewed at varying dpi -  `Good Point UUUU: fixed stage extent.` The stage is a sprite (https://en.wikipedia.org/wiki/Sprite_(computer_graphics)) and can be given script code, and any number of sprites can be placed on the stage to compose a visual scene.
+ 
+ The sprites own code blocks which can interact with stage chnages and manipulate the sprites' properties.
+ The sprites have a concept of their direction and can be made to "bounce" within the stage area automatically.
  
  ![A minimal Scratch project](scratch-large.png)
  
 ### Visualisation 
-TODO(PMM)
+The entire (basic) environment is visual, with editors for all aspects of the sprites and code blocks.
+The stage is manipulated at both "run time" and "design time" in the same way, which is `Good Point VVVV: persistence of stage state`.
+This allows fine positioning by eye, avoiding too much demands on mental arithmetic for the initial learning stages.
+
+### Running the project
+
+There is a Green button to start running, and a Red button to stop running.
+What running means can be deceptively simple - the simplest event is "When Flag Clicked", which can have some code blocks attached underneath - this could perform initialisation or start a processing loop of some kind. You can have as many as you like.
 
 ### Debugging
-* All versions allow blocks to be dragged in, then dragged out *while the project is running* - can _your_  tool do that?
+All versions allow blocks to be dragged in, then dragged out *while the project is running*.
+Can _your_  tool do that?
 
 This is a grab of the code blocks being inspected while the code is running
 ![The code blocks being run](in-large.png)
@@ -85,28 +92,28 @@ This is a grab of a chunk of code blocks pulled out _while the code is running_
 
 You can do this while just using the mouse - the selection extends naturally from your selected block to the end of the enclosing container block - another `Good point SSSS: selection of blocks has some subtle but powerful affordances`
 
-* But scratch desktop has _single step_!
+This works great on an interactive whiteboard to show the effect of a chunk of code blocks.
+
+Even more impressively: Scratch desktop has _single step_, which illuminates the running block!
 
 ## More Good Points
 
-`Good Points 5-14:`
+There's a raft of features: `Good Points AAAA-OOOO:`
 
-Logo like Sprite Primitives, Code Blocks, Message passing, composable mathematical operations, cloning, entry prompts, text messages, pen operations, sound
+Logo like Sprite Primitives, Code Blocks, Message Passing, Composable Mathematical Operations, Sprite Cloning, Entry Prompts, Text Messages, Pen operations, Sound. The latter are in my personal order of appreciation.
+A feature worth mentioning is _Message Passing_  , which allows broadcasts of messages to all items on a stage.
 
-These are in my personal order of significance TODO(PMM) cherry pick some to illustrate
+## Supported Development Styles
+So, the possibilities are limitless, but there is a definite set of approaches that practitioners will work through.
 
-## Development Styles
+### Basic: Sprites, Backdrops, Costumes
+ Coupled with setting some properties, the  bounce / direction / touching colour capabilities allow treating the visual stage as a mini engine with some rudimentary support for using the stage as a dressed "set".
 
-### Sprites, Backdrops, Costumes
- * with bounce / direction / touching colour
+### Advanced: Explicit Positioning / Drawing
+ To move onto to more dynamic generation of content, it is possible to use explicit positioning, and the use of pens to craft abritrary shapes. 
 
-### Explicit Positioning / Drawing
- * explicit positioning 
- * hand crafted drawing of objects
-
-#### It's not like "coding"
+#### Don't worry: it's not like "coding"
 http://worrydream.com/MeanwhileAtCodeOrg/
-
 
 * Immediacy
 This goes to the kind of benefits mentioned in the kind of thing Brett Victor talks about
