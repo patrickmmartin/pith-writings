@@ -2,35 +2,39 @@ The Tao of Scratch
 ====
 
 Abstract
-====
+---
 
 When I look at Scratch, I see something different. 
 
-I'd like persuade to my viewpoint by going through what I see are the `Good Points`.
+I'd like persuade you to my viewpoint by going through what I see are the `Good Points`.
 
-## Target Audience
 I'll be up-front here and state my target audience is the "noble corporate toiler".
-It has perhaps been a while since you were introduced / subjected to a teaching tool (a memory from work that causes a shudder is the Computer Based Training that was less than tolerant of where irrelevant spaces were or were not in my answers).
-Scratch is a tool for learning computing based upon many years of thought, and as such is worth some study.   
+It has hopefully been a while since you were introduced / subjected to a computer based teaching tool.
+Scratch is a tool for implementing computing based upon many years of thought, and as such is worth some study.   
 
-# What is Scratch?
+# Just What is Scratch?
 
 The best place to start is their web site: the description of the project is at https://llk.media.mit.edu/projects/783/ and the main portal is http://scatch.mit.edu
 
 The Wikipedia page is good on this https://en.wikipedia.org/wiki/Scratch_(programming_language)
 
 It's a visual programming language, available as a web application online, that operates on a visual stage with some simple but effective visual components that allows the programmer to construct a range of different visual experiences.  
+There is an offline version now which seems to entirely match the basic capabilities of the web version.
+
+# Why Should I be interested in Scratch?
 
 ## It's coming a "classroom near you" 
 
-Note also that Scratch is on the way to being taught in the UK in primary and secondary schools - that's years 3-8!.
+TODO(PM) "Good Thing"
+Note also that Scratch at this moment on the way to being taught in the UK in primary and secondary schools - that's years 3-8!.
 See the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
 
-## Inspiration
+## The Scratch Heritage 
 
+TODO(PM) "Good Thing"
 The Scratch environment is inspired by the work of Seymour Papert http://www.papert.org/ epitomised in the book Mindstorms  http://www.goodreads.com/book/show/703532.Mindstorms
 
-## Examples
+## Some Examples
 
 You can explore for yourself by visiting http://scratch.mit.edu, making use of `Good Point 1: it has a single entry search box`.
 Having found a project of interest, you can dive straight in and take a look using `Good Point 2: Scratch has a "See Inside" button`.
@@ -43,7 +47,7 @@ Now, although it ruins the nice 3-part list rhetorical flourish, let me just men
 Question: how many _paid for_ services that we use for generating wealth can say the same?
 For the classroom environment, when dealing with the early years where it is a stretch to require detailed forward planning, this is a Good Thing.
 
-### What can be done in Scratch?
+## What can be done in Scratch?
 I won't promote individual projects, but instead rely upon `Good Point 1: it has a single entry search box`
 
  * Yorkshire to English dictionary
@@ -57,11 +61,11 @@ I won't promote individual projects, but instead rely upon `Good Point 1: it has
  * Pacman 
   *  https://scratch.mit.edu/search/google_results/?q=pacman
 
-### Who are the users?
+## Who are the users?
 
 Well, it seems to be primarily educationalists and scholastic years 3-8 (at least); that's around 7 - 12.
 
-## A Whistle Stop tour
+# A Whistle Stop tour
  
  Scratch operates on a visual stage of 480x360 virtual pixels, and can be viewed at varying dpi -  `Good Point UUUU: fixed stage extent.` The stage is a sprite (https://en.wikipedia.org/wiki/Sprite_(computer_graphics)) and can be given script code, and any number of sprites can be placed on the stage to compose a visual scene.
  
@@ -70,21 +74,21 @@ Well, it seems to be primarily educationalists and scholastic years 3-8 (at leas
  
  ![A minimal Scratch project](scratch-large.png)
  
-### Visualisation 
+## Visualisation 
 The entire (basic) environment is visual, with editors for all aspects of the sprites and code blocks.
 The stage is manipulated at both "run time" and "design time" in the same way, which is `Good Point VVVV: persistence of stage state`.
 This allows fine positioning by eye, avoiding too much demands on mental arithmetic for the initial learning stages.
 
-### Running the project
+## Running the project
 
 There is a Green button to start running, and a Red button to stop running.
 What running means can be deceptively simple - the simplest event is "When Flag Clicked", which can have some code blocks attached underneath - this could perform initialisation or start a processing loop of some kind. You can have as many as you like.
 
-### Debugging
+## Debugging
 
 Debugging is an interesting proposition for the target audience.
-#### Adults - example: @garybernhardt "I'm in a super good mood. Everything is still broken, but now it's funny instead of making me mad."
-#### Years 3-8 - I've seen their projects - for some, let me assure you "Everything *is* broken", but they're not fazed.
+### Adults - example: @garybernhardt "I'm in a super good mood. Everything is still broken, but now it's funny instead of making me mad."
+### Years 3-8 - I've seen their projects - for some, let me assure you "Everything *is* broken", but they're not fazed.
 
 Depending upon their developmental stages, there will be a number of strategies employed:
 * ignoring problem in case it goes away in a later fix
@@ -112,36 +116,33 @@ Making use of another `Good point UUUU: the positioning of code blocks in the sc
 
 This works great on an interactive whiteboard to show the effect of a chunk of code blocks.
 
-Even more impressively: the Scratch desktop version, has a similar _single step_, which illuminates the currently running block!
+Even more impressively: the Old Scratch 1.x desktop version, has a similar _single step_, which illuminates the currently running block!
+Clearly this was too mind-blowing and is not available in the current version.
 
-## More Good Points
+## A List of Additional  Good Points
 
 There's a raft of features: `Good Points AAAA-OOOO:`
 
 Logo like Sprite Primitives, Code Blocks, Message Passing, Composable Mathematical Operations, Sprite Cloning, Entry Prompts, Text Messages, Pen operations, Sound. The latter are in my personal order of appreciation.
 A feature worth mentioning is _Message Passing_  , which allows broadcasts of messages to all items on a stage.
 
-## Supported Development Styles
+# Supported Development Styles
 So, the possibilities are limitless, but there is a definite set of approaches that practitioners will work through.
 
-### Basic: Sprites, Backdrops, Costumes
+## Basic: Sprites, Backdrops, Costumes
  Coupled with setting some properties, the  bounce / direction / touching colour capabilities allow treating the visual stage as a mini engine with some rudimentary support for using the stage as a dressed "set".
 
-### Advanced: Explicit Positioning / Drawing
+## Advanced: Explicit Positioning / Drawing
  To move onto to more dynamic generation of content, it is possible to use explicit positioning, and the use of pens to craft abritrary shapes. 
 
-#### Don't worry: it's not like "coding"
-http://worrydream.com/MeanwhileAtCodeOrg/
-
-* Immediacy
+## Immediacy
 This goes to the kind of benefits mentioned in the kind of thing Brett Victor talks about
 in http://worrydream.com/#!/InventingOnPrinciple
 I still think about the impression that talk had on me.
 
-* Accessibility
-
-## Why haven't I mentioned _entirely free to use_ yet?
-* If you care about diversity and granting access to self improvement to all then this is huge.
+## Accessibility
+Why haven't I mentioned _entirely free to use_ yet? If you care about diversity and granting access to self improvement to all then this is huge.
+And no ads...
 
 ## Sharing
 From `Good Point 3: Scratch has a "Remix" button`
@@ -158,22 +159,25 @@ From `Good Point 17: Scratch seems to be incredibly good natured`
  * what element of self selection of the group, and self policing is going on here?
  * is this in fact a _very interesting outcome_ we might want to think about more closely
 
-* It's a constrained environment
+# It's a constrained environment
  * `Good Point MMM: there are  "Only a few ways to do certain things"`
-* Except when it's not
+# Except when it's not
  * `Good Point NNN: counterpoint to MMM  'Since when did that stop anyone"`
 
-## Suitability for classroom and distributed teaching
+## Don't worry: it's not like "coding"
+http://worrydream.com/MeanwhileAtCodeOrg/
+
+# Suitability for classroom and distributed teaching
   `Good Point PPPP: Scratch supports multiple sessions on the same account and concurrent work`
   Given each project has a thumbnail: `Good Point QQQQ: all projects have a thumbnail` it's very easy for a supervisor to see what they're up to: even in the corners.
 
-## Teachable Moments:  "Big chunks of blocks" vs. Message Passing
+## Teachable Moments 1:  "Big chunks of blocks" vs. Message Passing
 When did you, dear reader, love to learn messages passing as a style?
 In the Scratch environment, it seems to be a few months from a standing start.
 Very quickly, it becomes clear that giant chunks of nested blocks and variables can be replaced by sending the appropriate message. 
 
 
-## Teachable Moments: Space Invaders vs Pacman
+## Teachable Moments 2: Space Invaders vs Pacman
 This seems to be one of challenges that sorts the population - the Space Invaders clones tend to be very high quality, whereas for the "deceptively simple Pacman" there tends to be a raft of issues that challenge `Good Point RRRR: some tasks lend themselves to "teachable moments"`
 
 # Scratch has some "Magic" features which are well loved 
@@ -185,7 +189,7 @@ This seems to be one of challenges that sorts the population - the Space Invader
 
 
 # User Straw Poll
-I decided to get an assessment from the horse's mouth, as it were
+So, I decided to get an assessment from the horse's mouth, as it were
 
 The results are for "best thing about Scratch" are:
  
@@ -200,7 +204,8 @@ The results are for "best thing about Scratch" are:
 
 
 
-# Can it really all be lovely in the garden?
+# Can it really all be Lovely In The Garden?
+
 * Security concerns will always be with us
 *  TODO(PMM) Is there a dark scratch?
 * Is it addictive enough to prevent people progressing?
