@@ -81,20 +81,38 @@ There is a Green button to start running, and a Red button to stop running.
 What running means can be deceptively simple - the simplest event is "When Flag Clicked", which can have some code blocks attached underneath - this could perform initialisation or start a processing loop of some kind. You can have as many as you like.
 
 ### Debugging
-All versions allow blocks to be dragged in, then dragged out *while the project is running*.
-Can _your_  tool do that?
 
-This is a grab of the code blocks being inspected while the code is running
+Debugging is an interesting proposition for the target audience.
+#### Adults - example: @garybernhardt "I'm in a super good mood. Everything is still broken, but now it's funny instead of making me mad."
+#### Years 3-8 - I've seen their projects - for some, let me assure you "Everything *is* broken", but they're not fazed.
+
+Depending upon their developmental stages, there will be a number of strategies employed:
+* ignoring problem in case it goes away in a later fix
+* trying something different to see if that's better
+* ask teacher
+* reasoning it was the last change
+* trying a completely different tack
+* attempting to reason from their mental model
+ 
+Remember, this is now work, so these are all *absolutely fine* as long as they remain engaged and learning.
+
+`Good point TTTT: code blocks can be modified at runtime in the designer` all versions allow blocks to be dragged in, then dragged out _while the project is running_.
+Can _your_ tool do that?
+
+This is a grab of the code blocks being inspected _while the code is running_
 ![The code blocks being run](in-large.png)
 
-This is a grab of a chunk of code blocks pulled out _while the code is running_
+This is a grab of a chunk of code blocks after being pulled out of their container _while the code is running_
 ![The code blocks not being run!](out-large.png)
 
-You can do this while just using the mouse - the selection extends naturally from your selected block to the end of the enclosing container block - another `Good point SSSS: selection of blocks has some subtle but powerful affordances`
+Did I mention you can do this _while the code is running_?
+
+You can do this while just using the mouse - the selection extends naturally from your selected block to the end of the enclosing container block - another `Good point SSSS: selection of blocks has some subtle but powerful affordances`.
+Making use of another `Good point UUUU: the positioning of code blocks in the scripts area can be arbitrary.`, so you can park a small chunk of logic still within the visual context of where it was running to reduce the cognitive load.
 
 This works great on an interactive whiteboard to show the effect of a chunk of code blocks.
 
-Even more impressively: Scratch desktop has _single step_, which illuminates the running block!
+Even more impressively: the Scratch desktop version, has a similar _single step_, which illuminates the currently running block!
 
 ## More Good Points
 
