@@ -25,14 +25,12 @@ There is an offline version now which seems to entirely match the basic capabili
 
 ## It's coming a "classroom near you" 
 
-TODO(PM) "Good Thing"
-Note also that Scratch at this moment on the way to being taught in the UK in primary and secondary schools - that's years 3-8!.
-See the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
+Good Thing @@@@: “This Thing is Happening”" Note also that Scratch at this moment on the way to being taught in the UK in primary and secondary schools - that's years 3-8!. See the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
 
 ## The Scratch Heritage 
 
-TODO(PM) "Good Thing"
-The Scratch environment is inspired by the work of Seymour Papert http://www.papert.org/ epitomised in the book Mindstorms  http://www.goodreads.com/book/show/703532.Mindstorms
+The Scratch environment is inspired by the work of Seymour Papert http://www.papert.org/ epitomised in the book Mindstorms  http://www.goodreads.com/book/show/703532.Mindstorms 
+Listing the whole corpus of the whole back story is a massive endeavour for a brief story, so this is going to be left for the interested reader.
 
 ## Some Examples
 
@@ -48,7 +46,7 @@ Question: how many _paid for_ services that we use for generating wealth can say
 For the classroom environment, when dealing with the early years where it is a stretch to require detailed forward planning, this is a Good Thing.
 
 ## What can be done in Scratch?
-I won't promote individual projects, but instead rely upon `Good Point 1: it has a single entry search box`
+I won't promote individual projects, and indeed I will assert that I don’t need to. Instead let’s rely upon `Good Point 1: it has a single entry search box`
 
  * Yorkshire to English dictionary
   * https://scratch.mit.edu/search/google_results/?q=Yorkshire+Dictionary 
@@ -63,21 +61,19 @@ I won't promote individual projects, but instead rely upon `Good Point 1: it has
 
 ## Who are the users?
 
-Well, it seems to be primarily educationalists and scholastic years 3-8 (at least); that's around 7 - 12.
+Well, it seems to be primarily educationalists and UK scholastic years 3-8 (at least); that's around 7 – 12, we’ll see why in a bit, though Good Point ~~~~ figures.
 
 # A Whistle Stop tour
  
  Scratch operates on a visual stage of 480x360 virtual pixels, and can be viewed at varying dpi -  `Good Point UUUU: fixed stage extent.` The stage is a sprite (https://en.wikipedia.org/wiki/Sprite_(computer_graphics)) and can be given script code, and any number of sprites can be placed on the stage to compose a visual scene.
  
- The sprites own code blocks which can interact with stage chnages and manipulate the sprites' properties.
- The sprites have a concept of their direction and can be made to "bounce" within the stage area automatically.
+The sprites own code blocks which can interact with stage changes and manipulate the sprites' properties.
+The sprites have a concept of their direction and can be made to orient in any direction, move and "bounce" within the stage area automatically.
  
  ![A minimal Scratch project](scratch-large.png)
  
 ## Visualisation 
-The entire (basic) environment is visual, with editors for all aspects of the sprites and code blocks.
-The stage is manipulated at both "run time" and "design time" in the same way, which is `Good Point VVVV: persistence of stage state`.
-This allows fine positioning by eye, avoiding too much demands on mental arithmetic for the initial learning stages.
+The entire (basic) environment is visual, with editors for all aspects of the sprites and code blocks. The stage is manipulated at both "run time" and "design time" in the same way, which is Good Point VVVV: persistence of stage state. This allows fine positioning by eye, avoiding too many demands on arithmetic for the initial learning stages.
 
 ## Running the project
 
@@ -90,15 +86,8 @@ Debugging is an interesting proposition for the target audience.
 * Adults - example: @garybernhardt "I'm in a super good mood. Everything is still broken, but now it's funny instead of making me mad."
 * Years 3-8 - I've seen their projects - for some, let me assure you "Everything *is* broken", but they're not fazed.
 
-Depending upon their developmental stages, there will be a number of strategies employed:
-* ignoring problem in case it goes away in a later fix
-* trying something different to see if that's better
-* ask teacher
-* reasoning it was the last change
-* trying a completely different tack
-* attempting to reason from their mental model
- 
-Remember, this is now work, so these are all *absolutely fine* as long as they remain engaged and learning.
+There is a learning curve on the road to learning to debug your project, and there are some useful built-ins 
+The coolest of which is: Good point TTTT: code blocks can be modified at runtime in the designer all versions allow blocks to be dragged in, then dragged out while the project is running. Can your tool do that?
 
 `Good point TTTT: code blocks can be modified at runtime in the designer` all versions allow blocks to be dragged in, then dragged out _while the project is running_.
 Can _your_ tool do that?
@@ -106,7 +95,7 @@ Can _your_ tool do that?
 This is a grab of the code blocks being inspected _while the code is running_
 ![The code blocks being run](in-large.png)
 
-This is a grab of a chunk of code blocks after being pulled out of their container _while the code is running_
+This is a grab of a chunk of code blocks after being pulled out of their container block _while the code is running_
 ![The code blocks not being run!](out-large.png)
 
 Did I mention you can do this _while the code is running_?
@@ -133,12 +122,12 @@ So, the possibilities are limitless, but there is a definite set of approaches t
  Coupled with setting some properties, the  bounce / direction / touching colour capabilities allow treating the visual stage as a mini engine with some rudimentary support for using the stage as a dressed "set".
 
 ## Advanced: Explicit Positioning / Drawing
- To move onto to more dynamic generation of content, it is possible to use explicit positioning, and the use of pens to craft abritrary shapes. 
+To move onto to more dynamic generation of content, it is possible to use explicit positioning, and the use of pens to craft abritrary shapes. 
 
 ## Immediacy
-This goes to the kind of benefits mentioned in the kind of thing Brett Victor talks about
+This goes to the kind of benefits mentioned in the kind of thing Brett Victor talks about 
 in http://worrydream.com/#!/InventingOnPrinciple
-I still think about the impression that talk had on me.
+I still think about the impression that talk had on me. It’s not quite possible to reproduce that talk right now in Scratch, but the immediacy of the run – change – run loop is still very impressive.  
 
 ## Accessibility
 Why haven't I mentioned _entirely free to use_ yet? If you care about diversity and granting access to self improvement to all then this is huge.
@@ -146,18 +135,18 @@ And no ads...
 
 ## Sharing
 From `Good Point 3: Scratch has a "Remix" button`
-* It exists and works
+*	It exists and works – if you like something and want to have a try at improving it, you just press the button
 * Is this because it of `Good Point 15: Scratch has No Merge Action` (for you corporate warriors)
 
 ## Deployment 
 From `Good Point 16: Scratch has a "public" checkbox`
-* ahahaha - you just press "Share"!
+* pwaahahaha - you just press "Share"!
 
 ## Politeness
-From `Good Point 17: Scratch seems to be incredibly good natured`
-* Is it because they're all under 12? ( or perhaps over 30 ?)
- * what element of self selection of the group, and self policing is going on here?
- * is this in fact a _very interesting outcome_ we might want to think about more closely
+TODO(PMM) From Good Point 17: Scratch seems to be incredibly good natured
+*	Is it because they're all under 12? ( or over 30 ?)
+ *	what element of self selection of the group, and self policing is going on here?
+ *	is this in fact a very interesting outcome we might want to think about more closely?
 
 # It's a constrained environment
  * `Good Point MMM: there are  "Only a few ways to do certain things"`
@@ -172,21 +161,23 @@ http://worrydream.com/MeanwhileAtCodeOrg/
   Given each project has a thumbnail: `Good Point QQQQ: all projects have a thumbnail` it's very easy for a supervisor to see what they're up to: even in the corners.
 
 ## Teachable Moments 1:  "Big chunks of blocks" vs. Message Passing
-When did you, dear reader, love to learn messages passing as a style?
-In the Scratch environment, it seems to be a few months from a standing start.
-Very quickly, it becomes clear that giant chunks of nested blocks and variables can be replaced by sending the appropriate message. 
+When did you, dear reader, love to learn message passing as a style? In the Scratch environment, it seems to be a few months from a standing start. Very quickly, the users seem to grasp that giant chunks of nested blocks and variables can be replaced by sending the appropriate message.
 
 
 ## Teachable Moments 2: Space Invaders vs Pacman
-This seems to be one of challenges that sorts the population - the Space Invaders clones tend to be very high quality, whereas for the "deceptively simple Pacman" there tends to be a raft of issues that challenge `Good Point RRRR: some tasks lend themselves to "teachable moments"`
+This seems to be one of challenges that sorts the population. Caveat: in my purely personal sampling: the Space Invaders clones tend to be very high quality, whereas for the "deceptively simple” Pacman there tends to be a raft of issues that challenge the users Good Point RRRR: some tasks lend themselves to "teachable moments". My suspicion is that there are a couple of required complex concepts in a maze game that Scratch does not deliver in its default toolbox, or that are easily synthesised. This might be a fruitful  area to extend the sprite’s capabilities
+
+*	confession time: for the second time (approx 30+ years after the first attempt) I am re-implementing Pacman	and I'm finding that talking about the incomplete (broken?) versions I "Saved As" on the way can be used for Good Point RRRR: some tasks lend themselves to "teachable moments"
+ *	for example, I have various baby step projects that will show the stages of
+ *	move smoothly betweens points on a grid
+ *	choose from N, E, W, S to head to Pacman
+ *	now turn left instead of reversing on the next choice -> delivers the ghost patrolling in circles behaviour for free
+   
 
 # Scratch has some "Magic" features which are well loved 
  * `Good Point OOO: Vector -> bitmap -> Vector!`
- * Single Step (desktop version) - this highlights the _block being run_ as the program executes 
- * concurrency 
-  * what sequence are operations run in?
-  * also, do we care?
-
+ * Defining concurrent operations “just works” (Multiple “When_Flag_Clicked” can be used)
+ 
 
 # User Straw Poll
 So, I decided to get an assessment from the horse's mouth, as it were
@@ -202,22 +193,17 @@ The results are for "best thing about Scratch" are:
 | It's easy to share               | 1 |
 | It's satisfying to finish things | 1 |
 
-
+So, the games have it, which is fine- what is not immediately clear is the sheer breadth and depth of games created – perfect Space Invaders clone to Fantasy Football style games
 
 # Can it really all be Lovely In The Garden?
 
+*	Uses ActionScript
 * Security concerns will always be with us
 *  TODO(PMM) Is there a dark scratch?
 * Is it addictive enough to prevent people progressing?
  * - to HTML (? barf)
- * to python
- * confession time: for the second time (approx 30+ years after the first attempt) I am re-implementing Pacman
-  * and I'm finding that talking about the incomplete (broken?) versions I "Saved As" on the way can be used for  `Good Point RRRR: some tasks lend themselves to "teachable moments"`
-  * for example, I have various baby step projects that will show the stages of
-   * move smoothly betweens points on a grid
-   * choose from N, E, W, S to head to Pacman
-   * now turn left instead of reversing on the next choice -> delivers the ghost patrolling in circles behaviour for free
-
+ * to python (arguably more serious)
+ 
 # Lessons for "Grown ups"
 
 Here we come to the punchline: TODO(PMM) - think about some "contrast and compares" here.
