@@ -87,8 +87,8 @@ What running means can be deceptively simple - the simplest event is "When Flag 
 ## Debugging
 
 Debugging is an interesting proposition for the target audience.
-### Adults - example: @garybernhardt "I'm in a super good mood. Everything is still broken, but now it's funny instead of making me mad."
-### Years 3-8 - I've seen their projects - for some, let me assure you "Everything *is* broken", but they're not fazed.
+* Adults - example: @garybernhardt "I'm in a super good mood. Everything is still broken, but now it's funny instead of making me mad."
+* Years 3-8 - I've seen their projects - for some, let me assure you "Everything *is* broken", but they're not fazed.
 
 Depending upon their developmental stages, there will be a number of strategies employed:
 * ignoring problem in case it goes away in a later fix
