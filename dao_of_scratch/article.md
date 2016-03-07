@@ -18,25 +18,26 @@ The best place to start is their web site: the description of the project is at 
 
 The Wikipedia page is good on this https://en.wikipedia.org/wiki/Scratch_(programming_language)
 
-It's a visual programming language, available as a web application online, that operates on a visual stage with some simple but effective visual components that allows the programmer to construct a range of different visual experiences.  
-There is an offline version now which seems to entirely match the basic capabilities of the web version.
+It's a visual programming language, consisting of composable code blocks that form the elements of a program. It is available as a web application online, and implements a visual stage as the program output.  
+There is also an offline version now which seems to match the basic capabilities of the web version, omitting online only features.
 
 # Why Should I be interested in Scratch?
+Good question
 
 ## It's coming a "classroom near you" 
 
-Good Thing @@@@: “This Thing is Happening”" Note also that Scratch at this moment on the way to being taught in the UK in primary and secondary schools - that's years 3-8!. See the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
+Good Thing @@@@: “This Thing is Happening”" Note also that Scratch at this moment on the way to being taught in the UK in primary and secondary schools - that's years 3-8! (around 7 to 12). See the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
 
 ## The Scratch Heritage 
 
 The Scratch environment is inspired by the work of Seymour Papert http://www.papert.org/ epitomised in the book Mindstorms  http://www.goodreads.com/book/show/703532.Mindstorms 
-Listing the whole corpus of the whole back story is a massive endeavour for a brief story, so this is going to be left for the interested reader.
+Listing the whole corpus of the whole back story is out of scope, so this is going to be left for the interested reader.
 
 ## Some Examples
 
 You can explore for yourself by visiting http://scratch.mit.edu, making use of `Good Point 1: it has a single entry search box`.
 Having found a project of interest, you can dive straight in and take a look using `Good Point 2: Scratch has a "See Inside" button`.
-If you like what you find you can then just fork it using `Good Point 3: Scratch has a "Remix" button`
+If you like what you find you can then simply fork it using `Good Point 3: Scratch has a "Remix" button`
 - that new project is now available for you to modify, debug and run in any way you see fit.
 
 Now, although it ruins the nice 3-part list rhetorical flourish, let me just mention
@@ -46,7 +47,7 @@ Question: how many _paid for_ services that we use for generating wealth can say
 For the classroom environment, when dealing with the early years where it is a stretch to require detailed forward planning, this is a Good Thing.
 
 ## What can be done in Scratch?
-I won't promote individual projects, and indeed I will assert that I don’t need to. Instead let’s rely upon `Good Point 1: it has a single entry search box`
+I won't promote individual projects, and further I will assert that I don’t need to. Instead let’s rely upon `Good Point 1: it has a single entry search box` and I can list some jump off points
 
  * Yorkshire to English dictionary
   * https://scratch.mit.edu/search/google_results/?q=Yorkshire+Dictionary 
@@ -54,26 +55,32 @@ I won't promote individual projects, and indeed I will assert that I don’t nee
   * https://scratch.mit.edu/search/google_results/?q=cat+clans
   * no, me neither
  * Space Invaders
-  * aww, yeah...
   * https://scratch.mit.edu/search/google_results/?q=space+invaders
+  * aww, yeah...
  * Pacman 
   *  https://scratch.mit.edu/search/google_results/?q=pacman
 
 ## Who are the users?
 
-Well, it seems to be primarily educationalists and UK scholastic years 3-8 (at least); that's around 7 – 12, we’ll see why in a bit, though Good Point ~~~~ figures.
+Well, it seems to be primarily educationalists and UK scholastic years 3-8 (at least), we’ll see why in a bit, through `Good Point ~~~~ figures on usage` TODO(PMM).
 
 # A Whistle Stop tour
  
- Scratch operates on a visual stage of 480x360 virtual pixels, and can be viewed at varying dpi -  `Good Point UUUU: fixed stage extent.` The stage is a sprite (https://en.wikipedia.org/wiki/Sprite_(computer_graphics)) and can be given script code, and any number of sprites can be placed on the stage to compose a visual scene.
- 
-The sprites own code blocks which can interact with stage changes and manipulate the sprites' properties.
+Scratch operates on a visual stage of 480x360 virtual pixels, and can be viewed at varying dpi -  `Good Point UUUU: fixed stage extent.` The stage is a sprite (https://en.wikipedia.org/wiki/Sprite_(computer_graphics)) and can be given script code, and any number of sprites can be placed on the stage to compose a visual scene. 
+The sprites have a scripts container which owns aggregations of code blocks that can interact with stage changes, kay and mouse events and manipulate the sprites' properties.
 The sprites have a concept of their direction and can be made to orient in any direction, move and "bounce" within the stage area automatically.
+Finally, the large array of primitive code blocks available for the scripts can react to events and message and with the sprites and  allow the programmer to construct a range of different behaviours and visual experiences .
+ 
+ Here is a grab of a minimal project put together from an empty project and the built in resources.
  
  ![A minimal Scratch project](scratch-large.png)
  
 ## Visualisation 
 The entire (basic) environment is visual, with editors for all aspects of the sprites and code blocks. The stage is manipulated at both "run time" and "design time" in the same way, which is Good Point VVVV: persistence of stage state. This allows fine positioning by eye, avoiding too many demands on arithmetic for the initial learning stages.
+
+## Resources
+
+It's a `Good thing ZZZZ: built in resources` that image and audio resources are embedded into to the project and are available in a standard library, which can be expanded by assets uploaded to the project. All of these can be copied, and modified once embedded.
 
 ## Running the project
 
@@ -84,12 +91,11 @@ What running means can be deceptively simple - the simplest event is "When Flag 
 
 Debugging is an interesting proposition for the target audience.
 * Adults - example: @garybernhardt "I'm in a super good mood. Everything is still broken, but now it's funny instead of making me mad."
-* Years 3-8 - I've seen their projects - for some, let me assure you "Everything *is* broken", but they're not fazed.
+* Years 3-8 - Now, I've seen their projects, and for some let me assure you: "Everything *is* broken", but they're not fazed.
 
-There is a learning curve on the road to learning to debug your project, and there are some useful built-ins 
-The coolest of which is: Good point TTTT: code blocks can be modified at runtime in the designer all versions allow blocks to be dragged in, then dragged out while the project is running. Can your tool do that?
+There is a learning curve on the road to learning to debug your project, and there are some useful built-ins, like message and comment notes.. 
+The coolest of which is though: `Good point TTTT: code blocks can be modified at runtime in the designer` all versions allow blocks to be dragged in, then dragged out while the project is running. Can your tool do that?
 
-`Good point TTTT: code blocks can be modified at runtime in the designer` all versions allow blocks to be dragged in, then dragged out _while the project is running_.
 Can _your_ tool do that?
 
 This is a grab of the code blocks being inspected _while the code is running_
@@ -103,10 +109,10 @@ Did I mention you can do this _while the code is running_?
 You can do this while just using the mouse - the selection extends naturally from your selected block to the end of the enclosing container block - another `Good point SSSS: selection of blocks has some subtle but powerful affordances`.
 Making use of another `Good point UUUU: the positioning of code blocks in the scripts area can be arbitrary.`, so you can park a small chunk of logic still within the visual context of where it was running to reduce the cognitive load.
 
-This works great on an interactive whiteboard to show the effect of a chunk of code blocks.
+This works particularly well on an interactive whiteboard to show the effect of a chunk of code blocks.
 
 Even more impressively: the Old Scratch 1.x desktop version, has a similar _single step_, which illuminates the currently running block!
-Clearly this was too mind-blowing and is not available in the current version.
+Clearly this was too mind-blowing and is no longer available in the current version.
 
 ## A List of Additional  Good Points
 
@@ -154,11 +160,11 @@ TODO(PMM)
 
 ## Don't worry: it's not like "coding"
 http://worrydream.com/MeanwhileAtCodeOrg/
-TODO(PMM)
+TODO(PMM) elaborate
 
 # Suitability for classroom and distributed teaching
-  `Good Point PPPP: Scratch supports multiple sessions on the same account and concurrent work`
-  Given each project has a thumbnail: `Good Point QQQQ: all projects have a thumbnail` it's very easy for a supervisor to see what they're up to, even in the corners of the classroom, and even allows the supervisor to investigate and debug a project if needs be.
+  `Good Point PPPP: Scratch supports multiple sessions on the same account and concurrent work on different projects`
+  This is one setup I can advocate: given each project has a thumbnail in the account's list of projects: `Good Point QQQQ: all projects have a thumbnail` it's very easy for a supervisor to see what individuals are up to. This also allows the supervisor to investigate and debug a project remotely if needs be.
 
 ## Teachable Moments 1:  "Big chunks of blocks" vs. Message Passing
 When did you, dear reader, love to learn message passing as a style? In the Scratch environment, it seems to be a few months from a standing start. Very quickly, the users seem to grasp that giant chunks of nested blocks and variables can be replaced by sending the appropriate message to be hanlded by a smaller chunk of code blocks.
@@ -174,15 +180,15 @@ This seems to be one of challenges that sorts the population. Caveat: this is fr
  *	 turning left instead of reversing direction on the next choice -> which then delivers the ghost patrolling in circles behaviour for free
    
 
-# Scratch has some "Magic" features which are well loved 
+# Scratch has some "Magic" features which are well loved TODO(PMM) demote?
  * `Good Point OOO: Vector -> bitmap -> Vector!`
  * Defining concurrent operations “just works” (Multiple “When <Green Flag> Clicked” can be used)
  
 
 # User Straw Poll
-So, I decided to get an assessment from the horse's mouth, as it were, and ran a very unscientific poll of a miniscule sample set of users.
+So, recently it hit me that I should get an assessment from the horse's mouth, as it were. So I ran a very unscientific poll of a miniscule sample set of users, and asked them one question.
 
-The results are for answers to "best thing about Scratch" are:
+The results are for answers to "What's the best thing about Scratch?" are:
  
 | Thing  | Votes |
 | ------------- | ------------- |
@@ -193,18 +199,25 @@ The results are for answers to "best thing about Scratch" are:
 | It's easy to share               | 1 |
 | It's satisfying to finish things | 1 |
 
-So, making games wins it, but the ability to express yourself is clearly highly valued.   
+So, making games wins it, but the ability to express yourself is clearly highly valued. TODO(PMM) user agency very important- not passive consumption.
 
 # Can it really all be Lovely In The Garden?
 
 * It's a social environment with quite young users interacting over the internet running arbitrary code.
-  Security concerns will always be with us, but there are rules and admins which seem to work. 
-* Is it addictive enough to prevent people progressing to HTML and python?
-  This is a concern: Scratch can seem to easily become the tool of choice to prototype an idea, which is dual edged, as it's a good to get an idea captured, but conversely it would be good to stretch oneself and branch out. However, when it comes to string processing, it's a safe bet that python is going to win hands down, though. 
+  Security concerns will always be with us, but there are rules and admins which (touch wood) seem to work. 
+* Is it so addictive as to prevent people progressing to (say) HTML and python?
+  This is a concern I have heard expressed: Scratch can seem to easily become the tool of choice to prototype an idea, which is dual edged, as it's a good thing to get an idea captured, but conversely it would be good to stretch oneself and branch out. However, when it comes to string processing, it's a safe bet that python is going to win hands down, though.
 
-# Lessons for "Grown ups"
+# Conclusion
 
-So here we come to the punchline: I have joked that some companies should figure out how to write and deploy their business apps using Scratch. That's not a serious proposition, but I suugest we can see that the secret of the success is all the Good Things, working to make the environment as frictionless as possible.
+## Lessons for "Grown ups"
+So here we come to the punchline: I have joked that some companies should figure out how to write and deploy their business apps using Scratch. That's not a serious proposition, but I suggest we can see that the secret of the success is all the Good Things, working to make the environment as frictionless as possible.
+
+## The "Ah, of course" moments
+I hope I have shied away from too much hyperbole (!) in going over Scratch, and have instead relied upon the Good Points.
+In re-reading I think I see a pattern emerging of: _introduce concept, explain how it's made accessible, realise that it's a sensible, easily grasped implementation, build on it_. This happens a lot as you start to work through Scratch, there is very little cognitive dissonance to distract one from the flow of working with the ideas. 
+Perhaps this is the key takeaway: I don't know about your situation, but in many organisations, when a certain key technique is explained there is often a "WAT?" moment experienced by people new to that particular "elephant in the room" as the disconnect between what is required and what has in fact been done becomes apparent. It behoves us to consider both why there are incentives to create that elephant and incentives to maintain it. 
+
 
 Acknowledgments
 ---------
