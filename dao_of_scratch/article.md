@@ -131,22 +131,21 @@ I still think about the impression that talk had on me. It’s not quite possibl
 
 ## Accessibility
 Why haven't I mentioned _entirely free to use_ yet? If you care about diversity and granting access to self improvement to all then this is huge.
-And no ads...
 
 ## Sharing
 From `Good Point 3: Scratch has a "Remix" button`
 *	It exists and works – if you like something and want to have a try at improving it, you just press the button
-* Is this because it of `Good Point 15: Scratch has No Merge Action` (for you corporate warriors)
+* Is this due to `Good Point 15: Scratch has No Merge Action` (for you corporate warriors)
 
 ## Deployment 
 From `Good Point 16: Scratch has a "public" checkbox`
-* pwaahahaha - you just press "Share"!
+* pwaahahaha - you just press "Share"! TODO(PMM)
 
 ## Politeness
-TODO(PMM) From Good Point 17: Scratch seems to be incredibly good natured
-*	Is it because they're all under 12? ( or over 30 ?)
- *	what element of self selection of the group, and self policing is going on here?
- *	is this in fact a very interesting outcome we might want to think about more closely?
+From `Good Point 17: Scratch seems to be incredibly good natured`, ss it because they're all under 12? ( or over 30 ?)
+Well, there are The Rules: http://wiki.scratch.mit.edu/wiki/Scratch_Rules and there are the banned topics http://wiki.scratch.mit.edu/wiki/List_of_Controversial_Topics_on_Scratch.
+There even seems to be a Scratch version of Herobrine http://minecraft.gamepedia.com/Herobrine.
+TODO(PMM)
 
 # It's a constrained environment
  * `Good Point MMM: there are  "Only a few ways to do certain things"`
@@ -155,34 +154,35 @@ TODO(PMM) From Good Point 17: Scratch seems to be incredibly good natured
 
 ## Don't worry: it's not like "coding"
 http://worrydream.com/MeanwhileAtCodeOrg/
+TODO(PMM)
 
 # Suitability for classroom and distributed teaching
   `Good Point PPPP: Scratch supports multiple sessions on the same account and concurrent work`
-  Given each project has a thumbnail: `Good Point QQQQ: all projects have a thumbnail` it's very easy for a supervisor to see what they're up to: even in the corners.
+  Given each project has a thumbnail: `Good Point QQQQ: all projects have a thumbnail` it's very easy for a supervisor to see what they're up to, even in the corners of the classroom, and even allows the supervisor to investigate and debug a project if needs be.
 
 ## Teachable Moments 1:  "Big chunks of blocks" vs. Message Passing
-When did you, dear reader, love to learn message passing as a style? In the Scratch environment, it seems to be a few months from a standing start. Very quickly, the users seem to grasp that giant chunks of nested blocks and variables can be replaced by sending the appropriate message.
+When did you, dear reader, love to learn message passing as a style? In the Scratch environment, it seems to be a few months from a standing start. Very quickly, the users seem to grasp that giant chunks of nested blocks and variables can be replaced by sending the appropriate message to be hanlded by a smaller chunk of code blocks.
 
 
 ## Teachable Moments 2: Space Invaders vs Pacman
-This seems to be one of challenges that sorts the population. Caveat: in my purely personal sampling: the Space Invaders clones tend to be very high quality, whereas for the "deceptively simple” Pacman there tends to be a raft of issues that challenge the users Good Point RRRR: some tasks lend themselves to "teachable moments". My suspicion is that there are a couple of required complex concepts in a maze game that Scratch does not deliver in its default toolbox, or that are easily synthesised. This might be a fruitful  area to extend the sprite’s capabilities
+This seems to be one of challenges that sorts the population. Caveat: this is from my purely personal sampling. I have found the Space Invaders clones tend to be very high quality, whereas for the "deceptively simple” Pacman there tends to be a raft of issues that challenge the users `Good Point RRRR: some tasks lend themselves to "teachable moments"`. My suspicion is that there are a couple of required complex concepts in a maze game that Scratch does not deliver in its default toolbox, or that are easily synthesised. This might be a fruitful  area to extend the sprite’s capabilities
 
-*	confession time: for the second time (approx 30+ years after the first attempt) I am re-implementing Pacman	and I'm finding that talking about the incomplete (broken?) versions I "Saved As" on the way can be used for Good Point RRRR: some tasks lend themselves to "teachable moments"
+*	confession time: for the second time (approx 30+ years after the first attempt) I am re-implementing Pacman	and I'm finding that talking about the incomplete (broken?) versions I "Saved As" on the way can be used for `Good Point RRRR: some tasks lend themselves to "teachable moments"`
  *	for example, I have various baby step projects that will show the stages of
- *	move smoothly betweens points on a grid
- *	choose from N, E, W, S to head to Pacman
- *	now turn left instead of reversing on the next choice -> delivers the ghost patrolling in circles behaviour for free
+ *	moving smoothly betweens points on a grid
+ *	choosing betweeen N, E, W, S to head to Pacman / some other target
+ *	 turning left instead of reversing direction on the next choice -> which then delivers the ghost patrolling in circles behaviour for free
    
 
 # Scratch has some "Magic" features which are well loved 
  * `Good Point OOO: Vector -> bitmap -> Vector!`
- * Defining concurrent operations “just works” (Multiple “When_Flag_Clicked” can be used)
+ * Defining concurrent operations “just works” (Multiple “When <Green Flag> Clicked” can be used)
  
 
 # User Straw Poll
-So, I decided to get an assessment from the horse's mouth, as it were
+So, I decided to get an assessment from the horse's mouth, as it were, and ran a very unscientific poll of a miniscule sample set of users.
 
-The results are for "best thing about Scratch" are:
+The results are for answers to "best thing about Scratch" are:
  
 | Thing  | Votes |
 | ------------- | ------------- |
@@ -193,22 +193,18 @@ The results are for "best thing about Scratch" are:
 | It's easy to share               | 1 |
 | It's satisfying to finish things | 1 |
 
-So, the games have it, which is fine- what is not immediately clear is the sheer breadth and depth of games created – perfect Space Invaders clone to Fantasy Football style games
+So, making games wins it, but the ability to express yourself is clearly highly valued.   
 
 # Can it really all be Lovely In The Garden?
 
-*	Uses ActionScript
-* Security concerns will always be with us
-*  TODO(PMM) Is there a dark scratch?
-* Is it addictive enough to prevent people progressing?
- * - to HTML (? barf)
- * to python (arguably more serious)
- 
+* It's a social environment with quite young users interacting over the internet running arbitrary code.
+  Security concerns will always be with us, but there are rules and admins which seem to work. 
+* Is it addictive enough to prevent people progressing to HTML and python?
+  This is a concern: Scratch can seem to easily become the tool of choice to prototype an idea, which is dual edged, as it's a good to get an idea captured, but conversely it would be good to stretch oneself and branch out. However, when it comes to string processing, it's a safe bet that python is going to win hands down, though. 
+
 # Lessons for "Grown ups"
 
-Here we come to the punchline: TODO(PMM) - think about some "contrast and compares" here.
-I have joked that some companies should figure out how to deploy their business apps using Scratch of something very like it.
-Though, come to think of it, what would so wrong?
+So here we come to the punchline: I have joked that some companies should figure out how to write and deploy their business apps using Scratch. That's not a serious proposition, but I suugest we can see that the secret of the success is all the Good Things, working to make the environment as frictionless as possible.
 
 Acknowledgments
 ---------
