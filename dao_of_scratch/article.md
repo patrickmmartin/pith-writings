@@ -203,20 +203,20 @@ So, making games wins it, but the ability to express yourself is clearly highly 
 
 # Can it really all be Lovely In The Garden?
 
-* It's a social environment with quite young users interacting over the internet running arbitrary code.
+* Well, It's a social environment with quite young users interacting over the internet running arbitrary code.
   Security concerns will always be with us, but there are rules and admins which (touch wood) seem to work. 
 * Is it so addictive as to prevent people progressing to (say) HTML and python?
-  This is a concern I have heard expressed: Scratch can seem to easily become the tool of choice to prototype an idea, which is dual edged, as it's a good thing to get an idea captured, but conversely it would be good to stretch oneself and branch out. However, when it comes to string processing, it's a safe bet that python is going to win hands down, though.
+  This is a concern I have heard expressed: Scratch can seem to easily become the tool of choice to prototype an idea, which is dual edged, as it's a good thing to get an idea captured, but conversely it would be good to stretch oneself and branch out.
 
 # Conclusion
 
 ## Lessons for "Grown ups"
-So here we come to the punchline: I have joked that some companies should figure out how to write and deploy their business apps using Scratch. That's not a serious proposition, but I suggest we can see that the secret of the success is all the Good Things, working to make the environment as frictionless as possible.
+So here we come to the punchline: I have joked that some companies should figure out how to write and deploy their business apps using Scratch. That's not in fact a serious proposition, but I suggest we can see that the secret of the success is all the Good Things, working to make the environment as frictionless as possible.
 
 ## The "Ah, of course" moments
-I hope I have shied away from too much hyperbole (!) in going over Scratch, and have instead relied upon the Good Points.
-In re-reading I think I see a pattern emerging of: _introduce concept, explain how it's made accessible, realise that it's a sensible, easily grasped implementation, build on it_. This happens a lot as you start to work through Scratch, there is very little cognitive dissonance to distract one from the flow of working with the ideas. 
-Perhaps this is the key takeaway: I don't know about your situation, but in many organisations, when a certain key technique is explained there is often a "WAT?" moment experienced by people new to that particular "elephant in the room" as the disconnect between what is required and what has in fact been done becomes apparent. It behoves us to consider both why there are incentives to create that elephant and incentives to maintain it. 
+I hope I have shied away from too much hyperbole (!) in going over Scratch, and have instead relied upon the Good Points to make my case.
+In re-reading I see a pattern emerging of key concepts that are implemented and made available in a frictionless manner. This is part of the power as the cognitive load is minimized, driving out the distraction from the flow of working with the ideas. 
+Perhaps this is the key takeaway: a real commitment to reducing the superfluous complexity of the concepts we work with leads to better outcomes. 
 
 
 Acknowledgments
