@@ -62,7 +62,7 @@ I won't promote individual projects, and further I will assert that I don’t ne
 
 ## Who are the users?
 
-Well, it seems to be primarily educationalists and UK scholastic years 3-8 (at least), we’ll see why in a bit, through `Good Point ~~~~ figures on usage` TODO(PMM).
+Well, it seems to be primarily educationalists and UK scholastic years 3-8 (at least), we’ll see why in a bit, through `Good Point ~~~~ a cast of thousands` - from http://wiki.scratch.mit.edu/wiki/Scratch_Statistics and there are 10s of millions of projects and millions of users as per https://scratch.mit.edu/statistics/.
 
 # A Whistle Stop tour
  
@@ -119,7 +119,7 @@ Clearly this was too mind-blowing and is no longer available in the current vers
 There's a raft of features: `Good Points AAAA-OOOO:`
 
 Logo like Sprite Primitives, Code Blocks, Message Passing, Composable Mathematical Operations, Sprite Cloning, Entry Prompts, Text Messages, Pen operations, Sound. The latter are in my personal order of appreciation.
-A feature worth mentioning is _Message Passing_  , which allows broadcasts of messages to all items on a stage.
+A feature worth mentioning is _Message Passing_ , which allows broadcasts of user defined messages to all items on a stage
 
 # Supported Development Styles
 So, the possibilities are limitless, but there is a definite set of approaches that practitioners will work through.
@@ -144,23 +144,23 @@ From `Good Point 3: Scratch has a "Remix" button`
 * Is this due to `Good Point 15: Scratch has No Merge Action` (for you corporate warriors)
 
 ## Deployment 
-From `Good Point 16: Scratch has a "public" checkbox`
-* pwaahahaha - you just press "Share"! TODO(PMM)
+From `Good Point 16: Scratch has a "public" checkbox` almost nothing could be simpler - you just click the "public" checkbox.
 
 ## Politeness
 From `Good Point 17: Scratch seems to be incredibly good natured`, ss it because they're all under 12? ( or over 30 ?)
 Well, there are The Rules: http://wiki.scratch.mit.edu/wiki/Scratch_Rules and there are the banned topics http://wiki.scratch.mit.edu/wiki/List_of_Controversial_Topics_on_Scratch.
 There even seems to be a Scratch version of Herobrine http://minecraft.gamepedia.com/Herobrine.
-TODO(PMM)
 
-# It's a constrained environment
- * `Good Point MMM: there are  "Only a few ways to do certain things"`
-# Except when it's not
+TODO(PMM) - clean this up
+
+## It's a constrained environment
+ * `Good Point MMM: there are  "Only a few ways to do certain things"` which lends itself to the users hitting a decent enough solution to their problems, and then building on that. 
+## Except when it's not
  * `Good Point NNN: counterpoint to MMM  'Since when did that stop anyone"`
 
 ## Don't worry: it's not like "coding"
-http://worrydream.com/MeanwhileAtCodeOrg/
-TODO(PMM) elaborate
+It is important to point out that "just coding" is not the point - it's engagement with the environment, using creative approaches and problem solving that are the real end games here. I think this says it most clearly http://worrydream.com/MeanwhileAtCodeOrg/
+
 
 # Suitability for classroom and distributed teaching
   `Good Point PPPP: Scratch supports multiple sessions on the same account and concurrent work on different projects`
@@ -174,17 +174,11 @@ When did you, dear reader, love to learn message passing as a style? In the Scra
 This seems to be one of challenges that sorts the population. Caveat: this is from my purely personal sampling. I have found the Space Invaders clones tend to be very high quality, whereas for the "deceptively simple” Pacman there tends to be a raft of issues that challenge the users `Good Point RRRR: some tasks lend themselves to "teachable moments"`. My suspicion is that there are a couple of required complex concepts in a maze game that Scratch does not deliver in its default toolbox, or that are easily synthesised. This might be a fruitful  area to extend the sprite’s capabilities
 
 *	confession time: for the second time (approx 30+ years after the first attempt) I am re-implementing Pacman	and I'm finding that talking about the incomplete (broken?) versions I "Saved As" on the way can be used for `Good Point RRRR: some tasks lend themselves to "teachable moments"`
- *	for example, I have various baby step projects that will show the stages of
- *	moving smoothly betweens points on a grid
- *	choosing betweeen N, E, W, S to head to Pacman / some other target
- *	 turning left instead of reversing direction on the next choice -> which then delivers the ghost patrolling in circles behaviour for free
+ *	for example, I have various baby step projects that will show the small adjustments to the code blocks that will implement the stages of
+  *	moving smoothly betweens points on a grid
+  *	choosing betweeen N, E, W, S to head to Pacman / some other target
+  *	 turning left instead of reversing direction on the next choice -> which then delivers the ghost patrolling in circles behaviour for free
    
-
-# Scratch has some "Magic" features which are well loved TODO(PMM) demote?
- * `Good Point OOO: Vector -> bitmap -> Vector!`
- * Defining concurrent operations “just works” (Multiple “When <Green Flag> Clicked” can be used)
- 
-
 # User Straw Poll
 So, recently it hit me that I should get an assessment from the horse's mouth, as it were. So I ran a very unscientific poll of a miniscule sample set of users, and asked them one question.
 
@@ -199,14 +193,15 @@ The results are for answers to "What's the best thing about Scratch?" are:
 | It's easy to share               | 1 |
 | It's satisfying to finish things | 1 |
 
-So, making games wins it, but the ability to express yourself is clearly highly valued. TODO(PMM) user agency very important- not passive consumption.
+So, making games wins it, but the ability to express yourself is clearly highly valued. It's very encouraging that user agency is highly prized and not just passive consumption.
 
 # Can it really all be Lovely In The Garden?
-
+Sounds to good to be true
 * Well, It's a social environment with quite young users interacting over the internet running arbitrary code.
-  Security concerns will always be with us, but there are rules and admins which (touch wood) seem to work. 
+  Security concerns will always be with us, but there as mentioned are rules and admins which (touch wood) seem to work. 
 * Is it so addictive as to prevent people progressing to (say) HTML and python?
   This is a concern I have heard expressed: Scratch can seem to easily become the tool of choice to prototype an idea, which is dual edged, as it's a good thing to get an idea captured, but conversely it would be good to stretch oneself and branch out.
+* There is a very serious number of games, some of which are quite impressive...
 
 # Conclusion
 
@@ -226,4 +221,4 @@ TODO(PMM) - check the wording here carefully
 Bloomberg LP (http://www.bloomberg.net) very generously supports my volunteering of time to mentor at an after school club, under the auspices of Code Club (http://codeclub.org.uk) 
 
 
-
+TODO(PMM) renumber the `Good Things`
