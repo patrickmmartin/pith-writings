@@ -26,7 +26,7 @@ Good question
 
 ## It's coming a "classroom near you" 
 
-Good Point 1: “This Thing is Happening”" Note also that Scratch at this moment on the way to being taught in the UK in primary and secondary schools - that's years 3-8! (around 7 to 12). See the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
+`Good Point 1: “This Thing is Happening”` Note also that Scratch at this moment on the way to being taught in the UK in primary and secondary schools - that's years 3-8! (around 7 to 12). See the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
 
 ## The Scratch Heritage 
 
@@ -80,7 +80,7 @@ The entire (basic) environment is visual, with editors for all aspects of the sp
 
 ## Resources
 
-It's a `Good thing 2: built in resources` that image and audio resources are embedded into to the project and are available in a standard library, which can be expanded by assets uploaded to the project. All of these can be copied, and modified once embedded.
+It's a `Good Point 2: built in resources` that image and audio resources are embedded into to the project and are available in a standard library, which can be expanded by assets uploaded to the project. All of these can be copied, and modified once embedded.
 
 ## Running the project
 
@@ -141,13 +141,13 @@ Why haven't I mentioned _entirely free to use_ yet? If you care about diversity 
 ## Sharing
 From `Good Point 5: Scratch has a "Remix" button`
 *	It exists and works – if you like something and want to have a try at improving it, you just press the button
-* Is this due to `Good Point 15: Scratch has No Merge Action` (for you corporate warriors)
+* Is this due to `Good Point 22: Scratch has No Merge Action` (for you corporate warriors)
 
 ## Deployment 
-From `Good Point 22: Scratch has a "public" checkbox` almost nothing could be simpler - you just click the "public" checkbox.
+From `Good Point 23: Scratch has a "public" checkbox` almost nothing could be simpler - you just click the "public" checkbox.
 
 ## Politeness
-From `Good Point 17: Scratch seems to be incredibly good natured`, ss it because they're all under 12? ( or over 30 ?)
+From `Good Point 24: Scratch seems to be incredibly good natured`, ss it because they're all under 12? ( or over 30 ?)
 Well, there are The Rules: http://wiki.scratch.mit.edu/wiki/Scratch_Rules and there are the banned topics http://wiki.scratch.mit.edu/wiki/List_of_Controversial_Topics_on_Scratch.
 There even seems to be a Scratch version of Herobrine http://minecraft.gamepedia.com/Herobrine.
 
@@ -156,15 +156,15 @@ It is important to point out that "just coding" is not the point - it's engageme
 
 
 # Suitability for classroom and distributed teaching
-  `Good Point PPPP: Scratch supports multiple sessions on the same account and concurrent work on different projects`
-  This is one setup I can advocate: given each project has a thumbnail in the account's list of projects: `Good Point 23: all projects have a thumbnail` it's very easy for a supervisor to see what individuals are up to. This also allows the supervisor to investigate and debug a project remotely if needs be.
+  `Good Point 25: Scratch supports multiple sessions on the same account and concurrent work on different projects`
+  This is one setup I can advocate: given each project has a thumbnail in the account's list of projects: `Good Point 26: all projects have a thumbnail` it's very easy for a supervisor to see what individuals are up to. This also allows the supervisor to investigate and debug a project remotely if needs be.
 
 ## Teachable Moments 1:  "Big chunks of blocks" vs. Message Passing
 When did you, dear reader, love to learn message passing as a style? In the Scratch environment, it seems to be a few months from a standing start. Very quickly, the users seem to grasp that giant chunks of nested blocks and variables can be replaced by sending the appropriate message to be hanlded by a smaller chunk of code blocks.
 
 
 ## Teachable Moments 2: Space Invaders vs Pacman
-This seems to be one of challenges that sorts the population. Caveat: this is from my purely personal sampling. I have found the Space Invaders clones tend to be very high quality, whereas for the "deceptively simple” Pacman there tends to be a raft of issues that challenge the users `Good Point 24: some tasks lend themselves to "teachable moments"`. My suspicion is that there are a couple of required complex concepts in a maze game that Scratch does not deliver in its default toolbox, or that are easily synthesised. This might be a fruitful  area to extend the sprite’s capabilities
+This seems to be one of challenges that sorts the population. Caveat: this is from my purely personal sampling. I have found the Space Invaders clones tend to be very high quality, whereas for the "deceptively simple” Pacman there tends to be a raft of issues that challenge the users `Good Point 27: some tasks lend themselves to "teachable moments"`. My suspicion is that there are a couple of required complex concepts in a maze game that Scratch does not deliver in its default toolbox, or that are easily synthesised. This might be a fruitful  area to extend the sprite’s capabilities
 
 *	confession time: for the second time (approx 30+ years after the first attempt) I am re-implementing Pacman	and I'm finding that talking about the incomplete (broken?) versions I "Saved As" on the way can be used for some "teachable moments"`
  *	for example, I have various baby step projects that will show the small adjustments to the code blocks that will implement the stages of
@@ -215,5 +215,3 @@ Acknowledgments
 TODO(PMM) - check the wording here carefully
 Bloomberg LP (http://www.bloomberg.net) very generously supports my volunteering of time to mentor at an after school club, under the auspices of Code Club (http://codeclub.org.uk) 
 
-
-TODO(PMM) renumber the `Good Things`
