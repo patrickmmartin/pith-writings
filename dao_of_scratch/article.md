@@ -151,13 +151,6 @@ From `Good Point 17: Scratch seems to be incredibly good natured`, ss it because
 Well, there are The Rules: http://wiki.scratch.mit.edu/wiki/Scratch_Rules and there are the banned topics http://wiki.scratch.mit.edu/wiki/List_of_Controversial_Topics_on_Scratch.
 There even seems to be a Scratch version of Herobrine http://minecraft.gamepedia.com/Herobrine.
 
-TODO(PMM) - clean this up
-
-## It's a constrained environment
- * `Good Point MMM: there are  "Only a few ways to do certain things"` which lends itself to the users hitting a decent enough solution to their problems, and then building on that. 
-## Except when it's not
- * `Good Point NNN: counterpoint to MMM  'Since when did that stop anyone"`
-
 ## Don't worry: it's not like "coding"
 It is important to point out that "just coding" is not the point - it's engagement with the environment, using creative approaches and problem solving that are the real end games here. I think this says it most clearly http://worrydream.com/MeanwhileAtCodeOrg/
 
