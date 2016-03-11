@@ -136,7 +136,7 @@ in http://worrydream.com/#!/InventingOnPrinciple
 I still think about the impression that talk had on me. It’s not quite possible to reproduce that talk right now in Scratch, but the immediacy of the run – change – run loop is still very forceful.  
 
 ## Accessibility
-Why haven't I mentioned _entirely free to use_ yet? If you care about diversity and granting access to self improvement to all then this is huge.
+Why haven't I mentioned _entirely free to use_ yet? If you care about diversity and granting access to self-improvement to all then this is huge.
 
 ## Sharing
 From `Good Point 5: Scratch has a "Remix" button`
@@ -147,7 +147,7 @@ From `Good Point 5: Scratch has a "Remix" button`
 From `Good Point 23: Scratch has a "public" checkbox` almost nothing could be simpler - you just click the "public" checkbox.
 
 ## Politeness
-From `Good Point 24: Scratch seems to be incredibly good natured`, ss it because they're all under 12? ( or over 30 ?)
+From `Good Point 24: Scratch seems to be incredibly good natured`, is it because they're all under 12? ( or over 30 ?)
 Well, there are The Rules: http://wiki.scratch.mit.edu/wiki/Scratch_Rules and there are the banned topics http://wiki.scratch.mit.edu/wiki/List_of_Controversial_Topics_on_Scratch.
 There even seems to be a Scratch version of Herobrine http://minecraft.gamepedia.com/Herobrine.
 
@@ -159,7 +159,7 @@ It is important to point out that "just coding" is not the point - it's engageme
   This is one setup I can advocate: given each project has a thumbnail in the account's list of projects: `Good Point 26: all projects have a thumbnail` it's very easy for a supervisor to see what individuals are up to. This also allows the supervisor to investigate and debug a project remotely if needs be.
 
 ## Teachable Moments 1:  "Big chunks of blocks" vs. Message Passing
-When did you, dear reader, love to learn message passing as a style? In the Scratch environment, it seems to be a few months from a standing start. Very quickly, the users seem to grasp that giant chunks of nested blocks and variables can be replaced by sending the appropriate message to be hanlded by a smaller chunk of code blocks.
+When did you, dear reader, love to learn message passing as a style? In the Scratch environment, it seems to be a few months from a standing start. Very quickly, the users seem to grasp that giant chunks of nested blocks and variables can be replaced by sending the appropriate message to be handled by a smaller chunk of code blocks.
 
 
 ## Teachable Moments 2: Space Invaders vs Pacman
@@ -167,8 +167,8 @@ This seems to be one of challenges that sorts the population. Caveat: this is fr
 
 *	confession time: for the second time (approx 30+ years after the first attempt) I am re-implementing Pacman	and I'm finding that talking about the incomplete (broken?) versions I created on the way can be used for some "teachable moments"`
  *	for example, I have various "baby step" projects that will show the small adjustments to the code blocks that will implement the stages of a ghost
-  1.	moving smoothly betweens points on a grid
-  1.	choosing betweeen N, E, W, S to head towards Pacman / some other target
+  1.	moving smoothly between points on a grid
+  1.	choosing between N, E, W, S to head towards Pacman / some other target
   1.	turning left instead of reversing direction on the next choice
  
 Note this -> which then delivers the distinctive Pacman "ghost patrolling in circles" behaviour for free
@@ -190,8 +190,8 @@ The results are for answers to "What's the best thing about Scratch?" are:
 So, making games wins it, but the ability to express yourself is clearly highly valued. It's very encouraging that user agency afforded by working in Scratch is prized over passive consumption.
 
 # Can it really all be Lovely In The Garden?
-Sounds to good to be true, right?
-* Well, it's a social environment with quite young users interacting over the internet running arbitrary code.
+Sounds too good to be true, right?
+* Well, it *is* a social environment with quite young users interacting over the internet running arbitrary code.
   Security concerns will always be with us, but there as mentioned are rules and admins which (touch wood) seem to work. 
 * Is it so addictive as to prevent people progressing to (say) HTML and python?
   This is a concern I have heard expressed: Scratch can seem to easily become the tool of choice to prototype an idea, which is dual edged: it's a good thing to get an idea captured quickly, but conversely it would be good to stretch oneself and branch out.
