@@ -35,13 +35,13 @@ Listing the whole corpus of the whole back story is out of scope, so this is goi
 
 ## Some Examples
 
-You can explore for yourself by visiting http://scratch.mit.edu, making use of `Good Point 3: it has a single entry search box`.
-Having found a project of interest, you can dive straight in and take a look using `Good Point 4: Scratch has a "See Inside" button`.
-If you like what you find you can then simply fork it using `Good Point 5: Scratch has a "Remix" button`
+You can explore for yourself by visiting http://scratch.mit.edu, making use of `Good Point 2: it has a single entry search box`.
+Having found a project of interest, you can dive straight in and take a look using `Good Point 3: Scratch has a "See Inside" button`.
+If you like what you find you can then simply fork it using `Good Point 4: Scratch has a "Remix" button`
 - that new project is now available for you to modify, debug and run in any way you see fit.
 
 Now, although it ruins the nice 3-part list rhetorical flourish, let me just mention here
-`Good Point 6: Scratch lets you edit before login *and then* allows you to login and save if you wish`.
+`Good Point 5: Scratch lets you edit before login *and then* allows you to login and save if you wish`.
 
 Question: how many _paid for_ services that we use for generating wealth can say the same?
 For the classroom environment, when dealing with the early years where it is a stretch to require detailed forward planning, this is a Good Thing.
@@ -62,11 +62,11 @@ I won't promote individual projects, and further I will assert that I don’t ne
 
 ## Who are the users?
 
-Well, it seems to be primarily educationalists and UK scholastic years 3-8 (at least), we’ll see why in a bit, through `Good Point 7: a cast of thousands` - from http://wiki.scratch.mit.edu/wiki/Scratch_Statistics and https://scratch.mit.edu/statistics there are 10s of millions of projects and millions of users.
+Well, it seems to be primarily educationalists and UK scholastic years 3-8 (at least), we’ll see why in a bit, through `Good Point 6: a cast of thousands` - from http://wiki.scratch.mit.edu/wiki/Scratch_Statistics and https://scratch.mit.edu/statistics there are 10s of millions of projects and millions of users.
 
 # A Whistle Stop tour
  
-Scratch operates on a visual stage of 480x360 virtual pixels, and can be viewed at varying dpi -  `Good Point 8: fixed stage extent.` The stage is a sprite (https://en.wikipedia.org/wiki/Sprite_(computer_graphics)) and can be given script code, and any number of sprites can be placed on the stage to compose a visual scene. 
+Scratch operates on a visual stage of 480x360 virtual pixels, and can be viewed at varying dpi -  `Good Point 7: fixed stage extent.` The stage is a sprite (https://en.wikipedia.org/wiki/Sprite_(computer_graphics)) and can be given script code, and any number of sprites can be placed on the stage to compose a visual scene. 
 The sprites have a scripts container which owns aggregations of code blocks that can interact with stage changes, kay and mouse events and manipulate the sprites' properties.
 The sprites have a concept of their direction and can be made to orient in any direction, move and "bounce" within the stage area automatically.
 Finally, the large array of primitive code blocks available for the scripts can react to events and message and with the sprites and  allow the programmer to construct a range of different behaviours and visual experiences .
@@ -76,11 +76,11 @@ Finally, the large array of primitive code blocks available for the scripts can 
  ![A minimal Scratch project](scratch-large.png)
  
 ## Visualisation 
-The entire (basic) environment is visual, with editors for all aspects of the sprites and code blocks. The stage is manipulated at both "run time" and "design time" in the same way, which is `Good Point 9: persistence of stage state`. This allows fine positioning by eye, avoiding too many demands on mental arithmetic for the initial learning stages.
+The entire (basic) environment is visual, with editors for all aspects of the sprites and code blocks. The stage is manipulated at both "run time" and "design time" in the same way, which is `Good Point 8: persistence of stage state`. This allows fine positioning by eye, avoiding too many demands on mental arithmetic for the initial learning stages.
 
 ## Resources
 
-It's a `Good Point 2: built in resources` that image and audio resources are embedded into to the project and are available in a standard library, which can be expanded by assets uploaded to the project. All of these can be copied, and modified once embedded.
+It's a `Good Point 9: built in resources` that image and audio resources are embedded into to the project and are available in a standard library, which can be expanded by assets uploaded to the project. All of these can be copied, and modified once embedded.
 
 ## Running the project
 
