@@ -168,7 +168,7 @@ This seems to be one of challenges that sorts the population. Caveat: this is fr
 *	confession time: for the second time (approx 30+ years after the first attempt) I am re-implementing Pacman	and I'm finding that talking about the incomplete (broken?) versions I created on the way can be used for some "teachable moments"`
  *	for example, I have various "baby step" projects that will show the small adjustments to the code blocks that will implement the stages of a ghost
   1.	moving smoothly between points on a grid
-  1.	choosing betweeen N, E, W, S to head towards Pacman / some other target
+  1.	choosing between N, E, W, S to head towards Pacman / some other target
   1.	turning left instead of reversing direction on the next choice
  
 Note this -> which then delivers the distinctive Pacman "ghost patrolling in circles" behaviour for free
