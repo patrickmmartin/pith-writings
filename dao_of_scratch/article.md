@@ -190,8 +190,8 @@ The results are for answers to "What's the best thing about Scratch?" are:
 So, making games wins it, but the ability to express yourself is clearly highly valued. It's very encouraging that user agency afforded by working in Scratch is prized over passive consumption.
 
 # Can it really all be Lovely In The Garden?
-Sounds to good to be true, right?
-* Well, it's a social environment with quite young users interacting over the internet running arbitrary code.
+Sounds too good to be true, right?
+* Well, it *is* a social environment with quite young users interacting over the internet running arbitrary code.
   Security concerns will always be with us, but there as mentioned are rules and admins which (touch wood) seem to work. 
 * Is it so addictive as to prevent people progressing to (say) HTML and python?
   This is a concern I have heard expressed: Scratch can seem to easily become the tool of choice to prototype an idea, which is dual edged: it's a good thing to get an idea captured quickly, but conversely it would be good to stretch oneself and branch out.
