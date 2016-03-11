@@ -19,10 +19,10 @@ The best place to start is their web site: the description of the project is at 
 The Wikipedia page is good on this https://en.wikipedia.org/wiki/Scratch_(programming_language)
 
 It's a visual programming language, consisting of composable code blocks that form the elements of a program. It is available as a web application online, and implements a visual stage as the program output.  
-There is also an offline version now which seems to match the basic capabilities of the web version, omitting online only features.
+There is also an offline version now which largely matches the basic capabilities of the web version, omitting online only features.
 
 # Why Should I be interested in Scratch?
-Good question
+As good question. Here are some topics to persuade you. 
 
 ## It's coming a "classroom near you" 
 
@@ -46,7 +46,7 @@ Now, although it ruins the nice 3-part list rhetorical flourish, let me just men
 Question: how many _paid for_ services that we use for generating wealth can say the same?
 For the classroom environment, when dealing with the early years where it is a stretch to require detailed forward planning, this is a Good Thing.
 
-## What can be done in Scratch?
+# What can be done in Scratch?
 I won't promote individual projects, and further I will assert that I don’t need to. Instead let’s rely upon `Good Point 3: it has a single entry search box` and I can list some jump off points
 
  * Yorkshire to English dictionary
@@ -62,7 +62,7 @@ I won't promote individual projects, and further I will assert that I don’t ne
 
 ## Who are the users?
 
-Well, it seems to be primarily educationalists and UK scholastic years 3-8 (at least), we’ll see why in a bit, through `Good Point 7: a cast of thousands` - from http://wiki.scratch.mit.edu/wiki/Scratch_Statistics and there are 10s of millions of projects and millions of users as per https://scratch.mit.edu/statistics/.
+Well, it seems to be primarily educationalists and UK scholastic years 3-8 (at least), we’ll see why in a bit, through `Good Point 7: a cast of thousands` - from http://wiki.scratch.mit.edu/wiki/Scratch_Statistics and https://scratch.mit.edu/statistics there are 10s of millions of projects and millions of users.
 
 # A Whistle Stop tour
  
@@ -76,7 +76,7 @@ Finally, the large array of primitive code blocks available for the scripts can 
  ![A minimal Scratch project](scratch-large.png)
  
 ## Visualisation 
-The entire (basic) environment is visual, with editors for all aspects of the sprites and code blocks. The stage is manipulated at both "run time" and "design time" in the same way, which is Good Point 9: persistence of stage state. This allows fine positioning by eye, avoiding too many demands on arithmetic for the initial learning stages.
+The entire (basic) environment is visual, with editors for all aspects of the sprites and code blocks. The stage is manipulated at both "run time" and "design time" in the same way, which is `Good Point 9: persistence of stage state`. This allows fine positioning by eye, avoiding too many demands on mental arithmetic for the initial learning stages.
 
 ## Resources
 
@@ -94,7 +94,7 @@ Debugging is an interesting proposition for the target audience.
 * Years 3-8 - Now, I've seen their projects, and for some let me assure you: "Everything *is* broken", but they're not fazed.
 
 There is a learning curve on the road to learning to debug your project, and there are some useful built-ins, like message and comment notes.. 
-The coolest of which is though: `Good point 10: code blocks can be modified at runtime in the designer` all versions allow blocks to be dragged in, then dragged out while the project is running. Can your tool do that?
+The coolest of which is though: `Good point 10: code blocks can be modified at runtime in the designer` all versions allow blocks to be dragged in, then dragged out while the project is running?
 
 Can _your_ tool do that?
 
@@ -114,26 +114,26 @@ This works particularly well on an interactive whiteboard to show the effect of 
 Even more impressively: the Old Scratch 1.x desktop version, has a similar _single step_, which illuminates the currently running block!
 Clearly this was too mind-blowing and is no longer available in the current version.
 
-## A List of Additional  Good Points
+# A List of Additional Good Points
 
 There's a raft of features: `Good Points 13-21:`
 
 Logo like Sprite Primitives, Code Blocks, Message Passing, Composable Mathematical Operations, Sprite Cloning, Entry Prompts, Text Messages, Pen operations, Sound. The latter are in my personal order of appreciation.
 A feature worth mentioning is _Message Passing_ , which allows broadcasts of user defined messages to all items on a stage
 
-# Supported Development Styles
+## Supported Development Styles
 So, the possibilities are limitless, but there is a definite set of approaches that practitioners will work through.
 
-## Basic: Sprites, Backdrops, Costumes
+### Basic: Sprites, Backdrops, Costumes
  Coupled with setting some properties, the  bounce / direction / touching colour capabilities allow treating the visual stage as a mini engine with some rudimentary support for using the stage as a dressed "set".
 
-## Advanced: Explicit Positioning / Drawing
+### Advanced: Explicit Positioning / Drawing
 To move onto to more dynamic generation of content, it is possible to use explicit positioning, and the use of pens to craft abritrary shapes. 
 
 ## Immediacy
 This goes to the kind of benefits mentioned in the kind of thing Brett Victor talks about 
 in http://worrydream.com/#!/InventingOnPrinciple
-I still think about the impression that talk had on me. It’s not quite possible to reproduce that talk right now in Scratch, but the immediacy of the run – change – run loop is still very impressive.  
+I still think about the impression that talk had on me. It’s not quite possible to reproduce that talk right now in Scratch, but the immediacy of the run – change – run loop is still very forceful.  
 
 ## Accessibility
 Why haven't I mentioned _entirely free to use_ yet? If you care about diversity and granting access to self improvement to all then this is huge.
@@ -152,10 +152,9 @@ Well, there are The Rules: http://wiki.scratch.mit.edu/wiki/Scratch_Rules and th
 There even seems to be a Scratch version of Herobrine http://minecraft.gamepedia.com/Herobrine.
 
 ## Don't worry: it's not like "coding"
-It is important to point out that "just coding" is not the point - it's engagement with the environment, using creative approaches and problem solving that are the real end games here. I think this says it most clearly http://worrydream.com/MeanwhileAtCodeOrg/
+It is important to point out that "just coding" is not the point - it's engagement with the environment, using creative approaches and problem solving that are the real end games here. This is highlighted here: http://worrydream.com/MeanwhileAtCodeOrg/
 
-
-# Suitability for classroom and distributed teaching
+## Suitability for classroom and distributed teaching
   `Good Point 25: Scratch supports multiple sessions on the same account and concurrent work on different projects`
   This is one setup I can advocate: given each project has a thumbnail in the account's list of projects: `Good Point 26: all projects have a thumbnail` it's very easy for a supervisor to see what individuals are up to. This also allows the supervisor to investigate and debug a project remotely if needs be.
 
@@ -164,18 +163,18 @@ When did you, dear reader, love to learn message passing as a style? In the Scra
 
 
 ## Teachable Moments 2: Space Invaders vs Pacman
-This seems to be one of challenges that sorts the population. Caveat: this is from my purely personal sampling. I have found the Space Invaders clones tend to be very high quality, whereas for the "deceptively simple” Pacman there tends to be a raft of issues that challenge the users `Good Point 27: some tasks lend themselves to "teachable moments"`. My suspicion is that there are a couple of required complex concepts in a maze game that Scratch does not deliver in its default toolbox, or that are easily synthesised. This might be a fruitful  area to extend the sprite’s capabilities
+This seems to be one of challenges that sorts the population. Caveat: this is from my purely personal sampling. I have found the Space Invaders clones tend to be very high quality, whereas for the "deceptively simple” Pacman there tends to be a raft of issues that challenge the users `Good Point 27: some tasks lend themselves to "teachable moments"`. My suspicion is that there are a couple of required complex concepts in a maze game that Scratch does not deliver in its default toolbox, or that are easily synthesised. This might be a fruitful area to extend the sprite’s capabilities
 
-*	confession time: for the second time (approx 30+ years after the first attempt) I am re-implementing Pacman	and I'm finding that talking about the incomplete (broken?) versions I "Saved As" on the way can be used for some "teachable moments"`
- *	for example, I have various baby step projects that will show the small adjustments to the code blocks that will implement the stages of
-  *	moving smoothly betweens points on a grid
-  *	choosing betweeen N, E, W, S to head to Pacman / some other target
-  *	 turning left instead of reversing direction on the next choice
+*	confession time: for the second time (approx 30+ years after the first attempt) I am re-implementing Pacman	and I'm finding that talking about the incomplete (broken?) versions I created on the way can be used for some "teachable moments"`
+ *	for example, I have various "baby step" projects that will show the small adjustments to the code blocks that will implement the stages of a ghost
+  1.	moving smoothly betweens points on a grid
+  1.	choosing betweeen N, E, W, S to head towards Pacman / some other target
+  1.	turning left instead of reversing direction on the next choice
  
-Note this -> which then delivers the ghost patrolling in circles behaviour for free
+Note this -> which then delivers the distinctive Pacman "ghost patrolling in circles" behaviour for free
    
 # User Straw Poll
-So, recently it hit me that I should get an assessment from the horse's mouth, as it were. So I ran a very unscientific poll of a miniscule sample set of users, and asked them one question.
+It hit me that I should get an assessment from the horse's mouth, as it were. I therefore ran a very unscientific poll of a miniscule sample set of users, and asked them one question.
 
 The results are for answers to "What's the best thing about Scratch?" are:
  
@@ -188,25 +187,25 @@ The results are for answers to "What's the best thing about Scratch?" are:
 | It's easy to share               | 1 |
 | It's satisfying to finish things | 1 |
 
-So, making games wins it, but the ability to express yourself is clearly highly valued. It's very encouraging that user agency is highly prized and not just passive consumption.
+So, making games wins it, but the ability to express yourself is clearly highly valued. It's very encouraging that user agency afforded by working in Scratch is prized over passive consumption.
 
 # Can it really all be Lovely In The Garden?
-Sounds to good to be true
-* Well, It's a social environment with quite young users interacting over the internet running arbitrary code.
+Sounds to good to be true, right?
+* Well, it's a social environment with quite young users interacting over the internet running arbitrary code.
   Security concerns will always be with us, but there as mentioned are rules and admins which (touch wood) seem to work. 
 * Is it so addictive as to prevent people progressing to (say) HTML and python?
-  This is a concern I have heard expressed: Scratch can seem to easily become the tool of choice to prototype an idea, which is dual edged, as it's a good thing to get an idea captured, but conversely it would be good to stretch oneself and branch out.
-* There is a very serious number of games, some of which are quite impressive...
+  This is a concern I have heard expressed: Scratch can seem to easily become the tool of choice to prototype an idea, which is dual edged: it's a good thing to get an idea captured quickly, but conversely it would be good to stretch oneself and branch out.
+* There is a very serious number of games, some of which are quite impressive and diverting...
 
 # Conclusion
 
 ## Lessons for "Grown ups"
-So here we come to the punchline: I have joked that some companies should figure out how to write and deploy their business apps using Scratch. That's not in fact a serious proposition, but I suggest we can see that the secret of the success is all the Good Things, working to make the environment as frictionless as possible.
+So here we come to the punchline: I have joked that some companies could figure out how to write and deploy their business apps using Scratch. That's not in fact a serious proposition, but I suggest we can see that the secret of the success is all the Good Things, working to make the environment as frictionless as possible.
 
 ## The "Ah, of course" moments
-I hope I have shied away from too much hyperbole (!) in going over Scratch, and have instead relied upon the Good Points to make my case.
-In re-reading I see a pattern emerging of key concepts that are implemented and made available in a frictionless manner. This is part of the power as the cognitive load is minimized, driving out the distraction from the flow of working with the ideas. 
-Perhaps this is the key takeaway: a real commitment to reducing the superfluous complexity of the concepts we work with leads to better outcomes. 
+Hopefully I have shied away from employing too much hyperbole (!) in going over Scratch, and have instead relied upon the Good Points to make my case.
+In re-reading I see a pattern emerging of key concepts that have been selected and made available in a frictionless manner. This is part of the power of the Scratch approach, as the cognitive load is minimized, driving out distractions from the flow of working with the concepts of the project. 
+For me this is the key takeaway: a real commitment to reducing the superfluous complexity of our tool sets leads to better outcomes. 
 
 
 Acknowledgments
