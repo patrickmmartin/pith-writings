@@ -159,7 +159,7 @@ It is important to point out that "just coding" is not the point - it's engageme
   This is one setup I can advocate: given each project has a thumbnail in the account's list of projects: `Good Point 26: all projects have a thumbnail` it's very easy for a supervisor to see what individuals are up to. This also allows the supervisor to investigate and debug a project remotely if needs be.
 
 ## Teachable Moments 1:  "Big chunks of blocks" vs. Message Passing
-When did you, dear reader, love to learn message passing as a style? In the Scratch environment, it seems to be a few months from a standing start. Very quickly, the users seem to grasp that giant chunks of nested blocks and variables can be replaced by sending the appropriate message to be hanlded by a smaller chunk of code blocks.
+When did you, dear reader, love to learn message passing as a style? In the Scratch environment, it seems to be a few months from a standing start. Very quickly, the users seem to grasp that giant chunks of nested blocks and variables can be replaced by sending the appropriate message to be handled by a smaller chunk of code blocks.
 
 
 ## Teachable Moments 2: Space Invaders vs Pacman
