@@ -136,7 +136,7 @@ in http://worrydream.com/#!/InventingOnPrinciple
 I still think about the impression that talk had on me. It’s not quite possible to reproduce that talk right now in Scratch, but the immediacy of the run – change – run loop is still very forceful.  
 
 ## Accessibility
-Why haven't I mentioned _entirely free to use_ yet? If you care about diversity and granting access to self improvement to all then this is huge.
+Why haven't I mentioned _entirely free to use_ yet? If you care about diversity and granting access to self-improvement to all then this is huge.
 
 ## Sharing
 From `Good Point 5: Scratch has a "Remix" button`
@@ -147,7 +147,7 @@ From `Good Point 5: Scratch has a "Remix" button`
 From `Good Point 23: Scratch has a "public" checkbox` almost nothing could be simpler - you just click the "public" checkbox.
 
 ## Politeness
-From `Good Point 24: Scratch seems to be incredibly good natured`, ss it because they're all under 12? ( or over 30 ?)
+From `Good Point 24: Scratch seems to be incredibly good natured`, is it because they're all under 12? ( or over 30 ?)
 Well, there are The Rules: http://wiki.scratch.mit.edu/wiki/Scratch_Rules and there are the banned topics http://wiki.scratch.mit.edu/wiki/List_of_Controversial_Topics_on_Scratch.
 There even seems to be a Scratch version of Herobrine http://minecraft.gamepedia.com/Herobrine.
 
