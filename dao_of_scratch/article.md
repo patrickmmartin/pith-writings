@@ -197,10 +197,14 @@ Sounds too good to be true, right?
   This is a concern I have heard expressed: Scratch can seem to easily become the tool of choice to prototype an idea, which is dual edged: it's a good thing to get an idea captured quickly, but conversely it would be good to stretch oneself and branch out.
 * There is a very serious number of games, some of which are quite impressive and diverting...
 
-# Conclusion
+# Conclusion and Lessons for "Grown ups"
+So here we come to the punchline: I have joked that some companies could figure out how to write and deploy their business apps using Scratch. That's not in fact a serious proposition, but I suggest we can see that the secret of the success is all the Good Things, working to make the environment as expressive as possible.
 
-## Lessons for "Grown ups"
-So here we come to the punchline: I have joked that some companies could figure out how to write and deploy their business apps using Scratch. That's not in fact a serious proposition, but I suggest we can see that the secret of the success is all the Good Things, working to make the environment as frictionless as possible.
+## Many operations take one step
+A case in point is the debugging example already demonstrated; in fact the users slip naturally into re-initialising or exploring different initial conditions for the stage in a rough manner _by dragging the sprites back into position while the project is running_.. It's only upon writing the sentence that is struck me how extraordinary that is. There is an analogue with for example the  mavens of languages supporting a command line REPL for "real work", and also raw web development. Yet for many commercial systems, many steps exist between us and the prize.   
+
+## Most things are quick
+This multiplies the time savings with the prior point, but more importantly is key to a learning environment that encourages and rewards exploration. This is why coding club "classes" should ideally not need a squad of instructors to oversee and guide work as the users can very well formulate hypotheses and test them themselves in short order.
 
 ## The "Ah, of course" moments
 Hopefully I have shied away from employing too much hyperbole (!) in going over Scratch, and have instead relied upon the Good Points to make my case.
@@ -211,6 +215,6 @@ For me this is the key takeaway: a real commitment to reducing the superfluous c
 Acknowledgments
 ---------
 
-TODO(PMM) - check the wording here carefully
+TODO(PMM) - ticket is out with HR - if needed, it can be ditched 
 Bloomberg LP (http://www.bloomberg.net) very generously supports my volunteering of time to mentor at an after school club, under the auspices of Code Club (http://codeclub.org.uk) 
 
