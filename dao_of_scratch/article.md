@@ -21,12 +21,62 @@ The Wikipedia page is good on this https://en.wikipedia.org/wiki/Scratch_(progra
 It's a visual programming language, consisting of composable code blocks that form the elements of a program. It is available as a web application online, and implements a visual stage as the program output.  
 There is also an offline version now which largely matches the basic capabilities of the web version, omitting online only features.
 
+# A Whistle Stop tour
+ 
+Scratch operates on a visual stage of 480x360 virtual pixels, and can be viewed at varying dpi -  `Good Point 1: fixed stage extent.` The stage is a sprite (https://en.wikipedia.org/wiki/Sprite_(computer_graphics)) and can be given script code, and any number of sprites can be placed on the stage to compose a visual scene. 
+The sprites have a scripts container which owns aggregations of code blocks that can interact with stage changes, key and mouse events and manipulate the sprites' properties.
+The sprites have a concept of their direction and can be made to orient in any direction, move and "bounce" within the stage area automatically.
+Finally, the large array of primitive code blocks available for the scripts can react to events and messages and with the sprites and  allow the programmer to construct a range of different behaviours and visual experiences .
+ 
+ Here is a grab of a minimal project put together from an empty project and the built in resources.
+ 
+ ![A minimal Scratch project](scratch-large.png)
+ 
+## Visualisation 
+The entire (basic) environment is visual, with editors for all aspects of the sprites and code blocks. The stage is manipulated at both "run time" and "design time" in the same way, which is `Good Point 2: persistence of stage state`. This allows fine positioning by eye, avoiding too many demands on mental arithmetic for the initial learning stages.
+
+## Resources
+
+It's a `Good Point 3: built in resources` that image and audio resources are embedded into to the project and are available in a standard library, which can be expanded by assets uploaded to the project. All of these can be copied, and modified once embedded.
+
+## Running the project
+
+There is a Green button to start running, and a Red button to stop running.
+What running means can be deceptively simple - the simplest event is "When Flag Clicked", which can have some code blocks attached underneath - this could perform initialisation or start a processing loop of some kind. You can have as many as you like.
+
+## Debugging
+
+Debugging is an interesting proposition for the target audience.
+* Adults - example: @garybernhardt "I'm in a super good mood. Everything is still broken, but now it's funny instead of making me mad."
+* Years 3-8 - Now, I've seen their projects, and for some let me assure you: "Everything *is* broken", but they're not fazed.
+
+There is a learning curve on the road to learning to debug your project, and there are some useful built-ins, like message and comment notes.. 
+The coolest of which is though: `Good Point 4: code blocks can be modified at runtime in the designer` all versions allow blocks to be dragged in, then dragged out while the project is running.
+
+Can _your_ tool do that?
+
+This is a grab of the code blocks being inspected _while the code is running_
+![The code blocks being run](in-large.png)
+
+This is a grab of a chunk of code blocks after being pulled out of their container block _while the code is running_
+![The code blocks not being run!](out-large.png)
+
+Did I mention you can do this _while the code is running_?
+
+You can do this while just using the mouse - the selection extends naturally from your selected block to the end of the enclosing container block - another `Good Point 5: selection of blocks has some subtle but powerful affordances`.
+Making use of another `Good Point 6: the positioning of code blocks in the scripts area can be arbitrary.`, so you can park a small chunk of logic still within the visual context of where it was running to reduce the cognitive load.
+
+This works particularly well on an interactive whiteboard to show the effect of a chunk of code blocks.
+
+Even more impressively: the Old Scratch 1.x desktop version, has a similar _single step_, which illuminates the currently running block!
+Clearly this was too mind-blowing and is no longer available in the current version.
+
 # Why Should I be interested in Scratch?
 As good question. Here are some topics to persuade you. 
 
 ## It's coming to a "classroom near you" 
 
-`Good Point 1: “This Thing is Happening”` Note also that Scratch at this moment is on the way to being taught in the UK in primary and secondary schools - that's years 3-8! (around 7 to 12). See the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
+`Good Point 7: “This Thing is Happening”` Note also that Scratch at this moment is on the way to being taught in the UK in primary and secondary schools - that's years 3-8! (around 7 to 12). See the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
 
 ## The Scratch Heritage 
 
@@ -35,19 +85,19 @@ Listing the whole corpus of the whole back story is out of scope, so this is goi
 
 ## Some Examples
 
-You can explore for yourself by visiting http://scratch.mit.edu, making use of `Good Point 2: it has a single entry search box`.
-Having found a project of interest, you can dive straight in and take a look using `Good Point 3: Scratch has a "See Inside" button`.
-If you like what you find you can then simply fork it using `Good Point 4: Scratch has a "Remix" button`
+You can explore for yourself by visiting http://scratch.mit.edu, making use of `Good Point 8: it has a single entry search box`.
+Having found a project of interest, you can dive straight in and take a look using `Good Point 9: Scratch has a "See Inside" button`.
+If you like what you find you can then simply fork it using `Good Point 10: Scratch has a "Remix" button`
 - that new project is now available for you to modify, debug and run in any way you see fit.
 
 Now, although it ruins the nice 3-part list rhetorical flourish, let me just mention here
-`Good Point 5: Scratch lets you edit before login *and then* allows you to login and save if you wish`.
+`Good Point 11: Scratch lets you edit before login *and then* allows you to login and save if you wish`.
 
 Question: how many _paid for_ services that we use for generating wealth can say the same?
 For the classroom environment, when dealing with the early years where it is a stretch to require detailed forward planning, this is a Good Thing.
 
 # What can be done in Scratch?
-I won't promote individual projects, and further I will assert that I don’t need to. Instead let’s rely upon `Good Point 3: it has a single entry search box` and I can list some jump off points
+I won't promote individual projects, and further I will assert that I don’t need to. Instead let’s rely upon `Good Point 8: it has a single entry search box` and I can list some jump off points
 
  * Yorkshire to English dictionary
   * https://scratch.mit.edu/search/google_results/?q=Yorkshire+Dictionary 
@@ -62,57 +112,7 @@ I won't promote individual projects, and further I will assert that I don’t ne
 
 ## Who are the users?
 
-Well, it seems to be primarily educationalists and UK scholastic years 3-8 (at least), we’ll see why in a bit, through `Good Point 6: a cast of thousands` - from http://wiki.scratch.mit.edu/wiki/Scratch_Statistics and https://scratch.mit.edu/statistics there are 10s of millions of projects and millions of users.
-
-# A Whistle Stop tour
- 
-Scratch operates on a visual stage of 480x360 virtual pixels, and can be viewed at varying dpi -  `Good Point 7: fixed stage extent.` The stage is a sprite (https://en.wikipedia.org/wiki/Sprite_(computer_graphics)) and can be given script code, and any number of sprites can be placed on the stage to compose a visual scene. 
-The sprites have a scripts container which owns aggregations of code blocks that can interact with stage changes, key and mouse events and manipulate the sprites' properties.
-The sprites have a concept of their direction and can be made to orient in any direction, move and "bounce" within the stage area automatically.
-Finally, the large array of primitive code blocks available for the scripts can react to events and messages and with the sprites and  allow the programmer to construct a range of different behaviours and visual experiences .
- 
- Here is a grab of a minimal project put together from an empty project and the built in resources.
- 
- ![A minimal Scratch project](scratch-large.png)
- 
-## Visualisation 
-The entire (basic) environment is visual, with editors for all aspects of the sprites and code blocks. The stage is manipulated at both "run time" and "design time" in the same way, which is `Good Point 8: persistence of stage state`. This allows fine positioning by eye, avoiding too many demands on mental arithmetic for the initial learning stages.
-
-## Resources
-
-It's a `Good Point 9: built in resources` that image and audio resources are embedded into to the project and are available in a standard library, which can be expanded by assets uploaded to the project. All of these can be copied, and modified once embedded.
-
-## Running the project
-
-There is a Green button to start running, and a Red button to stop running.
-What running means can be deceptively simple - the simplest event is "When Flag Clicked", which can have some code blocks attached underneath - this could perform initialisation or start a processing loop of some kind. You can have as many as you like.
-
-## Debugging
-
-Debugging is an interesting proposition for the target audience.
-* Adults - example: @garybernhardt "I'm in a super good mood. Everything is still broken, but now it's funny instead of making me mad."
-* Years 3-8 - Now, I've seen their projects, and for some let me assure you: "Everything *is* broken", but they're not fazed.
-
-There is a learning curve on the road to learning to debug your project, and there are some useful built-ins, like message and comment notes.. 
-The coolest of which is though: `Good point 10: code blocks can be modified at runtime in the designer` all versions allow blocks to be dragged in, then dragged out while the project is running.
-
-Can _your_ tool do that?
-
-This is a grab of the code blocks being inspected _while the code is running_
-![The code blocks being run](in-large.png)
-
-This is a grab of a chunk of code blocks after being pulled out of their container block _while the code is running_
-![The code blocks not being run!](out-large.png)
-
-Did I mention you can do this _while the code is running_?
-
-You can do this while just using the mouse - the selection extends naturally from your selected block to the end of the enclosing container block - another `Good point 11: selection of blocks has some subtle but powerful affordances`.
-Making use of another `Good point 12: the positioning of code blocks in the scripts area can be arbitrary.`, so you can park a small chunk of logic still within the visual context of where it was running to reduce the cognitive load.
-
-This works particularly well on an interactive whiteboard to show the effect of a chunk of code blocks.
-
-Even more impressively: the Old Scratch 1.x desktop version, has a similar _single step_, which illuminates the currently running block!
-Clearly this was too mind-blowing and is no longer available in the current version.
+Well, it seems to be primarily educationalists and UK scholastic years 3-8 (at least), we’ll see why in a bit, through `Good Point 12: a cast of thousands` - from http://wiki.scratch.mit.edu/wiki/Scratch_Statistics and https://scratch.mit.edu/statistics there are 10s of millions of projects and millions of users.
 
 # A List of Additional Good Points
 
@@ -132,14 +132,17 @@ To move onto to more dynamic generation of content, it is possible to use explic
 
 ## Immediacy
 This goes to the kind of benefits mentioned in the kind of thing Brett Victor talks about 
-in http://worrydream.com/#!/InventingOnPrinciple
+in http://worrydream.com/#!/InventingOnPrinciple the good stuff in my opinion starts around 10:00.
+A brief summary would be he demonstrates a "Braid" - like https://en.wikipedia.org/wiki/Braid_(video_game) game in a live editor which has the sbility to adjust variables using sliders at run time and to record and overlay timelines of the program state.
+The gist of the open question raised was "what could you do, if you could only visualise the outcomes?".    
+
 I still think about the impression that talk had on me. It’s not quite possible to reproduce that talk right now in Scratch, but the immediacy of the run – change – run loop is still very forceful.  
 
 ## Accessibility
 Why haven't I mentioned _entirely free to use_ yet? If you care about diversity and granting access to self-improvement to all then this is huge.
 
 ## Sharing
-From `Good Point 5: Scratch has a "Remix" button`
+From `Good Point 10: Scratch has a "Remix" button`
 *	It exists and works – if you like something and want to have a try at improving it, you just press the button
 * Is this due to `Good Point 22: Scratch has No Merge Action` (for you corporate warriors)
 
