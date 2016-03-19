@@ -133,7 +133,7 @@ To move onto to more dynamic generation of content, it is possible to use explic
 ## Immediacy
 This goes to the kind of benefits mentioned in the kind of thing Brett Victor talks about 
 in http://worrydream.com/#!/InventingOnPrinciple the good stuff in my opinion starts around 10:00.
-A brief summary would be he demonstrates a "Braid" - like https://en.wikipedia.org/wiki/Braid_(video_game) game in a live editor which has the sbility to adjust variables using sliders at run time and to record and overlay timelines of the program state.
+A brief summary would be that he demonstrates a "Braid" - like https://en.wikipedia.org/wiki/Braid_(video_game) game in a live editor, which has the ability to adjust variables using sliders at run time and to record and overlay timelines of the program state.
 The gist of the open question raised was "what could you do, if you could only visualise the outcomes?".    
 
 I still think about the impression that talk had on me. It’s not quite possible to reproduce that talk right now in Scratch, but the immediacy of the run – change – run loop is still very forceful.  
