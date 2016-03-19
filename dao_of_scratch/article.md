@@ -24,9 +24,9 @@ There is also an offline version now which largely matches the basic capabilitie
 # Why Should I be interested in Scratch?
 As good question. Here are some topics to persuade you. 
 
-## It's coming a "classroom near you" 
+## It's coming to a "classroom near you" 
 
-`Good Point 1: “This Thing is Happening”` Note also that Scratch at this moment on the way to being taught in the UK in primary and secondary schools - that's years 3-8! (around 7 to 12). See the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
+`Good Point 1: “This Thing is Happening”` Note also that Scratch at this moment is on the way to being taught in the UK in primary and secondary schools - that's years 3-8! (around 7 to 12). See the announcement here: https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science
 
 ## The Scratch Heritage 
 
@@ -67,9 +67,9 @@ Well, it seems to be primarily educationalists and UK scholastic years 3-8 (at l
 # A Whistle Stop tour
  
 Scratch operates on a visual stage of 480x360 virtual pixels, and can be viewed at varying dpi -  `Good Point 7: fixed stage extent.` The stage is a sprite (https://en.wikipedia.org/wiki/Sprite_(computer_graphics)) and can be given script code, and any number of sprites can be placed on the stage to compose a visual scene. 
-The sprites have a scripts container which owns aggregations of code blocks that can interact with stage changes, kay and mouse events and manipulate the sprites' properties.
+The sprites have a scripts container which owns aggregations of code blocks that can interact with stage changes, key and mouse events and manipulate the sprites' properties.
 The sprites have a concept of their direction and can be made to orient in any direction, move and "bounce" within the stage area automatically.
-Finally, the large array of primitive code blocks available for the scripts can react to events and message and with the sprites and  allow the programmer to construct a range of different behaviours and visual experiences .
+Finally, the large array of primitive code blocks available for the scripts can react to events and messages and with the sprites and  allow the programmer to construct a range of different behaviours and visual experiences .
  
  Here is a grab of a minimal project put together from an empty project and the built in resources.
  
@@ -94,7 +94,7 @@ Debugging is an interesting proposition for the target audience.
 * Years 3-8 - Now, I've seen their projects, and for some let me assure you: "Everything *is* broken", but they're not fazed.
 
 There is a learning curve on the road to learning to debug your project, and there are some useful built-ins, like message and comment notes.. 
-The coolest of which is though: `Good point 10: code blocks can be modified at runtime in the designer` all versions allow blocks to be dragged in, then dragged out while the project is running?
+The coolest of which is though: `Good point 10: code blocks can be modified at runtime in the designer` all versions allow blocks to be dragged in, then dragged out while the project is running.
 
 Can _your_ tool do that?
 
@@ -118,7 +118,7 @@ Clearly this was too mind-blowing and is no longer available in the current vers
 
 There's a raft of features: `Good Points 13-21:`
 
-Logo like Sprite Primitives, Code Blocks, Message Passing, Composable Mathematical Operations, Sprite Cloning, Entry Prompts, Text Messages, Pen operations, Sound. The latter are in my personal order of appreciation.
+Logo like Sprite Primitives, Code Blocks, Message Passing, Composable Mathematical Operations, Sprite Cloning, Entry Prompts, Text Messages, Pen operations and Sound. The latter are in my personal order of appreciation.
 A feature worth mentioning is _Message Passing_ , which allows broadcasts of user defined messages to all items on a stage
 
 ## Supported Development Styles
