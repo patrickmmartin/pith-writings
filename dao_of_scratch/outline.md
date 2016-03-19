@@ -16,7 +16,6 @@ File article.md:
 ### Basic: Sprites, Backdrops, Costumes
 ### Advanced: Explicit Positioning / Drawing
 ## Immediacy
-in http://worrydream.com/#!/InventingOnPrinciple
 ## Accessibility
 ## Sharing
 ## Deployment 
