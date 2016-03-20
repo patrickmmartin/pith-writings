@@ -191,7 +191,7 @@ engine with some rudimentary support for using the stage as a
 dressed ‘set’.
 * Advanced: explicit positioning/drawing
 To move onto to more dynamic generation of content, it is possible
-to use explicit positioning, and the use of pens to craft abritrary
+to use explicit positioning, and the use of pens to craft arbitrary
 shapes.
 
 ## Immediacy
