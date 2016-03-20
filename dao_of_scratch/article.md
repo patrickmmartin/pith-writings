@@ -112,7 +112,7 @@ Clearly this was too mind-blowing and is no longer available in the current
 version.
 
 # Why Should I be interested in Scratch?
-As good question. Here are some topics to persuade you. 
+A good question. Here are some topics to persuade you. 
 
 ## It's coming to a "classroom near you" 
 
