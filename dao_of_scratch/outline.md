@@ -1,16 +1,16 @@
 File article.md:
 # Just What is Scratch?
+# A Whistle Stop tour
+## Visualisation 
+## Resources
+## Running the project
+## Debugging
 # Why Should I be interested in Scratch?
 ## It's coming to a "classroom near you" 
 ## The Scratch Heritage 
 ## Some Examples
 # What can be done in Scratch?
 ## Who are the users?
-# A Whistle Stop tour
-## Visualisation 
-## Resources
-## Running the project
-## Debugging
 # A List of Additional Good Points
 ## Supported Development Styles
 ## Immediacy
