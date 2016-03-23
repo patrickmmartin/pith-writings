@@ -169,10 +169,11 @@ thousands` – there are 10s of millions of projects and millions of users.
 
 There’s a raft of features: `Good Points 13–21`:
 
-Logo-like Sprite Primitives, Code Blocks,
+Logo-like Sprite Primitives+, Code Blocks+,
 Message Passing, Composable Mathematical
-Operations, Sprite Cloning, Entry Prompts, Text
-Messages, Pen operations and Sound. The latter
+Operations+, Sprite Cloning, Entry Prompts, Text
+Messages, Pen operations and Sound. The annotated items are 
+all illustrated in Figure 2 in one way. The latter
 are in my personal order of appreciation. A feature
 worth mentioning is Message Passing, which
 allows broadcasts of user defined messages to all
