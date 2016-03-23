@@ -216,6 +216,12 @@ From `Good Point 10: Scratch has a ‘Remix’ button`
 improving it, you just press the button
 * Is this due to `Good Point 22: Scratch has No Merge Action` (for you
 corporate warriors)
+ * this point maybe bears some examination - there are no libraries in basic scratch and
+ no code sharing. In order to add some code inspired by code from elsewhere,
+ one has to understand what to splice in to a project, and actually do it.
+* Because there are two ways to generate Scratch projects: remix and create new, 
+there is at least some pseudo Darwininan process that improves the fitness of remixes,
+while the "gene pool" gets a steady stream of new projects.
 
 ## Deployment 
 From `Good Point 23: Scratch has a ‘public’ checkbox` almost nothing
