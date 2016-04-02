@@ -5,16 +5,17 @@ Good things:
 
 RTTI that *worked*
 
+- the language, well you either love it or you don't  
 - cite recent rant on state of affairs in C++
-- NO_MACROS
+- NO_MACROS!
 - blindingly fast compilation
-- almost perfect dependency management for dependent units (IMHO)
+- almost perfect dependency management for units (IMHO)
 - incremental, smart linker
 - simple type system (well until generics, anyway)
  - records (heap, stack)
  - classes (heap *only*)
   - classes had langauge support for inheritance
- - well and also objects, so weird class / record hybrideveryone forgot about
+ - well and also objects, so weird class / record hybrid everyone forgot about
 - PROPERTIES
 - READ ONLY PROPERTIES
 - PROPERTIES
@@ -36,5 +37,39 @@ RTTI that *worked*
 - language supported reference counted interfaces - so RAII if you want it :)
 - IDispatch support (freaky, but whatever floats your boat)
 - entire application could be statically linked (with very minimal dependencies) or not, at the "press of a button"
+- Exception handling that "just worked"
+  - related to the singly rooted object hierarchy
+   - no `throw 99` - you know who you are!
+ - _finally_ blocks - sometimes cleanup is needed
+ - there were some very successful templates which were exploited to produce solutions 
 
-TODO: pour in Evernote notes
+#TODO: break it down
+
+## singly rooted class hierarchy
+
+## RTTI
+
+
+## Property syntax
+### read-write - with getters /setters | direct access | a mixture
+### read only properties discoverable at runtime using RTTI
+### indexed properties 
+### write only properties
+
+
+## more compile-time gurantees 
+- initialization
+  
+- finalization
+
+## pretty decent set of application classes
+
+
+## pretty decent set of windowing clases
+- handled ownership and parenting and all that good stuff in a manageable manner
+
+## strong component design methodology and support
+- interesting, component model from the days of yore, which was part of the then thriving component market 
+
+
+
