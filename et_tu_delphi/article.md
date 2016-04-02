@@ -6,7 +6,7 @@ Good things:
 RTTI that *worked*
 
 - the language, well you either love it or you don't  
-```
+```pascal
 procedure Proc
 var
    i : Integer;
@@ -20,7 +20,7 @@ end;
 
 - cite recent rant on state of affairs in C++
 - NO_MACROS!
-```
+```pascal
 $IFDEF _ 
 $ENDIF
 ```
@@ -33,36 +33,36 @@ $ENDIF
   TODO(PMM) research
 - simple type system (well until generics, anyway)
  - records (heap, stack)
-```
+```pascal
 type TRecord = record
 // fields
 end;
 ```
  - classes (heap *only*)
-```
+```pascal
 type TSomeClass = class(TSomeBase, ISomeInterface)
 // fields, methods, properties
 end;
 ```
   - classes had langauge support for inheritance
  - well and also objects, so weird class / record hybrid everyone forgot about
-```
+```pascal
 type TSomeClass = object
 // fields, methods NO constructor / destructor
 end;
 ```
  
 - PROPERTIES
-```
+```pascal
   property SomeProp read FSomeProp write SetSomeProp;
 ```
 - READ ONLY PROPERTIES
 ```
   property SomeProp read FSomeProp;
-```
+```pascal
 - PROPERTIES
  - indexed properties
-```
+```pascal
   property SomeProp index TODO(PMM) read FSomeProp write SetSomeProp;
 ```
 
@@ -72,7 +72,7 @@ end;
 - pointer to class method types
   - pain-free syntax for class callbacks 
   
-```
+```pascal
   type TCallBack = procedure (i : Integer) of object;
 ```
   
