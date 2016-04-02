@@ -28,6 +28,10 @@ RTTI that *worked*
 - well thought through streaming system 
  - feeding into a well through through form design system
 -  truly amazing commitment to compatibility (for this day and age) demo apps from VCL version 1(?) _would load and run upon pressing F9 in VCL version 17_
--  
+- no RAII
+- easy FFI interface for "C", COM, c++ with some effort
+- language supported reference counted interfaces 
+- IDispatch support (freaky, but whatever floats your boat)
+- entire application could be statically linked (with very minimal dependencies) or not, at the "press of a button"
 
 TODO: pour in Evernote notes
