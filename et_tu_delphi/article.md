@@ -7,7 +7,10 @@ RTTI that *worked*
 
 - cite recent rant on state of affairs in C++
 - NO_MACROS
-- simple type system (well until generics
+- blindingly fast compilation
+- almost perfect dependency management for dependent units (IMHO)
+- incremental, smart linker
+- simple type system (well until generics, anyway)
  - records (heap, stack)
  - classes (heap *only*)
   - classes had langauge support for inheritance
@@ -28,9 +31,9 @@ RTTI that *worked*
 - well thought through streaming system 
  - feeding into a well through through form design system
 -  truly amazing commitment to compatibility (for this day and age) demo apps from VCL version 1(?) _would load and run upon pressing F9 in VCL version 17_
-- no RAII
+- no RAII :P
 - easy FFI interface for "C", COM, c++ with some effort
-- language supported reference counted interfaces 
+- language supported reference counted interfaces - so RAII if you want it :)
 - IDispatch support (freaky, but whatever floats your boat)
 - entire application could be statically linked (with very minimal dependencies) or not, at the "press of a button"
 
