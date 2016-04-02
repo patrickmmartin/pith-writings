@@ -6,24 +6,84 @@ Good things:
 RTTI that *worked*
 
 - the language, well you either love it or you don't  
+```
+procedure Proc
+var
+   i : Integer;
+begin
+   // we can have comments
+   (*
+    in both styles
+   *)
+end;
+```
+
 - cite recent rant on state of affairs in C++
 - NO_MACROS!
+```
+$IFDEF _ 
+$ENDIF
+```
 - blindingly fast compilation
+  You'll have to just take my word for it
+
 - almost perfect dependency management for units (IMHO)
+  TODO(PMM) research
 - incremental, smart linker
+  TODO(PMM) research
 - simple type system (well until generics, anyway)
  - records (heap, stack)
+```
+type TRecord = record
+// fields
+end;
+```
  - classes (heap *only*)
+```
+type TSomeClass = class(TSomeBase, ISomeInterface)
+// fields, methods, properties
+end;
+```
   - classes had langauge support for inheritance
  - well and also objects, so weird class / record hybrid everyone forgot about
+```
+type TSomeClass = object
+// fields, methods NO constructor / destructor
+end;
+```
+ 
 - PROPERTIES
+```
+  property SomeProp read FSomeProp write SetSomeProp;
+```
 - READ ONLY PROPERTIES
+```
+  property SomeProp read FSomeProp;
+```
 - PROPERTIES
  - indexed properties
+```
+  property SomeProp index TODO(PMM) read FSomeProp write SetSomeProp;
+```
+
 - a really good string type right out of the box: "c and c++ - don't think I can't see you in the corner - don't even start, ok?"
-- it's just modules all the way down, baby
- - circular dependencies are a _compiler error_, not a "way of life" as some people seem to treat it
+ language supports concatentation, reference counted, string length stored as part of the string, fully compatible with C char arrays 
+
+- pointer to class method types
+  - pain-free syntax for class callbacks 
+  
+```
+  type TCallBack = procedure (i : Integer) of object;
+```
+  
+
+
+- compilation units: it's just modules all the way down, baby
+- TODO(PMM) research this
+ - circular dependencies are a _compiler error_,
+  - not a "way of life" as some people seem to treat it
  - NO LIBS
+ - although there were "packages"
  - proper compiler supported initialisation and finalisation
   - NO STATIC INITIALIZATION FIASCO
   - unless you want to write your own
@@ -48,7 +108,7 @@ RTTI that *worked*
 ## singly rooted class hierarchy
 
 ## RTTI
-
+Almost as rich and dynamic as say, Java, allowing the composition of UI (and other) classes, driven effectively by data  
 
 ## Property syntax
 ### read-write - with getters /setters | direct access | a mixture
