@@ -71,9 +71,21 @@ end;
 
 - pointer to class method types
   - pain-free syntax for class callbacks 
+  - also, entirely trivial to stitch together methods to attach behaviour to compose classes
+  - this was used (and sometimes abused) for UI development
+  
+
   
 ```pascal
   type TCallBack = procedure (i : Integer) of object;
+  
+  recipient.Callback = handler.CallbackProc;
+  
+  // or even more abstracted....
+  
+  recipient.Callback = handlerRegistry.Lookup(key);
+  
+  
 ```
   
 
