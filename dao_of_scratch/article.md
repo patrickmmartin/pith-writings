@@ -4,28 +4,28 @@ The Tao of Scratch
 Abstract
 ---
 
-When I look at Scratch, I see something different.
+When I look at Scratch, I see something ‘different’.
 
 I’d like persuade you to my viewpoint by going through what I see are the Good Points.
 
-I’ll be up-front here and state my target audience is the ‘noble corporate toiler’.
-It has hopefully been a while since you were introduced / subjected
+I’ll be up-front here and state my target audience is the ‘noble corporate
+toiler’. It has hopefully been a while since you were introduced / subjected
 to a computer based teaching tool. Scratch is a tool for implementing
 computing projects based upon many years of thought, and it is well worth
-taking a look   
+taking a look.   
 
 # Just What is Scratch?
 
-The best place to start is their web site, where there is a description of the
-project [Scratch-1] and the main portal [Scratch-2]. The Wikipedia page
-is also good [Wikipedia-1].
+The best place to start is the Scratch web site, where there is a description
+of the project [Scratch-1] and the main portal [Scratch-2]. The Wikipedia
+page is also good [Wikipedia-1].
 
 It’s a visual programming language, consisting of composable code
 blocks that form the elements of a program. It is available as a web
 application online, and implements a visual stage as the program output.
 
-There is also an offline version now which largely matches the basic
-capabilities of the web version, omitting online only features.
+There is also an offline version now, which largely matches the basic
+capabilities of the web version, omitting online-only features.
 
 # A Whistle Stop tour
  
@@ -33,13 +33,13 @@ Scratch operates on a visual stage of 480 x 360 virtual pixels, and can be
 viewed at varying dpi – `Good Point 1: fixed stage extent`. The stage is a
 sprite [Wikipedia-2] and can be given script code, and any number of
 sprites can be placed on the stage to compose a visual scene. The sprites
-have a scripts container which owns aggregations of code blocks that can
+have a scripts container, which owns aggregations of code blocks that can
 interact with stage changes, key and mouse events and manipulate the
 sprites’ properties. The sprites have a concept of their direction and can
 be made to orient in any direction, move and ‘bounce’ within the stage
 area automatically. Finally, the large array of primitive code blocks
 available for the scripts can react to events and messages and with the
-sprites and allow the programmer to construct a range of different
+sprites, and allow the programmer to construct a range of different
 behaviours and visual experiences.
 
 Figure 1 is a grab of a minimal project put together from an empty project
@@ -56,8 +56,8 @@ demands on mental arithmetic for the initial learning stages.
 
 ## Resources
 
-It’s a `Good Point 3: built in resources` that image and audio resources are
-embedded into to the project and are available in a standard library, which
+Image and audio resources are embedded into to the project and are
+available in a standard library – `Good Point 3: built in resources` – which
 can be expanded by assets uploaded to the project. All of these can be
 copied, and modified once embedded.
 
@@ -72,44 +72,47 @@ some kind. You can have as many as you like.
 ## Debugging
 
 Debugging is an interesting proposition for the target audience.
-* Adults – example: @garybernhardt “I’m in a super good mood.
+* Adults (example) @garybernhardt: “I’m in a super good mood.
 Everything is still broken, but now it’s funny instead of making me
 mad.”
-* Years 3–8 – Now, I’ve seen their projects, and for some let me
-assure you: ‘Everything is broken’, but they’re not fazed.
+* Years 3–8: Now, I’ve seen their projects, and for some let me assure
+you: ‘Everything is broken’, but they’re not fazed.
 
 There is a learning curve on the road to learning to debug your project, and
 there are some useful built-ins, like message and comment notes. The
-coolest of which is though: `Good Point 4: code blocks can be modified
-at runtime in the designer` - all versions allow blocks to be dragged in, then
+coolest of which, though, is: `Good Point 4: code blocks can be modified
+at runtime in the designer`. All versions allow blocks to be dragged in, then
 dragged out while the project is running.
 
 Can _your_ tool do that?
 
-Figure 2 is a grab of the code blocks being inspected _while the code is
-running_ and Figure 3 is a grab of a chunk of code blocks after being pulled
+Figure 2 is a grab of the code blocks being inspected while the code is
+running and Figure 3 is a grab of a chunk of code blocks after being pulled
 out of their container block _while the code is running_.
-Did I mention you can do this while the code is running? 
+
+Did I mention you can do this _while the code is running_?
 
 ![Figure 2 - The code blocks being run](in-large.png)
 ![Figure 3 - The code blocks not being run!](out-large.png)
 
 You can do this while just using the mouse – the selection extends
 naturally from your selected block to the end of the enclosing container
-block – another `Good Point 5: selection of blocks has some subtle but
-powerful affordances`. Making use of another `Good Point 6: the
-positioning of code blocks in the scripts area can be arbitrary`, so you can
-park a small chunk of logic still within the visual context of where it was
-running to reduce the cognitive load.
+block – making `Good Point 5: selection of blocks has some subtle but
+powerful affordances`. Making use of `Good Point 6: the positioning of
+code blocks in the scripts area can be arbitrary`, you can park a small
+chunk of logic within the visual context of where it was running to reduce
+the cognitive load.
 
 This works particularly well on an interactive whiteboard to show the
 effect of a chunk of code blocks.
 
 Even more impressively: the Old Scratch 1.x desktop version, has a
-similar _single step_, which illuminates the currently running block!
+similar single step, which illuminates the currently running block!
 
-Clearly this was too mind-blowing and is no longer available in the current
+Clearly
+this was too mind-blowing and is no longer available in the current
 version.
+
 
 # Why Should I be interested in Scratch?
 A good question. Here are some topics to persuade you. 
@@ -266,19 +269,19 @@ suspicion is that there are a couple of required complex concepts in a maze
 game that Scratch does not deliver in its default toolbox, or that are easily
 synthesised. This might be a fruitful area to extend the sprite’s
 capabilities:
-### confession time: for the second time
-(approx 30+ years after the first attempt) I am re-implementing Pacman and I’m finding that talking
-about the incomplete (broken?) versions I created on the way can be
-used for some ‘teachable moments’
-* for example, I have various ‘baby step’ projects that will show
-the small adjustments to the code blocks that will implement the
-stages of a ghost
+
+Confession time: for the second time (approx 30+ years after the first
+attempt) I am re-implementing Pacman and I’m finding that talking about
+the incomplete (broken?) versions I created on the way can be used for
+some ‘teachable moments’, for example:
+* various ‘baby step’ projects that show the small adjustments to the
+code blocks that will implement the stages of a ghost
 * moving smoothly between points on a grid
-* choosing between N, E, W, S to head towards Pacman/some
-other target
-* turning left instead of reversing direction on the next choice
- * Note this last behaviour then delivers the distinctive Pacman ‘ghost patrolling
-in circles’ behaviour for free
+* choosing between N, E, W, S to head towards Pacman/some other
+target
+* turning left instead of reversing direction on the next choice (which
+delivers the distinctive Pacman ‘ghost patrolling in circles’
+behaviour for free)
 
    
 # User Straw Poll
