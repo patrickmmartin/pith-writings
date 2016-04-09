@@ -8,11 +8,11 @@ When I look at Scratch, I see something ‘different’.
 
 I’d like persuade you to my viewpoint by going through what I see are the Good Points.
 
-I’ll be up-front here and state my target audience is the ‘noble corporate
-toiler’. It has hopefully been a while since you were introduced / subjected
+I’ll be up-front here and state my target audience is the ‘noble corporate toiler’.
+It has hopefully been a while since you were introduced / subjected
 to a computer based teaching tool. Scratch is a tool for implementing
-computing projects based upon many years of thought, and it is well worth
-taking a look.   
+computing projects, based upon many years of thought, and it is well worth
+taking a look.
 
 # Just What is Scratch?
 
