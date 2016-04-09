@@ -1,10 +1,10 @@
-The Tao of Scratch
+﻿The Tao of Scratch
 ====
 
 Abstract
 ---
 
-When I look at Scratch, I see something different.
+When I look at Scratch, I see something ‘different’.
 
 I’d like to persuade you to my viewpoint by going through what I see are the Good Points.
 
@@ -12,88 +12,34 @@ I’ll be up-front here and state my target audience is the ‘noble corporate t
 It has hopefully been a while since you were introduced / subjected
 to a computer based teaching tool. Scratch is a tool for implementing
 computing projects, based upon many years of thought, and it is well worth
-taking a look   
+taking a look.
 
 # Just What is Scratch?
 
-The best place to start is their web site, where there is a description of the
-project [Scratch-1] and the main portal [Scratch-2]. The Wikipedia page
-is also good [Wikipedia-1].
+The best place to start is the Scratch web site, where there is a description
+of the project [Scratch-1] and the main portal [Scratch-2]. The Wikipedia
+page is also good [Wikipedia-1].
 
 It’s a visual programming language, consisting of composable code
 blocks that form the elements of a program. It is available as a web
 application online, and implements a visual stage as the program output.
 
-There is also an offline version now which largely matches the basic
-capabilities of the web version, omitting online only features.
-
-# Why Should I be interested in Scratch?
-As good question. Here are some topics to persuade you. 
-
-## It's coming to a "classroom near you" 
-
-`Good Point 1: ‘This Thing is Happening’` Note also that Scratch at this
-moment is on the way to being taught in the UK in primary and secondary
-schools – that’s years 3–8! (around 7 to 12 years old). [gov.uk]
-
-## The Scratch Heritage 
-
-The Scratch environment is inspired by the work of Seymour Papert
-[Papert], epitomised in the book _Mindstorms_ [Papert93]. Listing the
-whole corpus of the whole back story is out of scope, so this is going to
-be left for the interested reader.
-
-## Some Examples
-
-You can explore for yourself by visiting the website [Scratch-2], making
-use of `Good Point 2: it has a single entry search box`. Having found a
-project of interest, you can dive straight in and take a look using `Good
-Point 3: Scratch has a ‘See Inside’ button`. If you like what you find you
-can then simply fork it using `Good Point 4: Scratch has a ‘Remix’ button`.
-
-That new project is now available for you to modify, debug and run in any
-way you see fit.
-
-Now, although it ruins the nice 3-part list rhetorical flourish, let me just
-mention here `Good Point 5: Scratch lets you edit before login and then
-allows you to login and save if you wish`.
-
-Question: how many _paid for_ services that we use for generating wealth
-can say the same? For the classroom environment, when dealing with the
-early years where it is a stretch to require detailed forward planning, this
-is a Good Thing.
-
-# What can be done in Scratch?
-I won’t promote individual projects, and further I will assert that I don’t
-need to. Instead let’s rely upon `Good Point 3: it has a single entry search
-box` and I can list some jump off points:
-* Yorkshire to English dictionary [Scratch-Dictionary]
-* Innumerable RPG type things about cat clans [Scratch-Cats]
- * no, me neither
-* Space Invaders [Scratch-Invaders]
- * aww, yeah...
-* Pacman [Scratch-Pacman]
-
-## Who are the users?
-
-Well, it seems to be primarily educationalists and UK scholastic years 3–
-8 (at least), we’ll see why in a bit, through `Good Point 6: a cast of
-thousands` – there are 10s of millions of projects and millions of users.
-[Scratch-Stats1] [Scratch-Stats2]
+There is also an offline version now, which largely matches the basic
+capabilities of the web version, omitting online-only features.
 
 # A Whistle Stop tour
  
 Scratch operates on a visual stage of 480 x 360 virtual pixels, and can be
-viewed at varying dpi – `Good Point 7: fixed stage extent`. The stage is a
+viewed at varying dpi – `Good Point 1: fixed stage extent`. The stage is a
 sprite [Wikipedia-2] and can be given script code, and any number of
 sprites can be placed on the stage to compose a visual scene. The sprites
-have a scripts container which owns aggregations of code blocks that can
+have a scripts container, which owns aggregations of code blocks that can
 interact with stage changes, key and mouse events and manipulate the
 sprites’ properties. The sprites have a concept of their direction and can
 be made to orient in any direction, move and ‘bounce’ within the stage
 area automatically. Finally, the large array of primitive code blocks
 available for the scripts can react to events and messages and with the
-sprites and allow the programmer to construct a range of different
+sprites, and allow the programmer to construct a range of different
 behaviours and visual experiences.
 
 Figure 1 is a grab of a minimal project put together from an empty project
@@ -104,14 +50,14 @@ and the built in resources.
 ## Visualisation 
 The entire (basic) environment is visual, with editors for all aspects of the
 sprites and code blocks. The stage is manipulated at both ‘run time’ and
-‘design time’ in the same way, which is `Good Point 8: persistence of
+‘design time’ in the same way, which is `Good Point 2: persistence of
 stage state`. This allows fine positioning by eye, avoiding too many
 demands on mental arithmetic for the initial learning stages.
 
 ## Resources
 
-It’s a `Good Point 9: built in resources` that image and audio resources are
-embedded into to the project and are available in a standard library, which
+Image and audio resources are embedded into to the project and are
+available in a standard library – `Good Point 3: built in resources` – which
 can be expanded by assets uploaded to the project. All of these can be
 copied, and modified once embedded.
 
@@ -126,53 +72,111 @@ some kind. You can have as many as you like.
 ## Debugging
 
 Debugging is an interesting proposition for the target audience.
-* Adults – example: @garybernhardt “I’m in a super good mood.
+* Adults (example) @garybernhardt: “I’m in a super good mood.
 Everything is still broken, but now it’s funny instead of making me
 mad.”
-* Years 3–8 – Now, I’ve seen their projects, and for some let me
-assure you: ‘Everything is broken’, but they’re not fazed.
+* Years 3–8: Now, I’ve seen their projects, and for some let me assure
+you: ‘Everything is broken’, but they’re not fazed.
 
 There is a learning curve on the road to learning to debug your project, and
 there are some useful built-ins, like message and comment notes. The
-coolest of which is though: `Good point 10: code blocks can be modified
-at runtime in the designer` - all versions allow blocks to be dragged in, then
+coolest of which, though, is: `Good Point 4: code blocks can be modified
+at runtime in the designer`. All versions allow blocks to be dragged in, then
 dragged out while the project is running.
 
 Can _your_ tool do that?
 
-Figure 2 is a grab of the code blocks being inspected _while the code is
-running_ and Figure 3 is a grab of a chunk of code blocks after being pulled
+Figure 2 is a grab of the code blocks being inspected while the code is
+running and Figure 3 is a grab of a chunk of code blocks after being pulled
 out of their container block _while the code is running_.
-Did I mention you can do this while the code is running? 
+
+Did I mention you can do this _while the code is running_?
 
 ![Figure 2 - The code blocks being run](in-large.png)
 ![Figure 3 - The code blocks not being run!](out-large.png)
 
 You can do this while just using the mouse – the selection extends
 naturally from your selected block to the end of the enclosing container
-block – another `Good point 11: selection of blocks has some subtle but
-powerful affordances`. Making use of another `Good point 12: the
-positioning of code blocks in the scripts area can be arbitrary`, so you can
-park a small chunk of logic still within the visual context of where it was
-running to reduce the cognitive load.
+block – making `Good Point 5: selection of blocks has some subtle but
+powerful affordances`. Making use of `Good Point 6: the positioning of
+code blocks in the scripts area can be arbitrary`, you can park a small
+chunk of logic within the visual context of where it was running to reduce
+the cognitive load.
 
 This works particularly well on an interactive whiteboard to show the
 effect of a chunk of code blocks.
 
 Even more impressively: the Old Scratch 1.x desktop version, has a
-similar _single step_, which illuminates the currently running block!
+similar single step, which illuminates the currently running block!
 
-Clearly this was too mind-blowing and is no longer available in the current
+Clearly
+this was too mind-blowing and is no longer available in the current
 version.
+
+
+# Why Should I be interested in Scratch?
+A good question. Here are some topics to persuade you. 
+
+## It's coming to a "classroom near you" 
+
+`Good Point 7: ‘This Thing is Happening’` Note also that Scratch at this
+moment is on the way to being taught in the UK in primary and secondary
+schools – that’s years 3–8! (around 7 to 12 years old). [gov.uk]
+
+## The Scratch Heritage 
+
+The Scratch environment is inspired by the work of Seymour Papert
+[Papert], epitomised in the book _Mindstorms_ [Papert93]. Listing the
+whole corpus of the whole back story is out of scope, so this is going to
+be left for the interested reader.
+
+## Some Examples
+
+You can explore for yourself by visiting the website [Scratch-2], making
+use of `Good Point 8: it has a single entry search box`. Having found a
+project of interest, you can dive straight in and take a look using `Good
+Point 9: Scratch has a ‘See Inside’ button`. If you like what you find you
+can then simply fork it using `Good Point 10: Scratch has a ‘Remix’ button`.
+
+That new project is now available for you to modify, debug and run in any
+way you see fit.
+
+Now, although it ruins the nice 3-part list rhetorical flourish, let me just
+mention here `Good Point 11: Scratch lets you edit before login and then
+allows you to login and save if you wish`.
+
+Question: how many _paid for_ services that we use for generating wealth
+can say the same? For the classroom environment, when dealing with the
+early years where it is a stretch to require detailed forward planning, this
+is a Good Thing.
+
+# What can be done in Scratch?
+I won’t promote individual projects, and further I will assert that I don’t
+need to. Instead let’s rely upon `Good Point 8: it has a single entry search
+box` and I can list some jump off points:
+* Yorkshire to English dictionary [Scratch-Dictionary]
+* Innumerable RPG type things about cat clans [Scratch-Cats]
+ * no, me neither
+* Space Invaders [Scratch-Invaders]
+ * aww, yeah...
+* Pacman [Scratch-Pacman]
+
+## Who are the users?
+
+Well, it seems to be primarily educationalists and UK scholastic years 3–
+8 (at least), we’ll see why in a bit, through `Good Point 12: a cast of
+thousands` – there are 10s of millions of projects and millions of users.
+[Scratch-Stats1] [Scratch-Stats2]
 
 # A List of Additional Good Points
 
 There’s a raft of features: `Good Points 13–21`:
 
-Logo-like Sprite Primitives, Code Blocks,
+Logo-like Sprite Primitives+, Code Blocks+,
 Message Passing, Composable Mathematical
-Operations, Sprite Cloning, Entry Prompts, Text
-Messages, Pen operations and Sound. The latter
+Operations+, Sprite Cloning, Entry Prompts, Text
+Messages, Pen operations and Sound. The annotated items are 
+all illustrated in Figure 2 in one way. The latter
 are in my personal order of appreciation. A feature
 worth mentioning is Message Passing, which
 allows broadcasts of user defined messages to all
@@ -191,12 +195,18 @@ engine with some rudimentary support for using the stage as a
 dressed ‘set’.
 * Advanced: explicit positioning/drawing
 To move onto to more dynamic generation of content, it is possible
-to use explicit positioning, and the use of pens to craft abritrary
+to use explicit positioning, and the use of pens to craft arbitrary
 shapes.
 
 ## Immediacy
 This goes to the kind of benefits mentioned in the kind of thing Brett
-Victor talks about [Victor]. I still think about the impression that talk had
+Victor talks about [Victor] the good stuff in my opinion starts around 10:00.
+A brief summary would be that he demonstrates a "Braid" - like [Braid] game in a live editor,
+which has the ability to adjust variables using sliders at run time
+and to record and overlay timelines of the program state.
+The gist of the open question raised was "what could you do, if you could only visualise the outcomes?". 
+
+I still think about the impression that talk had
 on me. It’s not quite possible to reproduce that talk right now in Scratch,
 but the immediacy of the run–change–run loop is still very forceful.
 
@@ -205,11 +215,17 @@ Why haven’t I mentioned _entirely free to use_ yet? If you care about
 diversity and granting access to self-improvement to all then this is huge.
 
 ## Sharing
-From `Good Point 5: Scratch has a ‘Remix’ button`
+From `Good Point 10: Scratch has a ‘Remix’ button`
 * It exists and works – if you like something and want to have a try at
 improving it, you just press the button
 * Is this due to `Good Point 22: Scratch has No Merge Action` (for you
 corporate warriors)
+ * this point maybe bears some examination - there are no libraries in basic scratch and
+ no code sharing. In order to add some code inspired by code from elsewhere,
+ one has to understand what to splice in to a project, and actually do it.
+* Because there are two ways to generate Scratch projects: remix and create new, 
+there is at least some pseudo Darwininan process that improves the fitness of remixes,
+while the "gene pool" gets a steady stream of new projects.
 
 ## Deployment 
 From `Good Point 23: Scratch has a ‘public’ checkbox` almost nothing
@@ -253,19 +269,19 @@ suspicion is that there are a couple of required complex concepts in a maze
 game that Scratch does not deliver in its default toolbox, or that are easily
 synthesised. This might be a fruitful area to extend the sprite’s
 capabilities:
-### confession time: for the second time
-(approx 30+ years after the first attempt) I am re-implementing Pacman and I’m finding that talking
-about the incomplete (broken?) versions I created on the way can be
-used for some ‘teachable moments’
-* for example, I have various ‘baby step’ projects that will show
-the small adjustments to the code blocks that will implement the
-stages of a ghost
+
+Confession time: for the second time (approx 30+ years after the first
+attempt) I am re-implementing Pacman and I’m finding that talking about
+the incomplete (broken?) versions I created on the way can be used for
+some ‘teachable moments’, for example:
+* various ‘baby step’ projects that show the small adjustments to the
+code blocks that will implement the stages of a ghost
 * moving smoothly between points on a grid
-* choosing between N, E, W, S to head towards Pacman/some
-other target
-* turning left instead of reversing direction on the next choice
- * Note this last behaviour then delivers the distinctive Pacman ‘ghost patrolling
-in circles’ behaviour for free
+* choosing between N, E, W, S to head towards Pacman/some other
+target
+* turning left instead of reversing direction on the next choice (which
+delivers the distinctive Pacman ‘ghost patrolling in circles’
+behaviour for free)
 
    
 # User Straw Poll
@@ -346,6 +362,8 @@ Bloomberg LP (http://www.bloomberg.net) very generously supports my volunteering
 References
 ---
 
+[Braid] https://en.wikipedia.org/wiki/Braid_(video_game) 
+
 [Code Club] http://codeclub.org.uk
 
 [code.org] http://worrydream.com/MeanwhileAtCodeOrg/
@@ -383,3 +401,4 @@ References
 [Wikipedia-1] https://en.wikipedia.org/wiki/Scratch_(programming_language)
 
 [Wikipedia-2] https://en.wikipedia.org/wiki/Sprite_(computer_graphics)
+
