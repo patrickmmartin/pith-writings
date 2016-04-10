@@ -266,7 +266,7 @@ clones tend to be very high quality, whereas for the ‘deceptively simple’
 Pacman there tends to be a raft of issues that challenge the users `Good
 Point 27: some tasks lend themselves to ‘teachable moments’`. My
 suspicion is that there are a couple of required complex concepts in a maze
-game that Scratch does not deliver in its default toolbox, or that are easily
+game that Scratch neither delivers in its default toolbox, nor allows to be easily
 synthesised. This might be a fruitful area to extend the sprite’s
 capabilities:
 
