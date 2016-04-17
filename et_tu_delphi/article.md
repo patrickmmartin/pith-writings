@@ -33,6 +33,16 @@ $ENDIF
 - blindingly fast compilation
   You'll have to just take my word for it
 
+- a really good string type right out of the box: "c and c++ - don't think I can't see you in the corner - don't even start, ok?"
+ language supports concatentation, reference counted, string length stored as part of the string, fully compatible with C char arrays 
+  - note the modernised version of Delphi cunningly stores the encoding 
+
+- Char and Byte are not the same type
+
+- integer types and subrange stypes
+  
+- proper enforced enumerations ( compile time and even runtime for your sneaky sneaky type casters)
+
 - almost perfect dependency management for units (IMHO)
   TODO(PMM) research
 - incremental, smart linker
@@ -73,10 +83,6 @@ end;
   property SomeProp index TODO(PMM) read FSomeProp write SetSomeProp;
 ```
 
-- a really good string type right out of the box: "c and c++ - don't think I can't see you in the corner - don't even start, ok?"
- language supports concatentation, reference counted, string length stored as part of the string, fully compatible with C char arrays 
-  - note the modernised version of Delphi cunningly stores the encoding 
-  
 - pointer to class method types
   - pain-free syntax for class callbacks 
   - also, entirely trivial to stitch together methods to attach behaviour to compose classes
@@ -181,6 +187,11 @@ TODO(PMM) code samples
 
   
 ```
+
+  - note the initialisation follows the lexical ordering in the program unit (but see later) 
+  - note the de-init occurs perfectly
+  - also note that adding in a code level dependency re-jogs the initialisation order correctly 
+
 
 
 
