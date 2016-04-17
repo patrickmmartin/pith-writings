@@ -1,7 +1,11 @@
 `I come here not to bury Delphi, but to praise it.`
 ----
 
-Good things:
+Key  things:
+
+- built in concept of _interface_ and _implementation_ 
+
+- hey, that super trendy _"no copy constructor"_ concept again!
 
 RTTI that *worked*
 
@@ -24,6 +28,8 @@ end;
 $IFDEF _ 
 $ENDIF
 ```
+  - yup, no ```#define private public``` ...
+
 - blindingly fast compilation
   You'll have to just take my word for it
 
@@ -32,6 +38,7 @@ $ENDIF
 - incremental, smart linker
   TODO(PMM) research
 - simple type system (well until generics, anyway)
+  TODO(PMM) research
  - records (heap, stack)
 ```pascal
 type TRecord = record
@@ -68,13 +75,13 @@ end;
 
 - a really good string type right out of the box: "c and c++ - don't think I can't see you in the corner - don't even start, ok?"
  language supports concatentation, reference counted, string length stored as part of the string, fully compatible with C char arrays 
-
+  - note the modernised version of Delphi cunningly stores the encoding 
+  
 - pointer to class method types
   - pain-free syntax for class callbacks 
   - also, entirely trivial to stitch together methods to attach behaviour to compose classes
   - this was used (and sometimes abused) for UI development
   
-
   
 ```pascal
   type TCallBack = procedure (i : Integer) of object;
@@ -87,11 +94,9 @@ end;
   
   
 ```
-  
-
 
 - compilation units: it's just modules all the way down, baby
-- TODO(PMM) research this
+ - TODO(PMM) research this
  - circular dependencies are a _compiler error_,
   - not a "way of life" as some people seem to treat it
  - NO LIBS
@@ -116,6 +121,77 @@ end;
  - there were some very successful templates which were exploited to produce solutions 
 
 #TODO: break it down
+
+
+# code samples
+
+#  writing a registry
+- factoring out components
+- adding elements into the registry
+ - explicitly
+ - implicitly
+ - finally (ha!) singleton cleanup can be done using _finalization_
+TODO(PMM) code samples
+
+```pascal
+  
+  unit SomeRegistry
+  
+  interface ..
+  ...
+  
+  type
+     // one might make this object interfaced for additional complexity
+     TSomeRegistry = class
+     end;
+
+   // how to expose?
+   // one way that works fine is a getter
+   function GetSomeRegistry : TSomeRegistry;
+   
+   type TSomeRegistryManager
+   private:
+      FSomeRegistry : TSomeRegistry;
+   public    
+      class property SomeRegistry : TSomeRegistry read fSomeRegistry; 
+   end;
+   
+   TODO(PMM)      
+      
+  implementation
+  ...
+  mSomeRegistry : TSomeRegistry = nil;
+  
+  initialization
+    mSomeRegistry := TSomeRegistry.Create();
+    
+  finalization
+    mSomeRegistry.Free;     
+  
+   unit SomeProcessor
+   
+   initialization
+   GetSomeRegistry().AddProcessorClass(TSomeProcessor);
+   
+   unit SomeProcessor2
+   
+   initialization
+   GetSomeRegistry().AddProcessor(TSomeProcessor2.Create);
+   
+
+  
+```
+
+
+
+# interfaces are the only multiple inheritance route (i.e. Java, there isn't one)
+ - which if we're honest with ourselves if probably what we really wanted all along
+TODO(PMM) code samples
+
+# NewInstance, CreateInstance if you really want to go that route
+TODO(PMM) code samples
+
+
 
 ## singly rooted class hierarchy
 
