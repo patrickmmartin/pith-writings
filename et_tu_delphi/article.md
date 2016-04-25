@@ -1,7 +1,15 @@
 `I come here not to bury Delphi, but to praise it.`
 ----
 
-Key  things:
+
+TODOs
+---
+
+type Foo = type Bar;
+
+registration examples
+
+Key things:
 
 - built in concept of _interface_ and _implementation_ 
 
