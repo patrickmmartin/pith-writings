@@ -149,6 +149,20 @@ TODO(PMM) code samples
 
 ```pascal
   
+program registration;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils,
+  SomeRegistry in 'SomeRegistry.pas',
+  SomeProcessor in 'SomeProcessor.pas',
+  AnotherProcessor in 'AnotherProcessor.pas';
+
+begin
+
+end.
+  
   unit SomeRegistry
   
   interface ..
@@ -157,6 +171,8 @@ TODO(PMM) code samples
   type
      // one might make this object interfaced for additional complexity
      TSomeRegistry = class
+        procedure RegisterClass(AClass: TClass);
+        procedure DeregisterClass(AClass: TClass);
      end;
 
    // how to expose?
@@ -176,33 +192,86 @@ TODO(PMM) code samples
   ...
   mSomeRegistry : TSomeRegistry = nil;
   
+  (* implement  RegisterClass,  DeregisterClass *)
+
+  
+  
   initialization
     mSomeRegistry := TSomeRegistry.Create();
     
   finalization
     mSomeRegistry.Free;     
   
+  
+  ...
+  
    unit SomeProcessor
    
+   type TSomeProcessor = class
+   ...
+   end;
+   
    initialization
-   GetSomeRegistry().AddProcessorClass(TSomeProcessor);
+   GetSomeRegistry.RegisterClass(TSomeProcessor);
    
-   unit SomeProcessor2
+   unit AnotherProcessor
+   
+   type TAnotherProcessor = class
+   ...
+   end;
+   
+   implementation
    
    initialization
-   GetSomeRegistry().AddProcessor(TSomeProcessor2.Create);
+   GetSomeRegistry.RegisterClass(TAnotherProcessor);
    
-
-  
 ```
 
-  - note the initialisation follows the lexical ordering in the program unit (but see later) 
-  - note the de-init occurs perfectly
-  - also note that adding in a code level dependency re-jogs the initialisation order correctly 
+output:
 
+```
+Adding: TSomeProcessor
+Adding: TAnotherProcessor
+starting
+Registration complete
+exiting
+Removing: TAnotherProcessor
+Removing: TSomeProcessor
+```
 
+  - note the initialisation follows the lexical ordering in the program unit _in this case_ (but see later) 
+  - note the de-init occurs perfectly in the inverse order
+  - 
+  
+  - also note that adding in a code level dependency re-jigs the initialisation order correctly 
+  
+Add this uses directive into SomeProcessor, adding a source level dependency to AnotherProcessor from the SomeProcessor _implementation_
 
+```pascal
 
+unit SomeProcessor
+
+uses
+  AnotherProcessor,
+  SomeRegistry;
+
+```
+
+output:
+
+```
+Adding: TAnotherProcessor
+Adding: TSomeProcessor
+starting
+Registration complete
+exiting
+Removing: TSomeProcessor
+Removing: TAnotherProcessor
+```
+
+Note this happens when updating the unit, not the ```program``` code, which remains blissfully agnostic of the changes. 
+
+so, 
 # interfaces are the only multiple inheritance route (i.e. Java, there isn't one)
  - which if we're honest with ourselves if probably what we really wanted all along
 TODO(PMM) code samples
