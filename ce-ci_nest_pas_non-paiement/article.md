@@ -3,14 +3,26 @@ No-one likes non-payment
 
 
 
-
 First version
 ----
+
+
+```C++
+
+string output;
+int switches[] = { 1, 2, 3, 4 };
+
+for (int i : switches) {
+	oopsN(i, output);
+	cout << output << "\n";
+}
+
+```
 
 Various ways of omitting to make an update
 
 
-```C
+```C++
 
 
 switch
@@ -97,7 +109,22 @@ Upping the ante
 
 Some people like multiple points of return ...
 
-```C
+
+```C++
+
+string output;
+int switches[] = { 1, 2, 3, 4 };
+
+for (int i : switches) {
+	
+	cout << oopsN(i) << "\n";
+}
+
+```
+
+
+
+```C++
 
 
 string oops4(int condition) {
