@@ -156,5 +156,7 @@ string oops6(int condition) {
 
 the output is:
 
+![Image](protip.png)
 
+So, now you know which OS type I ran this on, and have what looks like a decent chunk of that application's environment variables.
 
