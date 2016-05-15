@@ -2,6 +2,17 @@ No-one likes non-payment
 =====
 
 
+Surprising, there are 2 or three things you can achieve with code that is never run.
+* Preventing that -wall -werror build from being created
+   "no return from non-void function"
+* Avoiding having to test that complex code path
+  it *looks* like all cases result in an action
+* A super simple way to dump the environment
+  when you just can't look up the documentation
+
+
+
+TODO(PMM)
 
 First version
 ----
