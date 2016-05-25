@@ -5,6 +5,14 @@
 TODOs
 ---
 
+
+Disclaimer  TODO(PMM)
+
+If you want a much funnier, longer lived, less overtly technical summary - try this on for size
+
+http://www.theregister.co.uk/2016/05/20/verity_sons_of_khan_witch_of_wookey/
+
+
 type Foo = type Bar;
 
 registration examples
@@ -13,7 +21,7 @@ Key things:
 
 - built in concept of _interface_ and _implementation_ 
 
-- hey, that super trendy _"no copy constructor"_ concept again!
+- hey, that super trendy _"no copy constructor"_ concept again! TODO(PMM) reference Rust
 
 RTTI that *worked*
 
