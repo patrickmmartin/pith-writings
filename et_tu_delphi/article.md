@@ -123,8 +123,12 @@ end;
   - not a "way of life" as some people seem to treat it
  - NO LIBS
  - although there were "packages"
+   - TODO(PMM) HOW COULD I HAVE FORGOTTEN ABOUT PACKAGES 
+   - although there were some "horror stories" like key variables in some packages initialised *upon load* by other packages, which foxed the IDE's dependency management (which was otherwise pretty cool)
+   - THE GREAT DELPHI PACKAGE DRIVE-BY FIASCO
  - proper compiler supported initialisation and finalisation
   - NO STATIC INITIALIZATION FIASCO
+   - although see package abuse if you want to learn how to *re-introduce* this
   - unless you want to write your own
 - dynamic packages - again something c/ c++ are still yearning for
 - An IDE "that was really good, once"
