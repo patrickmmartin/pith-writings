@@ -5,6 +5,10 @@
 TODOs
 ---
 
+* Can't create abstract classes in c++/
+* Agenda - can modules be this good ever again?
+ 
+
 
 Disclaimer  TODO(PMM)
 
