@@ -140,16 +140,17 @@ The graphical explanation of this algorithm is: iterative search for square root
 
 and hence:
 
-	double my_sqrt_bablyonian(double val) {
+``` C++
+double my_sqrt_bablyonian(double val) {
 
-	  double x = seed_root();
+    double x = seed_root();
 
-	  while (fabs((x * x) - val) > (val * TOLERANCE)) {
-	    x = 0.5 * (x + (val / x));
-	  }
-	  return x;
-	}
-
+    while (fabs((x * x) - val) > (val * TOLERANCE)) {
+        x = 0.5 * (x + (val / x));
+    }
+    return x;
+}
+```
 
 The loop is controlled by a test on whether we're "near enough" to the answer which may be a _discussion points_.
 
