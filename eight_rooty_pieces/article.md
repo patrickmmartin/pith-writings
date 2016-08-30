@@ -164,7 +164,7 @@ Notable points:
 * there is one more interesting fact we will discover shortly
 
 ### Finding the root using Newton Raphson
-Explanation: Newton Raphson [newton_raphson] searches for the value of x yielding zero for (x^2 - value) 
+Explanation: Newton Raphson [newton_raphson] searches for the value of x yielding zero for ```x^2 - value```, (hence ```x^2 = value```)
  
 Graphical explanation:
 
