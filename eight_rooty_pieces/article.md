@@ -161,7 +161,7 @@ Also note the mechanism for generating a new trial value always narrows the diff
 Notable points:
 * it's quite possibly the only algorithm to be presented here that you can implement using a piece of rope and a setsquare.  
   see [wikipedia_compass_and_straightedge] for the classical Ancient toolset
-* this algorithm is somewhat unique in that it can handle findng the negative root if that's the trial value generated
+* this algorithm is somewhat unique in that it can handle finding the negative root if the trial value passed in is negative
 * there is one more interesting fact we will discover shortly
 
 ### Finding the root using Newton Raphson
@@ -247,7 +247,7 @@ This is the Hero's method expression, so the final notable point about Hero's me
 
 #### Confession Time
           
-Having encountered the two methods (Bablyonian and Newton Raphson) independently, I missed the equivalence between them until I took a look at the iteration values.
+Having encountered the two methods (Babylonian and Newton Raphson) independently, I missed the equivalence between them until I took a look at the iteration values.
 
 Another confession - even with the mathematical equivalence there was still a difference as the version just shown has an issue - it fails to locate values for roots above sqrt(std::numeric_limits<float>::max()).
 This is due to an overflow in the expression to generate the new trial value. 
@@ -420,7 +420,7 @@ Here's my attempt to anticipate them.
 ### What's with the name for the repo?
 It's the square root of 8, the number of methods, of course cube root would be have yielded a simpler name - presaging the next installment!
 Note of course, *there will be no next installment*, as one thing we have learned is that this topic is a *giant nerd trap* [xkcd_nerd_sniping].
-Merely persuing the references to this article for a short time will show how many areas of exploration exist to be followed. 
+Merely perusing the references to this article for a short time will show how many areas of exploration exist to be followed. 
 
 ### Will the Fast sqrt work on big-endian?
 Very funny.
@@ -468,3 +468,4 @@ has a number of interesting comparisons, including old and modern native SQRT in
 [wikipedia_bogosort] https://en.wikipedia.org/wiki/Bogosort
 
 [xkcd_nerd_sniping] https://xkcd.com/356/
+
