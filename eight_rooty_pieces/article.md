@@ -116,6 +116,13 @@ Explanation: closed form for the win!
 This hinges on the identity
 
 	log x^y = y log x
+	
+And if we remind ourselves that
+
+	sqrt(x)	== x^(1/2)
+
+It all drops into place.
+Note that I did eliminate ```pow(x, 0.5)``` as a possible solution as that felt a bit  _too much_ like cheating to me.
 
 Search Algorithms
 ---
