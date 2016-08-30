@@ -77,11 +77,13 @@ Assuming we're here though: here's an incomplete list of things one might want t
     * you may want to keep your powder dry when asked, so push it, and pop it later 	
 * finally, $bright_spark may well know the POSIX prototypes: [posix_sqrt_proto].  
 	These prototypes address a lot of the above questions+
-  
-		#include <math.h>
-		double sqrt(double x);
-		float sqrtf(float x);
-		long double sqrtl(long double x);
+
+``` C  
+#include <math.h>
+double sqrt(double x);
+float sqrtf(float x);
+long double sqrtl(long double x);
+```
 
 Eight approaches
 ===
