@@ -341,7 +341,7 @@ Note there are other values for the magic value than 0x5f375a86 - which oddly ge
 The original code, sadly has comments and ```#ifdef``` rendering it unsuitable for printing in a family oriented programming publication, so here is modified version from [SO_chris_lomont].
 
 ``` C++
-float my_sqrt_homage_to_carmack(float val) {
+float my_sqrt_homage_to_carmack(float x) {
     // PMM: adapted from the doubly cleaner Chris Lomont version
 
     float xhalf = 0.5f * x;
@@ -424,6 +424,12 @@ Merely perusing the references to this article for a short time will show how ma
 
 ### Will the Fast sqrt work on big-endian?
 Very funny.
+
+Acknowledgements
+---
+
+I would like to take the opportunity to thank Frances Buontempo and the Overload review team for their careful review comments.
+Also Hillel Sims for spotting an issue in a code sample that got past everyone. 
 
 References
 ----
