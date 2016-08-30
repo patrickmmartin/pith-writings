@@ -72,7 +72,7 @@ Assuming we're here though: here's an incomplete list of things one might want t
     * is this going to influence your thinking on the approach you take?
 * what is your criterion for accuracy?
 * how about float denormal values inputs, results [float_denormal]      
-* what about NAN?
+* what about NAN, NaNQ, NaNS? [all_the_nans]
 * "Oh hey, what do CPUs do"? _discussion points_ [cpu_sqrt]
     * you may want to keep your powder dry when asked, so push it, and pop it later 	
 * finally, $bright_spark may well know the POSIX prototypes: [posix_sqrt_proto].  
@@ -338,7 +338,7 @@ Here is the obligatory xkcd reference [carmack_xkcd].
 This still works (on Intel), and there is also a good write-up of how this works [inverse_sqrt].
 Note there are other values for the magic value than 0x5f375a86 - which oddly get more search hits in Google(?!!).
 
-The original code, sadly has comments and ```#ifdef``` rendering it unsuitable for printing in a family oriented programming publication, so here is modified version from [SO_chris_lomont].
+The original code, sadly has comments and ```#ifdef``` rendering it unsuitable for printing in a family oriented programming publication, so here is modified version from Stack Overflow [SO_chris_lomont].
 
 ``` C++
 float my_sqrt_homage_to_carmack(float x) {
@@ -434,6 +434,7 @@ Also Hillel Sims for spotting an issue in a code sample that got past everyone.
 References
 ----
 
+
 [1] why are we using questions?
 
 [wikipedia_sqrt] https://en.wikipedia.org/wiki/Methods_of_computing_square_roots
@@ -443,9 +444,9 @@ References
 [domain_and_range]
 For IEEE 754 double, the maximum sqrt will exceed the maximum value for IEEE 754 float, so this forces us to consider the same return type as the input type
 
-[all_the_nans] https://en.wikipedia.org/wiki/NaN 
-
 [float_denormal] https://en.wikipedia.org/wiki/Denormal_number      
+
+[all_the_nans] https://en.wikipedia.org/wiki/NaN 
 
 [cpu_sqrt]
 These might be using optimised hardware, native CPU commands or hand-crafted solutions.
@@ -457,9 +458,9 @@ has a number of interesting comparisons, including old and modern native SQRT in
 
 [wikipedia_babylonian] https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method
 
-[wikpedia_newtown_raphson] https://en.wikipedia.org/wiki/Newton%27s_method
-
 [wikipedia_compass_and_straightedge] https://en.wikipedia.org/wiki/Compass-and-straightedge_construction
+
+[wikpedia_newtown_raphson] https://en.wikipedia.org/wiki/Newton%27s_method
 
 [wikipedia_householder_methods] https://en.wikipedia.org/wiki/Householder%27s_method
 
@@ -467,10 +468,10 @@ has a number of interesting comparisons, including old and modern native SQRT in
  
 [carmack_xkcd] http://www.xkcd.com/664/
 
-[SO_chris_lomont] http://stackoverflow.com/questions/1349542/john-carmacks-unusual-fast-inverse-square-root-quake-iii
- 
 [inverse_sqrt] https://en.wikipedia.org/wiki/Fast_inverse_square_root
 
+[SO_chris_lomont] http://stackoverflow.com/questions/1349542/john-carmacks-unusual-fast-inverse-square-root-quake-iii
+ 
 [wikipedia_bogosort] https://en.wikipedia.org/wiki/Bogosort
 
 [xkcd_nerd_sniping] https://xkcd.com/356/
