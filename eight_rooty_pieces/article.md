@@ -36,17 +36,17 @@ One thing I like about this question as that it's really quite easy to run and t
 
 ### What one learns in asking this question
 
-#### First up: some people are really quite wary of sqrt() in this context.
+* First up: some people are really quite wary of sqrt() in this context.  
 I am not judging, let us be clear.
 
-#### There is a giant range in the comfort level for working through the issues in implementing this _deceptively simple_ function.
+* There is a giant range in the comfort level for working through the issues in implementing this _deceptively simple_ function.
 
-#### People are generally wrong to be frightened of the problem.
+* People are generally wrong to be frightened of the problem.  
 They often surprise themselves when they reach the end.
  
-#### There are quite a few approaches that are recognisable.
+* There are quite a few approaches that are recognisable.
 
-#### 5.000000 stages of shock
+* 5.000000 stages of shock.  
 It would be a fair point that there is a sneaky element of testing character and resilience with this question.
 I am going to argue this is both legitimate and worthwhile, based on my assertion that [i] it's not that hard and [ii] there is so much to discuss that running out of steam / time is not that much of an issue in the wider scheme of things.
 
