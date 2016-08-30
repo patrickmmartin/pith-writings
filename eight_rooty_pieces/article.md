@@ -15,11 +15,11 @@ Let's assume it's that time in the interview when the candidate shows signs of b
 At this point it really starts to matter whether the interviewer has prepared sufficiently well for this eventuality.
 Therefore, a question that has several such plateaus to provide some good challenge for the candidates who are on a roll would be very useful. 
 I'm also suggesting the topic should generate _discussion points_ so that in the _initial 15 minutes_ that the candidate and I are forming a mutual opinion, I will get (and generate) as representative an impression as possible.
-Remember, the candidate is interviewing you also, and they might well form an opinion if all you're asking them to do is regurgitate facts. 
+Remember, the candidate is also interviewing you, and they might well form an opinion if all you're asking them to do is regurgitate facts. 
 
 So are there interview questions that have genuine "breadth and depth"? [1]
 
-Well, here's a little fun question I've been carting around for some time that I aim to persuade you will generate _discussion points_, and my personal notes have grown to either being
+Well, here's a fun little question I've been carting along to interviews in note form for some time that I aim to persuade you will generate _discussion points_, and my notes have grown to either being
 * a significant number of sheets of paper
 * or one page of an entirely unusable font size
 
@@ -28,7 +28,7 @@ So, without further ado.
 The Question
 ---
 
-"please implement the square root function"
+"Please implement the square root function"
 [wikipedia_sqrt]
 [monkeys_sqrt]
 
@@ -36,7 +36,7 @@ One thing I like about this question as that it's really quite easy to run and t
 
 ### What one learns in asking this question
 
-#### First up: some people are really, quite wary of sqrt() in this context.
+#### First up: some people are really quite wary of sqrt() in this context.
 I am not judging, let us be clear.
 
 #### There is a giant range in the comfort level for working through the issues in implementing this _deceptively simple_ function.
@@ -51,12 +51,13 @@ It would be a fair point that there is a sneaky element of testing character and
 I am going to argue this is both legitimate and worthwhile, based on my assertion that [i] it's not that hard and [ii] there is so much to discuss that running out of steam / time is not that much of an issue in the wider scheme of things.
 
 Nevertheless it seems people pass through shock and a number of other stages when presented with this challenge: Denial, Anger, Bargaining, Depression.
-I would like to think we can short-circuit this and skip straight to Acceptance (and perhaps a little Fun?)- let's dive in and see what I'm talking about.
+I would like to think we can short-circuit this and skip straight to Acceptance (and perhaps a little Fun?).
+Let's dive in and see what I'm talking about.
 
 
 ### Initial Unstructured points 
 
-The exercise typically goes through a number of phases, sometimes the first of which is something like scoping out the problem.
+The exercise typically goes through a number of phases, sometimes the first of which is akin to scoping out the problem.
  
 This can be a very revealing phase: demonstrating the candidates' process for collecting information. 
 Amusingly, some make adequate assumptions and plough on, because as we will see later: _"double is just fine"_ [domain_and_range], whereas some might ask about which arbitrary precision packages we're allowed to use.
@@ -72,10 +73,10 @@ Assuming we're here though: here's an incomplete list of things one might want t
 * what is your criterion for accuracy?
 * how about float denormal values inputs, results [float_denormal]      
 * what about NAN?
-* "oh hey, what do CPUs do"? _discussion points_ [cpu_sqrt]
+* "Oh hey, what do CPUs do"? _discussion points_ [cpu_sqrt]
     * you may want to keep your powder dry when asked, so push it, and pop it later 	
-* finally, $bright_spark may well know the POSIX prototypes: [posix_sqrt_proto]  
-	this answers a lot of the above questions
+* finally, $bright_spark may well know the POSIX prototypes: [posix_sqrt_proto].  
+	These prototypes address a lot of the above questions+
   
 		#include <math.h>
 		double sqrt(double x);
@@ -95,8 +96,8 @@ http://www.github.com/patrickmmartin/2.8284271247461900976033774484194
 ### Caveat
 
 Please remember that for some of these implementations it may be hard to find canonical examples "out there" of some of these algorithms.
-This is because they are in fact, a bit rubbish.
-The more "recognisable versions" are pretty much shadows of the many already thoroughly written-up versions already available for research.
+This is because they are in fact a bit rubbish.
+The more "recognisable versions" are pretty much shadows of the many already thoroughly written-up versions available for research.
 Remember though, the name of the game here is to get _discussion points_, any and all means are acceptable.
 
 ### Alien Technology
@@ -119,7 +120,7 @@ This hinges on the identity
 Search Algorithms
 ---
 
-This class of solutions hinge on iterating upon a trial value until convergence is attained - I've introduced a ```seed_root()``` function with no explanation that returns a "good initial guess" for sqrt() in order to concentrate on the details.
+This class of solution hinges on iterating upon a trial value until convergence is attained - I've introduced a ```seed_root()``` function with no explanation that returns a "good initial guess" for sqrt() in order to concentrate on the details.
 We'll come back to ```seed_root()``` later on.
  
 ### The Babylonian method or Hero's method [babylonian]
@@ -127,7 +128,7 @@ The graphical explanation of this algorithm is: iterative search for square root
 
 	pick side
 	derive other_side by A / side 
-	if side == other_side - return side
+	if side == other_side: return side
 	else split the difference for the next side and loop
 
 and hence:
@@ -145,7 +146,7 @@ and hence:
 
 The loop is controlled by a test on whether we're "near enough" to the answer which may be a _discussion points_.
 
-Finally, note the mechanism for generating a new trial value always narrows the difference between the trial and trial / input.
+Also note the mechanism for generating a new trial value always narrows the difference between the trial and trial / input.
  
 Notable points:
 * it's quite possibly the only algorithm to be presented here that you can implement using a piece of rope and a setsquare.
@@ -201,7 +202,7 @@ Now, some may know that there is a very simple result `d(x^2)/x = 2x` for the gr
 	}
 	```
   
-Note that original expression containing the gradient: 
+Note the original expression containing the gradient: 
   
     	      ```c++
     	      double gradient = (((x * 1.5) * (x * 1.5)) - ((x * 0.5) * (x * 0.5)))
@@ -218,12 +219,12 @@ This is the lazy man's version of calculating the gradient around the domain val
 		      
 If ```b``` were a constant this would not scale with the value of x, however ```b``` can be substituted by ```x/2``` and we recover the initial gradient calculation, and hence an equivalent expression for the closed form expression.   
 		      
-[confession time] I first picked ```0.5 * x``` and ```1.5 * x``` intuitively, having been hand-bodging numerical estimates into code for some time now, so I didn't think too hard about it (this time around) and serendipitously hit a solution that can be transformed using simple algebra into the closed form solution.
+Confession time: I first picked ```0.5 * x``` and ```1.5 * x``` intuitively, having been hand-bodging numerical estimates into code for some time now, so I didn't think too hard about it (this time around) and serendipitously hit a solution that can be transformed using simple algebra into the closed form solution.
 
 #### 3.0, 2.0 or 1.0 methods? 
 
-So far the last 3 loops have used identical loops, merely with different expressions for generating new trial values in the middle.
-Let's take a closer look at that expression: that with the closed form for the gradient we get this expression:
+So far the last 3 solutions have used identical outer loops, merely with different expressions for generating new trial values in the middle.
+Let's take a closer look at that expression: with the closed form for the gradient we get this expression:
 
       x = x - ((x * x - value) / (2 * x));
       =>
@@ -231,14 +232,14 @@ Let's take a closer look at that expression: that with the closed form for the g
       =>
       x = 0.5 * (x + (value / x))
       
-Which is the Hero's method expression, so the final notable point about Hero's method is that it's a condensed version of the more taxing Newtwon Raphson approach.           
+This is the Hero's method expression, so the final notable point about Hero's method is that it's a condensed version of the more taxing Newton Raphson approach.           
 
 #### Confession Time
           
 Having encountered the two methods (Bablyonian and Newton Raphson) independently, I missed the equivalence between them until I took a look at the iteration values.
 
 Another confession - even with the mathematical equivalence there was still a difference as the version just shown has an issue - it fails to locate values for roots above sqrt(std::numeric_limits<float>::max()).
-This is due to an overflow in the expression to generate the  
+This is due to an overflow in the expression to generate the new trial value. 
 
 The fix - perhaps unsurprisingly enough - is thus:
 
@@ -246,7 +247,7 @@ The fix - perhaps unsurprisingly enough - is thus:
          + _long_ double x = seed_root();
 	  
 Another set of _discussion_points_ arise from the necessity of introducing the long version of the type in the algorithm.
-Is this choice, leading to an implicit conversion in the return statement a maintenance wart?
+Is this choice leading to an implicit conversion in the return statement a maintenance wart?
 What if we need this to be a generic algorithm, parameterised on the input type? 
 
 ## Slow but sure (?)
@@ -281,13 +282,13 @@ The algorithm takes 30 iterations for a double sqrt as achieving over 10 digits 
     return x;
     }```
 
-If this is found in the wild. it would probably be best to put it out of its misery.
-The possible benefit of this is that candidates less confident of their mathematics will be able to implement this by concentrating purely upon the logic of searching 
+If this is found in the wild it would probably be best to put it out of its misery.
+The possible benefit of this is that candidates less confident of their mathematics will be able to implement this by concentrating purely upon the logic of searching.
 
 
 ### Scan and step reduction 
 
-This is a very naive guess step and scan approach, reversing and decreasing step on each transition.
+This is a very naive guess step and scan approach, reversing and decreasing the step on each transition from above to below.
 Feed it a decent enough initial guess and it will work its way towards the solution, as it is another linearly convergent solution.  
  
 	 ```c++
@@ -406,7 +407,7 @@ Here's my attempt to anticipate them.
 
 ### What's with the name for the repo?
 It's the square root of 8, the number of methods, of course cube root would be have yielded a simpler name - presaging the next installment!
-Note of course, *there will be no next installment*, as one thing we have learned is that this topic is a *giant nerd trap*.
+Note of course, *there will be no next installment*, as one thing we have learned is that this topic is a *giant nerd trap* [xkcd_nerd_sniping].
 Merely persuing the references to this article for a short time will show how many areas of exploration exist to be followed. 
 
 ### Will the Fast sqrt work on big-endian?
@@ -448,3 +449,4 @@ has a number of interesting comparisons, including old and modern native SQRT in
 
 [wikipedia_bogosort] https://en.wikipedia.org/wiki/Bogosort
 
+[xkcd_nerd_sniping] https://xkcd.com/356/
