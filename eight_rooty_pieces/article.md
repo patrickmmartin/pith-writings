@@ -109,9 +109,9 @@ An additional benefit of these discussions is when a _novel looking implementati
 
 Explanation: closed form for the win!
 
-	```c++
-	return exp(0.5 * log(val));
-	```
+``` C++
+return exp(0.5 * log(val));
+```
 
 This hinges on the identity
 
@@ -176,44 +176,44 @@ Graphical explanation:
 	
 here's one interpretation:	
 	
-	```c++
-	double my_sqrt_newtonraphson(double val) {
-	
-        double x = seed_root();
-          
-	  while (fabs((x * x) - val) > (val * TOLERANCE)) {
-          // x * x - value is the root sought
-          double gradient =
-			(((x * 1.5) * (x * 1.5)) - ((x * 0.5) * (x * 0.5))) / (x);
-          x = x - ((x * x - value) / gradient);
-	  }
-	  return x;
-	}
-	```
+``` C++
+double my_sqrt_newtonraphson(double val) {
+
+    double x = seed_root();
+  
+    while (fabs((x * x) - val) > (val * TOLERANCE)) {
+        // x * x - value is the root sought
+        double gradient =
+    	    (((x * 1.5) * (x * 1.5)) - ((x * 0.5) * (x * 0.5))) / (x);
+        x = x - ((x * x - value) / gradient);
+    }
+    return x;
+}
+```
   
 For _discussion points_ see also the related Householder methods [wikipedia_householder_methods]
 
 ### Newton Raphson With a closed form identity for the gradient 
 Now, some may know that there is a very simple result `d(x^2)/x = 2x` for the gradient that is needed for Newton Raphson and hence plugging in the closed form result for dy/dx, we can skip some typing to yield this.
 
-	```c++
-	double my_sqrt_newtonraphson(double val) {
+``` C++
+double my_sqrt_newtonraphson(double val) {
 	
-          double x = seed_root();
+    double x = seed_root();
           
-	  while (fabs((x * x) - val) > (val * TOLERANCE)) {
-	    // x * x - val is root sought
-	    x = x - ((x * x - val) / _(2 * x)_);
-	  }
-	  return x;
-	}
-	```
+    while (fabs((x * x) - val) > (val * TOLERANCE)) {
+        // x * x - val is root sought
+        x = x - ((x * x - val) / _(2 * x)_);
+    }
+    return x;
+    }
+```
   
 Note the original expression containing the gradient: 
   
-    	      ```c++
-    	      double gradient = (((x * 1.5) * (x * 1.5)) - ((x * 0.5) * (x * 0.5)))
-    	      ```
+``` C++
+double gradient = (((x * 1.5) * (x * 1.5)) - ((x * 0.5) * (x * 0.5)));
+```    	      
 
 This is the lazy man's version of calculating the gradient around the domain value ```x``` using the values at ```x +/- b``` 				
 					      
@@ -265,8 +265,8 @@ Graphical Explanation: a range reduction approach which aims to halve the range 
 Newton Raphson / Hero can be proven to converge quadratically [wikipedia_convergence], whereas this approach effectively converges linearly, hence it requires many more iterations.
 The algorithm takes 30 iterations for a double sqrt as achieving over 10 digits of decimal precision will typically require approximately 30 halvings of the interval.  
 
-    ```c++
-    double my_sqrt_range(double val) {
+``` C++
+double my_sqrt_range(double val) {
 	
     double upper = seed_root(value) * 10;
     double lower = seed_root(value) / 10;
@@ -287,7 +287,8 @@ The algorithm takes 30 iterations for a double sqrt as achieving over 10 digits 
       n++;
       }
     return x;
-    }```
+}
+```
 
 If this is found in the wild it would probably be best to put it out of its misery.
 The possible benefit of this is that candidates less confident of their mathematics will be able to implement this by concentrating purely upon the logic of searching.
@@ -298,31 +299,31 @@ The possible benefit of this is that candidates less confident of their mathemat
 This is a very naive guess step and scan approach, reversing and decreasing the step on each transition from above to below.
 Feed it a decent enough initial guess and it will work its way towards the solution, as it is another linearly convergent solution.  
  
-	 ```c++
-	 double my_sqrt_naive(double val) {
-	    int n = 1;
-	    double x = seed_root(value) / 2;
-	    double step = x / 4;
-	    double lastdiff = 0;
-	    double diff = (x * x) - value;
-	
-	    while ((n < RANGE_ITERATIONS) &&
-			    (fabs(diff) > (value * TOLERANCE))) {
-	      if (diff > 0)
-	        x -= step;
-	      else
-	        x += step;
-	
-	      if ((diff > 0) != (lastdiff > 0)) {
-	        step = step * 0.5;
-	      }
-	      lastdiff = diff;
-	      diff = (x * x) - value;
-	    }
-	
-	    return x;
-	} 
-	```
+``` C++
+double my_sqrt_naive(double val) {
+    int n = 1;
+    double x = seed_root(value) / 2;
+    double step = x / 4;
+    double lastdiff = 0;
+    double diff = (x * x) - value;
+
+    while ((n < RANGE_ITERATIONS) &&
+		    (fabs(diff) > (value * TOLERANCE))) {
+        if (diff > 0)
+            x -= step;
+        else
+            x += step;
+
+        if ((diff > 0) != (lastdiff > 0)) {
+            step = step * 0.5;
+        }
+    	lastdiff = diff;
+    	diff = (x * x) - value;
+    }
+
+    return x;
+} 
+```
  	
 
 ### "Homage to Carmack" method
@@ -335,40 +336,40 @@ Note there are other values for the magic value than 0x5f375a86 - which oddly ge
 
 The original code, sadly has comments and ```#ifdef``` rendering it unsuitable for printing in a family oriented programming publication, so here is modified version from [SO_chris_lomont].
 
-	```c++
-	float my_sqrt_homage_to_carmack(float val) {
-		// PMM: adapted from the doubly cleaner Chris Lomont version
-		
-		float xhalf = 0.5f * x;
-		int i = *(int *)&x;        // get bits for floating value
-		i = 0x5f375a86 - (i >> 1); // gives initial guess y0
-		x = *(float *)&i;          // convert bits back to float
-		
-		// PMM: initial guess: to within 10% already!
-		x = x * (1.5f - xhalf * x * x); // Newton step, repeating increases accuracy
-		
-		return 1 / x;
-	  }
-	  ```
+``` C++
+float my_sqrt_homage_to_carmack(float val) {
+    // PMM: adapted from the doubly cleaner Chris Lomont version
+
+    float xhalf = 0.5f * x;
+    int i = *(int *)&x;        // get bits for floating value
+    i = 0x5f375a86 - (i >> 1); // gives initial guess y0
+    x = *(float *)&i;          // convert bits back to float
+
+    // PMM: initial guess: to within 10% already!
+    x = x * (1.5f - xhalf * x * x); // Newton step, repeating increases accuracy
+
+    return 1 / x;
+}
+```
 
 And here is a version supporting double, with the appropriate 64-bit magic value. 
 
-	```c++
-	double my_sqrt_homage_to_carmack64(double x) {
-		double xhalf = x * 0.5;
-		// get bits for floating value
-		long long i = *(long long *)&x;    
-		// gives initial guess y0
-		i = 0x5fe6eb50c7b537a9 - (i >> 1); 
-		// convert bits back into double
-		x = *(double *)&i;                 
-		
-		// one Newton Raphson step
-		x = x * (1.5f - xhalf * x * x); 
-		
-		return 1 / x;
-	}
-	```
+``` C++
+double my_sqrt_homage_to_carmack64(double x) {
+    double xhalf = x * 0.5;
+    // get bits for floating value
+    long long i = *(long long *)&x;    
+    // gives initial guess y0
+    i = 0x5fe6eb50c7b537a9 - (i >> 1); 
+    // convert bits back into double
+    x = *(double *)&i;                 
+
+    // one Newton Raphson step
+    x = x * (1.5f - xhalf * x * x); 
+
+    return 1 / x;
+}
+```
 
 
 The result is not super accurate, but works in constant time and can be used as a seed into another algorithm.
