@@ -132,7 +132,7 @@ Search Algorithms
 This class of solution hinges on iterating upon a trial value until convergence is attained - I've introduced a ```seed_root()``` function with no explanation that returns a "good initial guess" for sqrt() in order to concentrate on the details.
 We'll come back to ```seed_root()``` later on.
  
-### The Babylonian method or Hero's method [babylonian]
+### The Babylonian method or Hero's method [wikipedia_babylonian]
 The graphical explanation of this algorithm is: iterative search for square root by successive reduction of difference in length between the 2 sides of a rectangle with the area of the input value.
 
 	pick side
@@ -159,12 +159,13 @@ The loop is controlled by a test on whether we're "near enough" to the answer wh
 Also note the mechanism for generating a new trial value always narrows the difference between the trial and trial / input.
  
 Notable points:
-* it's quite possibly the only algorithm to be presented here that you can implement using a piece of rope and a setsquare.
+* it's quite possibly the only algorithm to be presented here that you can implement using a piece of rope and a setsquare.  
+  see [wikipedia_compass_and_straightedge] for the classical Ancient toolset
 * this algorithm is somewhat unique in that it can handle findng the negative root if that's the trial value generated
 * there is one more interesting fact we will discover shortly
 
 ### Finding the root using Newton Raphson
-Explanation: Newton Raphson [newton_raphson] searches for the value of x yielding zero for ```x^2 - value```, (hence ```x^2 = value```)
+Explanation: Newton Raphson [wikipedia_newton_raphson] searches for the value of x yielding zero for ```x^2 - value```, (hence ```x^2 = value```)
  
 Graphical explanation:
 
@@ -447,6 +448,12 @@ http://assemblyrequired.crashworks.org/timing-square-root/
 has a number of interesting comparisons, including old and modern native SQRT instructions.
 
 [posix_sqrt_proto] http://pubs.opengroup.org/onlinepubs/9699919799/functions/sqrt.html
+
+[wikipedia_babylonian] https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method
+
+[wikpedia_newtown_raphson] https://en.wikipedia.org/wiki/Newton%27s_method
+
+[wikipedia_compass_and_straightedge] https://en.wikipedia.org/wiki/Compass-and-straightedge_construction
 
 [wikipedia_householder_methods] https://en.wikipedia.org/wiki/Householder%27s_method
 
