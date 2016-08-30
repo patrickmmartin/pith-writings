@@ -429,7 +429,7 @@ Acknowledgements
 ---
 
 I would like to take the opportunity to thank Frances Buontempo and the Overload review team for their careful review comments.
-Also Hillel Sims for spotting an issue in a code sample that got past everyone. 
+Also thanks to Hillel Y. Sims for spotting an issue in a code sample that got past everyone. 
 
 References
 ----
