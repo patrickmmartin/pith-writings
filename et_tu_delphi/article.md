@@ -1,9 +1,10 @@
 `I come here not to bury Delphi, but to praise it.`
 ====
 
-`Making modules great again.`
----
 
+
+`Making Hyperbole Great Again` (Thesis)
+--- 
 
 TODOs
 ---
@@ -11,6 +12,7 @@ TODOs
 * Can't create abstract classes in c++/
 * Agenda - can modules be this good ever again?
  
+
 
 
 Disclaimer  TODO(PMM)
@@ -123,6 +125,10 @@ end;
   
   
 ```
+
+
+`Making modules great again.` 
+---
 
 - compilation units: it's just modules all the way down, baby
  - TODO(PMM) research this
@@ -325,6 +331,19 @@ Almost as rich and dynamic as say, Java, allowing the composition of UI (and oth
 
 ## strong component design methodology and support
 - interesting, component model from the days of yore, which was part of the then thriving component market 
+
+
+`Building a wall against old tools` (Antithesis)
+--- 
+
+
+
+
+`I've said things` (Synthesis)
+--- 
+
+
+
 
 
 
