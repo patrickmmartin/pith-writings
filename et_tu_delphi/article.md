@@ -22,7 +22,9 @@ If you want a much funnier, longer lived, less overtly technical summary - try t
 http://www.theregister.co.uk/2016/05/20/verity_sons_of_khan_witch_of_wookey/
 
 
+``` pascal
 type Foo = type Bar;
+```
 
 registration examples
 
