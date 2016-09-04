@@ -11,8 +11,10 @@ TODOs
 
 * Can't create abstract classes in c++/
 * Agenda - can modules be this good ever again?
- T Component owner, notify were pretty clever
-Federation of languages comment
+* TComponent owner, notify were pretty clever
+* Federation of languages comment
+* Dangling pointers still possible without a coding style to avoid
+* Crashes tend to be more reproducible (why?)
 
 
  
