@@ -11,6 +11,10 @@ TODOs
 
 * Can't create abstract classes in c++/
 * Agenda - can modules be this good ever again?
+ T Component owner, notify were pretty clever
+Federation of languages comment
+
+
  
 
 
