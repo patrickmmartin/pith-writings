@@ -119,11 +119,12 @@ This hinges on the identity
 
 	log x^y = y log x
 	
-And if we remind ourselves that both
+And if we remind ourselves that the power that generates a square root is 0.5, and `exp` is the inverse of `log`
 
 	sqrt(x)	== x^(1/2), log(exp(x)) == x
 
-It all drops into place.
+It all drops into place.  
+Two very good examples of working through this identity are available at [SO_maths_sqrt].  
 Note that I did eliminate ```pow(x, 0.5)``` as a possible solution as that felt a bit  _too much_ like cheating to me.
 
 Search Algorithms
@@ -455,6 +456,11 @@ http://assemblyrequired.crashworks.org/timing-square-root/
 has a large number of interesting comparisons, including old and modern native SQRT instructions.
 
 [posix_sqrt_proto] http://pubs.opengroup.org/onlinepubs/9699919799/functions/sqrt.html
+
+[SO_maths_sqrt] when multiplied, powers are added, hence sqrt is pow(0.5) 
+http://math.stackexchange.com/questions/537383/why-is-x-frac12-the-same-as-sqrt-x  
+although the alleged duplicate has a beautiful answer  
+http://math.stackexchange.com/questions/656198/why-the-square-root-of-x-equals-x-to-the-one-half-power
 
 [wikipedia_babylonian] https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method
 
