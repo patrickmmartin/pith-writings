@@ -165,6 +165,11 @@ Notable points:
 * this algorithm is somewhat unique in that it can handle finding the negative root if the trial value passed in is negative
 * there is one more interesting fact we will discover shortly
 
+Although there is the amazing Bablyonian Tablet YBC 7289 [YBC7289], it's hard to find a lo-fi image of this implementation so I persuaded a 12-year old to do it for me. We started with a trial value of 6 and got the result 4.8 which is accurate to 0.08%.  
+Note the Babylonian tablet has sqrt(2) to 9 decimal digits of precision - _how did they do that?_. 
+
+![Hero's Method contempary reimplementation for the value 23](HeroMethod23.png)
+
 ### Finding the root using Newton Raphson
 Explanation: Newton Raphson [wikipedia_newton_raphson] searches for the value of x yielding zero for ```x^2 - value```, (hence ```x^2 = value```)
  
@@ -413,7 +418,8 @@ It would be hoped that parallelising this would lead to good wall clock times?
 ## Conclusion
 
 So, let's review what we can get out of "implement sqrt()" in terms of discussion topics: closed form results versus algorithmic solutions - discussion on the many interesting properties of floating point calculations, bronze age mathematical algorithms, consideration of domains and ranges.
-I haven't even touched upon error handling, but it's needed. 
+I haven't even touched upon error handling, but it's needed.  
+And finally there are other really fascinating techniques I haven't touched upon as I judged them too abstruse for an interview scenario: like Lagrange's continued fractions [wikipedia_square_root], and also the Vedic techniques mentioned in [wikipedia_sqrt]. 
 
 ## You may have some questions
 Here's my attempt to anticipate them.
@@ -430,6 +436,7 @@ Acknowledgements
 ---
 
 I would like to take the opportunity to thank Frances Buontempo and the Overload review team for their careful review comments.
+Gabriel Martin recreated the ancient world glories of calculating the square root of 23.  
 Also thanks to Hillel Y. Sims for spotting an issue in a code sample that got past everyone. 
 
 References
@@ -464,6 +471,8 @@ http://math.stackexchange.com/questions/656198/why-the-square-root-of-x-equals-x
 
 [wikipedia_babylonian] https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method
 
+[YBC7289] https://www.math.ubc.ca/~cass/Euclid/ybc/analysis.html
+
 [wikipedia_compass_and_straightedge] https://en.wikipedia.org/wiki/Compass-and-straightedge_construction
 
 [wikpedia_newtown_raphson] https://en.wikipedia.org/wiki/Newton%27s_method
@@ -481,3 +490,5 @@ http://math.stackexchange.com/questions/656198/why-the-square-root-of-x-equals-x
 [wikipedia_bogosort] https://en.wikipedia.org/wiki/Bogosort
 
 [xkcd_nerd_sniping] https://xkcd.com/356/
+
+[wikipedia_square_root] https://en.wikipedia.org/wiki/Square_root
