@@ -13,6 +13,17 @@ TODO CHECK
 
 https://en.wikipedia.org/wiki/Cyclomatic_complexity
 
+#### WHERE ARE THE TOOLS?
+
+#### Straw man argument: months 
+https://www.cqse.eu/en/blog/mccabe-cyclomatic-complexity/
+
+WHY NOT USE A MAP, EH?
+
+Also, map allows data and identities to be combined
+
+
+
 
 ### Performance arguments for simple pointer
 
