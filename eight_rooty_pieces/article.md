@@ -168,7 +168,8 @@ Notable points:
 Although there is the amazing Bablyonian Tablet YBC 7289 [YBC7289], it's hard to find a lo-fi image of this implementation so I persuaded a 12-year old to do it for me. We started with a trial value of 6 and got the result 4.8 which is accurate to 0.08%.  
 Note the Babylonian tablet has sqrt(2) to 9 decimal digits of precision - _how did they do that?_. 
 
-![Hero's Method contempary reimplementation for the value 23](HeroMethod23.png)
+![Hero's Method contemporary reimplementation for the value 23](HeroMethod23.png)  
+A Hero's Method contemporary reimplementation for the value 23   
 
 ### Finding the root using Newton Raphson
 Explanation: Newton Raphson [wikipedia_newton_raphson] searches for the value of x yielding zero for ```x^2 - value```, (hence ```x^2 = value```)
