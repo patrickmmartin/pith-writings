@@ -89,9 +89,9 @@ Eight approaches
 ===
 
 So, having got past the initial stage of get to know the question, it's probably time to start writing code.
-Here follow 8 implementations of varying quality, nominally in c++. 
+Here follow 8 implementations of varying quality, nominally in C++. 
 
-Code demonstrating c++ implementations with tests of all the following are available at  
+Code demonstrating C++ implementations with tests of all the following are available at  
 
 http://www.github.com/patrickmmartin/2.8284271247461900976033774484194
 
