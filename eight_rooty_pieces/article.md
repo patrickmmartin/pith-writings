@@ -89,9 +89,9 @@ Eight approaches
 ===
 
 So, having got past the initial stage of get to know the question, it's probably time to start writing code.
-Here follow 8 implementations of varying quality, nominally in c++. 
+Here follow 8 implementations of varying quality, nominally in C++. 
 
-Code demonstrating c++ implementations with tests of all the following are available at  
+Code demonstrating C++ implementations with tests of all the following are available at  
 
 http://www.github.com/patrickmmartin/2.8284271247461900976033774484194
 
@@ -119,11 +119,12 @@ This hinges on the identity
 
 	log x^y = y log x
 	
-And if we remind ourselves that both
+And if we remind ourselves that the power that generates a square root is 0.5, and `exp` is the inverse of `log`
 
 	sqrt(x)	== x^(1/2), log(exp(x)) == x
 
-It all drops into place.
+It all drops into place.  
+Two very good examples of working through this identity are available at [SO_maths_sqrt].  
 Note that I did eliminate ```pow(x, 0.5)``` as a possible solution as that felt a bit  _too much_ like cheating to me.
 
 Search Algorithms
@@ -163,6 +164,12 @@ Notable points:
   see [wikipedia_compass_and_straightedge] for the classical Ancient toolset
 * this algorithm is somewhat unique in that it can handle finding the negative root if the trial value passed in is negative
 * there is one more interesting fact we will discover shortly
+
+Although there is the amazing Bablyonian Tablet YBC 7289 [YBC7289], it's hard to find a lo-fi image of this implementation so I persuaded a 12-year old to do it for me. We started with a trial value of 6 and got the result 4.8 which is accurate to 0.08%.  
+Note the Babylonian tablet has sqrt(2) to 9 decimal digits of precision - _how did they do that?_. 
+
+![Hero's Method contemporary reimplementation for the value 23](HeroMethod23.png)  
+A Hero's Method contemporary reimplementation for the value 23   
 
 ### Finding the root using Newton Raphson
 Explanation: Newton Raphson [wikipedia_newton_raphson] searches for the value of x yielding zero for ```x^2 - value```, (hence ```x^2 = value```)
@@ -412,7 +419,8 @@ It would be hoped that parallelising this would lead to good wall clock times?
 ## Conclusion
 
 So, let's review what we can get out of "implement sqrt()" in terms of discussion topics: closed form results versus algorithmic solutions - discussion on the many interesting properties of floating point calculations, bronze age mathematical algorithms, consideration of domains and ranges.
-I haven't even touched upon error handling, but it's needed. 
+I haven't even touched upon error handling, but it's needed.  
+And finally there are other really fascinating techniques I haven't touched upon as I judged them too abstruse for an interview scenario: like Lagrange's continued fractions [wikipedia_square_root], and also the Vedic techniques mentioned in [wikipedia_sqrt]. 
 
 ## You may have some questions
 Here's my attempt to anticipate them.
@@ -429,6 +437,7 @@ Acknowledgements
 ---
 
 I would like to take the opportunity to thank Frances Buontempo and the Overload review team for their careful review comments.
+Gabriel Martin recreated the ancient world glories of calculating the square root of 23.  
 Also thanks to Hillel Y. Sims for spotting an issue in a code sample that got past everyone. 
 
 References
@@ -456,7 +465,14 @@ has a large number of interesting comparisons, including old and modern native S
 
 [posix_sqrt_proto] http://pubs.opengroup.org/onlinepubs/9699919799/functions/sqrt.html
 
+[SO_maths_sqrt] when multiplied, powers are added, hence sqrt is pow(0.5) 
+http://math.stackexchange.com/questions/537383/why-is-x-frac12-the-same-as-sqrt-x  
+although the alleged duplicate has a beautiful answer  
+http://math.stackexchange.com/questions/656198/why-the-square-root-of-x-equals-x-to-the-one-half-power
+
 [wikipedia_babylonian] https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method
+
+[YBC7289] https://www.math.ubc.ca/~cass/Euclid/ybc/analysis.html
 
 [wikipedia_compass_and_straightedge] https://en.wikipedia.org/wiki/Compass-and-straightedge_construction
 
@@ -475,3 +491,5 @@ has a large number of interesting comparisons, including old and modern native S
 [wikipedia_bogosort] https://en.wikipedia.org/wiki/Bogosort
 
 [xkcd_nerd_sniping] https://xkcd.com/356/
+
+[wikipedia_square_root] https://en.wikipedia.org/wiki/Square_root
