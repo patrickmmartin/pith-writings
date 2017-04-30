@@ -16,7 +16,11 @@ Chips, the Universe and everything (in between)
 
 ### Finally, the Einstein clock looks weird because it defies common prejudice
 #### But common prejudice is wrong!
+#### See the ladder problem
 #### ? Ergo we need better diagrams?
+ - maybe for program sequence diagrams
+ - for ladders passing through barns with rapidly shutting doors at close to the speed of light
+   - I dunno it just seems a little niche to me
 #### Top down diagram implicitly suggests an observable total ordering
 #### TODO(PMM) A better diagram would read the same way in any orientation, allowing people to be guided less by a dominant direction
    TODO(PMM) prior art ?
