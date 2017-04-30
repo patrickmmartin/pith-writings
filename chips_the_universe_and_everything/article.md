@@ -13,6 +13,7 @@ Chips, the Universe and everything (in between)
  * Transistors achieve thermal equilibrium on timescales observable over many transistors
  * ... and in fractions of a clock cycle
  * Compare and contrast
+ * transit time for 14 nm = 0.0467 fs (femtoseconds)
 
 ### Finally, the Einstein clock looks weird because it defies common prejudice
 #### But common prejudice is wrong!
