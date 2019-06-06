@@ -9,15 +9,57 @@
 TODOs
 ---
 
+
+
+Object Pascal as implemented by Borland had reference types for objects
+This meant unlike old style Pascal struct / objects which had to be `New(obj)` to be in a defined state.
+
+Invoking the constructor explicitly in code RAII OOTB  EVERYWHERE
+This is in exchange for giving up scope managed object lifetime
+  Except ... "with" 
+The natural corrolary is it is now possible for external systems to manage scope
+Therefore dependencyinjection blah blah blah all that good stuff
+
+But inception of these ideas larger predates all those concepts as many of the systems they develop plan did not really exist
+
+Now the real killer app for the scope management was the _fully synchronised visual designer_
+
+Let's have a look at some actual code to plan together some hypothetical framework objects
+TODO
+
+And let's have a look at some hypothetical DSL code to describe the moral equivalent of that code
+TODO
+
+Full disclosure: of course it's actual real DSL
+
+
+_Invented in 1994_
+
+Full disclosure there are some caveats
+
+* Number 1 A base level object type is used everywhere in constructor arguments and blue code arguments. so raising the very legitimate concerns about whether one should apply the rule of using the most derived possible virtual type in arguments
+* Objection number 2 of course let the object hierarchy holy wars begin
+  * Callbacks to objects were supported again cplusplus misses this feature and therefore does not have this problem but the considerations of typing arguments equally apply
+  * So as the phrase goes and if it doesn't let me invent it here "things were wild in the 90s" which brings me to 
+ * objection number 3 the whole thing was stitched together by wiring up Windows DLLs.
+  *  for those too little to remember the period of time of the *great DLL hell apocalypse* or in fact current times with our massive problems with malware: in many ways this is now frowned upon. Practically of course the issue that you are forcing unwitting users to become expert in writing these DLLs, what creating a system in which deliberate use and misuse of the underlying framework is permitted.
+  * As a sidebar: practically the whole thing worked amazingly well. But. Things could drift into going wrong and then it was very hard to figure out.
+ * Objection number 4 _they had to modify the definition of c plus plus and produced their own compiler_
+  * Have I mentioned the 90s were wild yet?
+* Objection number 5: it's Pascal. Apparently in some disciplines it is acceptable, may profitable to be a zealot around the choice of language. 
+* Although, *all the preceding considerations* are language independent concepts
+
+
+
+
+
+
 * Can't create abstract classes in c++/
 * Agenda - can modules be this good ever again?
 * TComponent owner, notify were pretty clever
 * Federation of languages comment
 * Dangling pointers still possible without a coding style to avoid
 * Crashes tend to be more reproducible (why?)
-
-
- 
 
 
 
