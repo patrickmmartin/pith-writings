@@ -20,6 +20,10 @@ This is in exchange for giving up scope managed object lifetime
 The natural corrolary is it is now possible for external systems to manage scope
 Therefore dependencyinjection blah blah blah all that good stuff
 
+
+TODO timelines for the various features
+
+
 But inception of these ideas larger predates all those concepts as many of the systems they develop plan did not really exist
 
 Now the real killer app for the scope management was the _fully synchronised visual designer_
