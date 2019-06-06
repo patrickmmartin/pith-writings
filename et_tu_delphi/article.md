@@ -24,13 +24,37 @@ But inception of these ideas larger predates all those concepts as many of the s
 
 Now the real killer app for the scope management was the _fully synchronised visual designer_
 
-Let's have a look at some actual code to plan together some hypothetical framework objects
+Let's have a look at some actual code to plug together some hypothetical framework objects
 TODO
+
+```pascal
+var
+  frmServers: TfrmServers;
+//  time passes ...
+begin
+
+  frmServers := TfrmServers.Create(Application);
+  tmrLocate := TTimer.Create;
+  tmrLocate.onTimer = tmrLocateTimer;
+  frmServers.AddChild(trmLocate);
+  
+end;  
+```
 
 And let's have a look at some hypothetical DSL code to describe the moral equivalent of that code
 TODO
 
+
+```dfm
+object frmServers: TfrmServers
+// some properties
+  object tmrLocate: TTimer
+    OnTimer = tmrLocateTimer
+```    
+
 Full disclosure: of course it's actual real DSL
+
+* AND THE IDE WOULD GENERATE ALL OF THAT FOR YOU * 
 
 
 _Invented in 1994_
