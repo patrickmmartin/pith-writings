@@ -9,6 +9,18 @@
 TODOs
 ---
 
+* see previous article for features from 20 YEARS AGO
+ * table with the status now and then for Delphi, C++, "web - say node"
+ 
+ * single inheritance has been rehabiliated?
+  * look at current languages, even C++ recommendations
+ 
+ * exception handling That Just Worked
+  * comment on how effective the exception handling model was due to SI - strong exception safety in the runtime *and* components
+  * hence a visual editor running your code live and handling exceptions for invalid states live in the IDE
+  * its's unclear whether this was science fiction or alien technology
+  
+
 
 
 Object Pascal as implemented by Borland had reference types for objects
