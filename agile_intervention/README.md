@@ -34,5 +34,11 @@ If we pick only low hanging fruit, then we run the following categories of risk:
 | focus on low hanging fruit | capacity to acheive anything that is now low hanging | all strategy is effectively stalled, or can only be reactive
 
 
+And yet, we appear to fret about minisicule increments of work
+-----------------------------------------------------------------
+
+- while leaving gaping holes in our knowledge of the future system and the current system *as a policy* 
+- interestingly, the automatic nature of following through on most Agile principles is a partial disinfectant for having a very low time horizon
+
 
 
