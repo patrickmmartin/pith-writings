@@ -6,10 +6,31 @@
 `Making Hyperbole Great Again` (Thesis)
 --- 
 
+
+
 TODOs
 ---
 
 * see previous article for features from 20 YEARS AGO
+
+
+prior overload article
+https://accu.org/index.php/journals/565
+
+covers:
+
+RTTI
+Exception handling (can't throw 99!)
+properties
+TEvents
+Typelib and IDispatch COM access
+no multiple inheritance (AND WHAT OF IT) - usefulness of the Exception message and sometimes data
+no MACROS (DEAR GOD WHO NEEDS MACROS)
+class references
+
+
+
+
  * table with the status now and then for Delphi, C++, "web - say node"
  
  * single inheritance has been rehabiliated?
@@ -20,6 +41,9 @@ TODOs
   * hence a visual editor running your code live and handling exceptions for invalid states live in the IDE
   * its's unclear whether this was science fiction or alien technology
   
+>All objects on the heap
+I can already hear the screeches if the "performance flying monkeys", but it turned out I never really felt the pain over many years.
+Many complaints. But most issues were bad sql, bad file handling or bad algorithm choice
 
 
 
