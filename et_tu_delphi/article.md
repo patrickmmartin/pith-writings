@@ -5,37 +5,29 @@
 But first what is Delphi?
 ---------------
 
+Perhaps for some of you:
 >It is a riddle, wrapped in a mystery, inside an enigma
 
+Google that word nowadays https://www.google.com/search?q=Delphi 
 
+- and I find links to site of the original ancient Greek myths and automative electronic solutions.
+ 
+ What you need is "Delphi pascal"  https://www.google.com/search?q=Delphi+pascal
+ 
+ and now we get the actual product homepage [embarcadero2019-1]; The place to go on Wikipedia is [wikipedia2019-1].
 
-Google that term now
-https://www.google.com/search?q=Delphi
-
-- and you will get links to site of the original ancient Greek myths; automative electronic solutions; and (on the second page for me) the actual product homepage https://www.embarcadero.com/products/delphi
-
-
-The place to go is 
-
-https://en.wikipedia.org/wiki/Delphi_(IDE)
-
-
-
-
-https://www.embarcadero.com/products/delphi/starter
-
-And if you can fight past registration djinns, you can get a free to use edition, even now.
-
+ So: it is a commercial product for developing software, with a proprietary IDE and version of Object Pascal [wikipedia2019-2] that integrates with the solution [embarcaderodocs2019-1] . There is even a free version you can download from [embarcadero2019-2], and if you can puzzle your way past the registration djinns, you can have it up and running in very little time.
 
 
 First, some History
 -----
 
-Releases table
+The product has been through a number of owners and a large number of point releases.
+Typically there would be a highly (for once I employ  understatement) compatible update to the component classes and improvements to the internals and new components and functionality.
 
 | Year | Release | Supports | Significant changes
 |--- |--- |---  |--- 
-| 1993 | Delphi 1.0 | Win16 | From out of nowhere, handling a GPF! TODO(PMM) what is a GPF?
+| 1993 | Delphi 1.0 | Win16 | From out of nowhere, handling a GPF
 | 1996 | Borland Delphi 2 | Win32 | 
 | 1997 | Borland Delphi 3 | Win32 | 
 | 1998 | Inprise Delphi 4 | Win32 | last version allowing 16-bit development
@@ -62,64 +54,64 @@ Releases table
 | 2018 | Embarcadero Delphi 10.2 Tokyo | Win32, Win64 | 
 | 2018 | Embarcadero Delphi 10.3 Rio | Win32, Win64 | 
 
+#### brief diversion - What's a GPF?
 
-Summary of the product
---------
+If we divide the pointer size in use by 2, then 2 again, so 64-bit -> 32-bit -> 16-bit we get to the days of Windows 3.x - finding any evidence of this era is becoming tricky but there is a picture here [farhni2018].
+Essentially, an exception where a bad address is dereferenced would "always" lead to a system dialogue pointing the finger at the offending module. _Or so we thought_ - from [oracleatdelphi2005] we have some reminiscences - and I quote:
 
-There would be regular releases; an incremental generally massively back-compatible update to the VCL and some new classes
-TODO(PMM)
+>Nick Hodges February 9, 2005 at 2:07 AM
+>I was at the launch event at SD'95. There was a palpable buzz in the room, and it was /packed/. I had to stand by the wall.
+>
+>
+>When Anders referenced that nil PChar, there was a literal hush in the room, and when it didn't crash, putting up an exception instead, the place went crazy. 
+>
+>
+>The MS people in the back were carried out on stretchers, I think from hyperventilating. ;-)
+
 
 
 ### Prior Art
 
+I found an Overload article from December 1998, which from our look-up table we can see is circa the Delphi 3 era [accu1998]. 
+So, almost 20 years ago the feature set for that Delphi was reviewed - this was the second 32-bit release so no references to GPFs (hooray). In my opinion, the feature set reviewed is a good set of choices, though with IMHO some lacunae which conveniently overlap with some of my observations to follow.
 
-A prior Overload article from December 1998, which from our look-up table we can see is circa the Delphi 3. 
+_Full disclosure_: as with most mature professional products, the full feature set is pretty huge, so one has to make choices as to what to omit - I approciate the other authors had to do this and I will also be selecting highlights.
 
-https://accu.org/index.php/journals/565
-
-
-So, almost 20 years ago the feature set was reviewed. In my opinion, the feature set reviewed is a good set of choices, though with IMHO some lacunae which conveniently overlap with some observations to follow.
-
-Of the features reviewed in that article, the major changes I would choose to highlight since then would be (in order of awesomeness)
+That said: of the features reviewed in [accu1998] article, the major changes I would choose to highlight since then would be (in order of awesomeness)
 * full 64-bit support is available
 * support for multiple platforms (linux, iOS)
 * operator overloading has been added to the language, along with quite a few other interesting tweaks, like closures
 
-
-If you want a much funnier, longer lived, arguably less overtly technical summary - try this on for size
-
-
-http://www.theregister.co.uk/2016/05/20/verity_sons_of_khan_witch_of_wookey/
+If you want a much funnier, arguably less overtly technical summary of the early days - try this on for size [stob2002].
 
 
-TODO(PMM) review section
- 
-************************
 
-
-OK, what made Delphi so Awesome - convince me!
+OK, what made Delphi so Awesome IYHO - convince me!
 ---------------------------
 
 Challenge accepted
 
 
-> Delphi was just inherently more a more dynamic by design
+Delphi was just inherently a more dynamic system by design for its time.
+--------------
 
 
 
 This is my central thesis:
 
 in 1999, I could fire up the IDE, load a form connected to, say a database and see and navigate records fetched from the datbase.
-The development environment was quick and effective to work in, and for those prepared to take the time
+The development environment was quick and effective to work in, and for those prepared to take the time to investigate, it had a cornucopia of treasures to uncover under the super user friendly surface.
+
+TODO(PMM) how much did the ability to read the source make a difference?
 
 
->Sidebar - " remember the 90s were wild, man"
-
-This was the time of the rise of the Component based model - people could pay (remember paying for software?) a nugatory amount for a component that would emulate Excel and embed it into their software.
-
-https://en.wikipedia.org/wiki/Component-based_software_engineering
+![Debugging in the visual runtime with one keypress](debugging.png)
 
 
+_Sidebar_ 
+> - " remember the 90s were wild, man"
+
+This was the time of the rise of the Component based model - people could pay (remember paying for software?) a nugatory amount for a component that would emulate, say Excel and embed it into their software [wikipedia2019-3]. 
 
 
 ### Let's review the basics
@@ -145,23 +137,45 @@ https://en.wikipedia.org/wiki/Component-based_software_engineering
 
 ### Source based Component Model
 
- TODO(PMM) explain what is meants
+ TODO(PMM) explain what is meant
 
 ### There are Corrolaries
 
-* "No RAII for you sir"
+> This ain't yer grand-daddy's Pascal
+
+TODO(PMM) - let's talk about what can be achieved and how it is done, and contrast with other languages, in contrast to listing required features (TM)
+ 
+* "No RAII for you, sir"
  - because once you have committed to a property based system for configuring objects, there is no constructor you can write that will handle all future use cases (well, not one you want to have to defend)
 * no automatic destruction of class instances
  - destruction is explicit, and - key point - with the Delphi component framework would be handled for you correctly
  - coupled with the streaming system's ability to "automagically" find and instantiate the right classes when streaming in a definition, you spend a lot less time worrying about "ownership" - because [a] it's done for you, and [b] if you wanted to do it yourself, you may well get it wrong or find yourself fighting the existing framework every step of the way
 * no objects on the stack, a la c++ 
- - this may feel like an intolerable constraint, but it fits in well with the concept of dynamic extensibility -> 
-   * if I could write code that placed an object into the binary,
-   * every time that module were loaded, that object's side-effects would occur at some point
-   * Requiring objects to be constructed by running some code then ensures that in the event of an exception the stack points to the culprit, and 
-   * bingo! - an extensible object designer system can simply rollback the stack from the offending startpoint 
-   * if the function was a property setter, then the IDE system can simply reject arbitrary failed attempts to set a property _without an injection or prior knowledge of the internals of the components that are interacting_
+ - this may feel like an intolerable constraint, but it happens to fits in well with the concept of dynamic extensibility -> 
+   * The code to construct an object can be supplied, even updated on the fly
+     - essentially, a "plugin" system that is capable of plugging in classes and their type metadata _on the fly_
+     - the IDE does this every time you rebuild a component package you are working on
+* Exceptions can only throw objects, and also, given the singly rooted hierarchy we can always walk our way to the actual instance type if have imported its interface
+   * bingo! - an extensible object designer system can simply rollback the stack from the offending starting point 
+   * *And what is more* if the function was a property setter, then the IDE system can simply reject arbitrary failed attempts to set a property _without an injection or prior knowledge of the internals of the components that are interacting_
 
+
+
+![Example of design-time exception handling](nope.png)
+
+![How this is raised in the code](butwhy.png)
+
+![And how it looks in the app](appnope.png)
+
+
+In order to investigate this I only had to add this code and hit "Debug"
+
+```delphi
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  SQLConnection1.Open;
+end;
+```
 
 ### The language - a brief tour
 
@@ -670,8 +684,6 @@ Almost as rich and dynamic as say, Java, allowing the composition of UI (and oth
 
 
 
-
-
 C'mon it can't have been that perfect, can it?
 ------------------
 
@@ -720,3 +732,15 @@ Full disclosure there are some caveats
 
 
 Working Code referred to in the article can be found at https://github.com/patrickmmartin/Brute
+
+
+[embarcadero2019-1] https://www.embarcadero.com/products/delphi
+[wikipedia2019-1] https://en.wikipedia.org/wiki/Delphi_(IDE)
+[wikipedia2019-2] https://en.wikipedia.org/wiki/Object_Pascal
+[embarcaderodocs2019-1] http://docwiki.embarcadero.com/RADStudio/Tokyo/en/Language_Overview
+[embarcadero2019-2] https://www.embarcadero.com/products/delphi/starter
+[accu1998] https://accu.org/index.php/journals/565
+[stob2002] https://www.theregister.co.uk/2012/01/16/verity_stob_sons_of_khan_2011/
+[wikipedia2019-2] https://en.wikipedia.org/wiki/Component-based_software_engineering
+[farhni2018] https://iam.fahrni.me/2018/08/12/1858/
+[oracleatdelphi2005] https://blog.therealoracleatdelphi.com/2005/02/10-years-of-delphi_8.html
