@@ -734,13 +734,13 @@ Full disclosure there are some caveats
 Working Code referred to in the article can be found at https://github.com/patrickmmartin/Brute
 
 
-[embarcadero2019-1] https://www.embarcadero.com/products/delphi
-[wikipedia2019-1] https://en.wikipedia.org/wiki/Delphi_(IDE)
-[wikipedia2019-2] https://en.wikipedia.org/wiki/Object_Pascal
-[embarcaderodocs2019-1] http://docwiki.embarcadero.com/RADStudio/Tokyo/en/Language_Overview
-[embarcadero2019-2] https://www.embarcadero.com/products/delphi/starter
-[accu1998] https://accu.org/index.php/journals/565
-[stob2002] https://www.theregister.co.uk/2012/01/16/verity_stob_sons_of_khan_2011/
-[wikipedia2019-2] https://en.wikipedia.org/wiki/Component-based_software_engineering
-[farhni2018] https://iam.fahrni.me/2018/08/12/1858/
-[oracleatdelphi2005] https://blog.therealoracleatdelphi.com/2005/02/10-years-of-delphi_8.html
+[embarcadero2019-1] https://www.embarcadero.com/products/delphi  
+[wikipedia2019-1] https://en.wikipedia.org/wiki/Delphi_(IDE)  
+[wikipedia2019-2] https://en.wikipedia.org/wiki/Object_Pascal  
+[embarcaderodocs2019-1] http://docwiki.embarcadero.com/RADStudio/Tokyo/en/Language_Overview  
+[embarcadero2019-2] https://www.embarcadero.com/products/delphi/starter  
+[accu1998] https://accu.org/index.php/journals/565  
+[stob2002] https://www.theregister.co.uk/2012/01/16/verity_stob_sons_of_khan_2011/  
+[wikipedia2019-2] https://en.wikipedia.org/wiki/Component-based_software_engineering  
+[farhni2018] https://iam.fahrni.me/2018/08/12/1858/  
+[oracleatdelphi2005] https://blog.therealoracleatdelphi.com/2005/02/10-years-of-delphi_8.html  
