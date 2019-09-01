@@ -1,29 +1,30 @@
 `I come here not to bury Delphi, but to praise it.`
 ====
 
-
 But first what is Delphi?
 ---------------
 
 >It is a riddle, wrapped in a mystery, inside an enigma
 
+### And why write about it?
 
-It's not a controversial statement that Delphi is not what it once was.  
-Now it supports 64 bit projects across the 3 main desktop platforms, to pick one evolution of the product.  
-Yet, the key aspects are still there, if not event better than before.
+It's not a controversial statement that Delphi is not what it once was in its heydey.
+I think it's worth reviewing what might have formed part of the secret sauce that was part of the success back then.
+Now the current version supports building 64-bit projects across the 3 main desktop platforms, to pick one are of evolution of the product.  
+And, the original key aspects are still there, if not even better than before.
 
+### Non goals and Own Goals
 
-There many things I will not be discussing in this article. 
+Thereany  many things I will not be discussing in this article. 
 For example, there is always _Much To Discuss_ when it comes to choice of programming language, I am told, but I will be steering well clear of that quagmire.  
-Comparing laundry lists of features between languages in some kind of checklist knockout tournament is not the aim here: 
-Instead, I want to recall - or perhaps eulogise - a general seam of features of the tool that - for me - made Delphi the game changer that it was..  
+Comparing laundry lists of features between languages in some kind of checklist knockout tournament is certainly not the aim here.
+Instead, I want to recall - or perhaps eulogise - a rich seam of features of the tool that - for me - made Delphi the game changer that it was then...  
 Back when I used it full time these were what made it so productive and fun to work with, and I humbly submit that there are few tools that come close to touching it even now.
 
 First, A Quick Review
 ----------------
 
-Delphi is a commercial product for developing software - [embarcadero2019-1], [wikipedia2019-1], with a proprietary IDE and version of Object Pascal [wikipedia2019-2] that integrates tightly with the solution [embarcaderodocs2019-1] . There is even a free version you can download from [embarcadero2019-2], and if you can puzzle your way past the registration djinns, you can have it up and running in very little time.
-It mainly produces native binaries, originally targetting Windows 16 bit, now 32-bit and 64-bit.
+Delphi is a commercial product for developing software - [embarcadero2019-1], [wikipedia2019-1], with a proprietary IDE and version of Object Pascal [wikipedia2019-2] that integrates tightly with the solution [embarcaderodocs2019-1] . There is even a free version you can download from [embarcadero2019-2], and if you can puzzle your way past the registration djinns, you can have it installed and up and running in a few minutes.
 
 A heavily abridged table of releases with release for some key milestones
 
@@ -38,22 +39,22 @@ A heavily abridged table of releases with release for some key milestones
 | 2012 | Embarcadero Delphi XE3 | Win32, Win64 | last version with .NET support
 | 2018 | Embarcadero Delphi 10.3 Rio | Win32, Win64 | current day
 
-There is even an ACCU article  [accu1998] article, and if you want a much funnier, arguably less overtly technical summary of the early days - try this on for size [stob2002].
+For prior art: there is even an ACCU article  [accu1998] article, and if you want a much funnier, arguably less slightly less technical summary of the early days - try this on for size [stob2002].
 
-Five bullet points to give a flavour of the system:
+Here's five bullet points I've chosen to give a flavour of the system:
 
 ### Fast
 
-Compile times were always in the vanguard, and the time to a fully linked executable that was ready to go was also very short. In the days of "spinning rust" drives, this really mattered.
+Compile times were always in the vanguard, currently there are quotes of many thousands of lines per second, and the time from a standing start to a fully linked executable that was ready to go was also very short. In the days of "spinning rust" drives, this really mattered.
 
 ### Strongly Typed (mainly*)
 
-For loops could only be integers. I got over it very quickly and never looked back, to be honest.  
-You could (and should) declare enums and sub-ranges and it would be a compilition and runtime error to assign incorrect values.
+For loops could only be Ordinal types. I got over it very quickly and never looked back, to be honest.  
+You could (and should) declare enums and sub-range types. It would then be a compilation and runtime error to assign incorrect values to these types.
 
 ```delphi
-// everyone likes cards
 type
+// everyone likes cards
   Suit = (Club, Diamond, Heart, Spade);
 // small things that it's just embarassing to get wrong
   SmallNumber = -128..127;
@@ -63,34 +64,33 @@ type
 
 ### Run Time Type information at all times
 
-If your variables are all strongly typed, this enables introspection without needing to resort to home-brew persistence / reflection methods. 
+One could always identify the type of an object at runtime and it was built into the language - with a little more effort one could browse all the types in the programs' type system. This will come in useful for building up complex objects, as 
+we will see.
 
 ### Straightforward dependency management
   
-The language has files called `units` - basically modules, which supported `interface` and `implementation` sections for exported symbols and internal only code. Circular dependencies were a _compile time error_, this strongly encouraged a way of organising one's code in such a way that one only had to really inspect the implementation section of a unit, and then choose whether to make it a dependency in the interface or not. Rinse and repeat for the rest of the program.
+The language has files called `units` - basically modules, which supported `interface` and `implementation` sections for exported symbols and internal only code. Circular dependencies were a _compile time error_, this strongly encouraged a way of organising one's code in such a way that one only had to really inspect the implementation section of a unit, and then choose whether to make it a dependency in the interface or not. Rinse and repeat for the rest of the program. In addition, the order of initialisation and finalisation of the units was straightforward and robust. _Even if spelled incorrectly._
 
-### Extensible RTL and Viual class libraries with designs showing off strengths of the language features
+### Extensible RTL and Visual class libraries exploiting the strengths of the language
 
-Object pascal supports class properties (write, read, read/write) as a first class feature.
+Object pascal supports class properties (read/write, write-only, read-only) as a first class feature.
 Objects on the stack are simply not allowed - I suspect eliminating this capability frees Delphi from having to deal with a large class of issues.
 Coupled with the ability to use the RTTI, these work together to support configurability of classes from properties.
 
 * although, there were some funky compiler features that allowed for late-bound function calls, mainly to support scripting OLE objects.
 
-
 ### Source based Component Model
 
-This was the time of the rise of the Component based model - people could pay (remember paying for software?) a nugatory amount for a component that would emulate Excel and embed it into their software.
+It's worth bearing in mind that the time when Delphi was conceived was the era of the rise of the Component based software model. For example - people could pay (remember paying for software?) a nugatory amount for a component that would emulate Excel and embed it into their software.
 
 https://en.wikipedia.org/wiki/Component-based_software_engineering
 
+In the very first release of Delphi was a thorough guide to writing components, proselytising for the style of authoring components. This was really high quality work and - true story - we kept a copy one of the Delphi 1 guide chapters that didn't survive to later releases around to consult, as it remained relevant. 
 
-
-Delphi was inherently very dynamic for its time
+Contention: Delphi was inherently very dynamic for its time
 ---------------------------
 
-
-This is my central thesis:
+This is my central thesis.
 
 In 1999, I could fire up the IDE, load a form connected to, say a database and see and navigate records fetched from the database live in the designer.
 The development environment was quick and effective to work in, and I had access to the source for debugging and simply reading the code.  
@@ -111,22 +111,14 @@ This was the time of the rise of the Component based model - people could pay (r
 In Delphi I could study the built-in in components, or follow the tutorials and write my own, if needs be, or figure out how to achieve my aims using the existing functionality.
 
 
- TODO(PMM) explain what is meant
+### Delphi's Streaming System and Form Design
 
+Now the real killer app for the app development was the _fully synchronised visual designer_
 
-
-Code Example
------------
-
-
-### Streaming system - DFM
-
-Now the real killer app for the scope management was the _fully synchronised visual designer_
-
-Let's have a look at some actual code to plug together some hypothetical framework objects.
+Let's have a look at some actual code to plug together some framework objects.
 Note, this process relies upon the concepts of
 * properties
-* the Delphi closure type
+* the Delphi closure type (reference to method call on object instance)
 * and RTTI to allow the RTL to work all the magic of wiring up the properties
 * there is also a hint of a framework which defines the ownership from the line 
    ```delphi
@@ -165,23 +157,23 @@ end
 
 Full disclosure: of course it's actual real DSL (edited slightly for space)
 
-* AND THE IDE WOULD GENERATE ALL OF THAT FOR YOU * 
+* The IDE would generate all of that for you * 
 
-
-now with the mere addition of 
+Now, with the mere addition of this line:
 
 ```delphi
    lblTime.Caption := TimeToStr(Now);
 ```
-we have a clock app
+We have a clock app!
 
 ![the clock app](clock.png)
 
 
 _So, that's assembling visual components visually sorted then_
 
-#### auto-registry, singletons done right (TM)
+#### registry singletons done right (TM)
 
+Here's an example illustrating how deterministic initialisation of modules would allow for very simple, yet robust registration concepts.
 
 ```pascal
   
@@ -212,8 +204,7 @@ end.
 ```
 
 ```pascal
-
-  unit SomeRegistry;
+unit SomeRegistry;
 
 interface
 
@@ -222,73 +213,48 @@ TSomeRegistry = class
 public
   procedure RegisterClass(AClass: TClass);
   procedure DeregisterClass(AClass: TClass);
-
 end;
-
 
 function GetSomeRegistry: TSomeRegistry;
 
 implementation
 
-uses Windows;
-
 var
   mSomeRegistry : TSomeRegistry = nil;
-
-
-function GetSomeRegistry: TSomeRegistry;
-begin
-  Result := mSomeRegistry;
-end;
-
-{ TSomeRegistry }
-
-procedure TSomeRegistry.RegisterClass(AClass: TClass);
-begin
-  WriteLn(PChar('Registry Adding: ' + AClass.ClassName));
-end;
-
-procedure TSomeRegistry.DeregisterClass(AClass: TClass);
-begin
-  WriteLn(PChar('Registry Removing: ' + AClass.ClassName));
-end;
-
+// details omitted
 initialization
   mSomeRegistry := TSomeRegistry.Create();
-
 finalization
   mSomeRegistry.Free;
-
 end.
   
 ```
 
 ```pascal
+ 
+unit SomeProcessor
 
-  
-   unit SomeProcessor
-   
-   type TSomeProcessor = class
-   ...
-   end;
-   
-   initialization
-   GetSomeRegistry.RegisterClass(TSomeProcessor);
+type TSomeProcessor = class
+// details omitted
+end;
+
+initialization
+   GetSomeRegistry.RegisterClass(TSomeProcessor); // register our class
 
 ```
 
 ```pascal
 
-   unit AnotherProcessor
-   
-   type TAnotherProcessor = class
-   ...
-   end;
-   
-   implementation
-   
-   initialization
-   GetSomeRegistry.RegisterClass(TAnotherProcessor);
+unit AnotherProcessor
+
+type TAnotherProcessor = class
+// details omitted
+end;
+
+implementation
+
+initialization
+  GetSomeRegistry.RegisterClass(TAnotherProcessor); // register our class
    
 ```
 
@@ -306,20 +272,18 @@ Registry Removing: TSomeProcessor
 
   - note the initialisation follows the lexical ordering in the program unit _in this case_ (but see later) 
   - note the de-init occurs perfectly in the inverse order
-  - 
-  
-  - also note that adding in a code level dependency re-jigs the initialisation order correctly 
   
 Add this uses directive into SomeProcessor, adding a source level dependency to AnotherProcessor from the SomeProcessor _implementation_
 
 ```pascal
-
 unit SomeProcessor
+...
+interface
 
 uses
-  AnotherProcessor,
+  AnotherProcessor, // <-
   SomeRegistry;
-
+...  
 ```
 
 output:
@@ -334,29 +298,26 @@ Registry Removing: TSomeProcessor
 Registry Removing: TAnotherProcessor
 ```
 
-Note this happens when updating the single unit, not the ```program``` code, which remains blissfully agnostic of the changes. 
-
-Note, this was used a lot in the VCL to ensure adding a module "would Do The Right Thing (TM)"
+Note this happens when updating the implementation of single unit, not the ```program``` code, which remains blissfully agnostic of the changes. 
 
 
-
-### There are Corrolaries
+### There are Corollaries
 
  
-* "No RAII for you, sir"
+* RAII _per se_ is out, although your classes must still behave sensibly
  - this may have been noted - properties need to have workable defaults (or default behaviour that makes sense)
- - because once you have committed to a property based system for configuring objects, what constructors will you write? Instead the component is plugged into the framework
+ - once you have committed to a property based system for configuring objects, what constructors will you write? Instead the component is plugged into the framework
 * no automatic destruction of class instances
- - destruction is explicit, and - key point - with the Delphi component framework would be handled for you correctly
+ - destruction is explicit in Delphi's Object Pascal, and - key point - with the Delphi component framework would be handled for you correctly
  - coupled with the streaming system's ability to "automagically" find and instantiate the right classes when streaming in a definition, you spend a lot less time worrying about "ownership" - because [a] it's done for you, and [b] if you wanted to do it yourself, you may well get it wrong or find yourself fighting the existing framework every step of the way
 * no objects on the stack, a la c++ 
  - this may feel like an intolerable constraint, but it happens to fits in well with the concept of dynamic extensibility -> 
    * The code to construct an object can be supplied, even updated on the fly
      - essentially, a "plugin" system that is capable of plugging in classes and their type metadata _on the fly_
-     - BTW the IDE does this every time you rebuild a component package you are working on
+     - BTW the IDE does this _every time you rebuild a component package_ you are working on
 * Exceptions can only throw objects, and also, given the singly rooted hierarchy we can always walk our way to the actual instance type if have imported its interface
-   * bingo! - an extensible object designer system can simply rollback the stack from the offending starting point 
-   * *And what is more* if the function was a property setter, then the IDE system can simply reject arbitrary failed attempts to set a property _without an injection or prior knowledge of the internals of the components that are interacting_
+   * conveniently an extensible object designer system can simply rollback the stack from the offending starting point
+   * *what is more* if the function was a property setter invoked by the IDE, then the IDE system can simply reject arbitrary failed attempts to set a property _without additional a priori knowledge of the internals of the components that are interacting_
 
 
 ### Example of design-time and run-time exception handling
@@ -388,38 +349,60 @@ That's the power of a unified and usable approach to exception handling.
 ![And how it looks in the app](appnope.png)
 
 
-
-
-
-
-
-In retrospect
----------------
-
-....
-
-
 C'mon it can't have been that perfect, can it?
-------------------
+-----
+
+Ah, now I have to explain why Delphi is not enjoying the popularity it once did.
+
+### Web applications
+
+Delphi was great for software that would be popped into the post, on a CD.  
+When the web based application revolution came, that became less relevant for new application. 
+I feel the offerings within the Delphi toolbox for web development didn't seem to cut through on the feature set, and of course at the time, everything from the OS to the Development tool needed to be paid for.  
+Given the competition at the time was the LAMP stack Linux + Apache + MySQl + PHP, it was clear how that would work out.
 
 ### It was proprietary
-Companies get in trouble; the 64-bit compiler took a long time to appear
+So, a fact of life is: individual companies get in trouble, go off-beam etc. this can be a real concern. For example the 64-bit compiler took a long time to appear, and some companies like to take a very long view on their enterprise applications.
 
 ### Cost concerns
 It could end up looking pricey compared to free tools. Yet beware false economies.
 
 ### Quality issues
-There were some releases that had surprisingly persistent niggles. This is the kind of thing that worries thoughtful programmers.
+There were some releases that had surprisingly persistent niggles. This is the kind of thing that worries thoughtful programmers.  
+Another syndrome that I saw which was very sad, is that the marvellous extensible IDE was at risk from poorly programmed component packages. The IDE would be blamed for instability, when in fact, the code that it loaded into its core might well be the cause. With an improved architecture, that might have been mitigated, but not eliminated. And of course, native code is not to be 100% trusted, yet can only be run as 100% trusted.
 
-### Interfacing with code other systems
-This was possible, but did require expertise to produce the translation units that could make use of FFI, else one could hope the feature would be implemented in the next version of Delphi
+### Interfacing with code from other systems
+SOme might believe this was not possible, but in fact it was.  
+Of course the interaction with the Windows libraries was via the win32 API, proving the point.  
+And there was nothing preventing the user from making their own integations. These did require some expertise to produce the translation units that could make use of the foreign function interfaces.  
+In fact, one of the long standing issues with Delpih for some people was that the translation units would not be updated quickly enough when new systems or features arrived in Windows.
 
 
-references
+In retrospect
+---------------
+
+So, in 2019, what conclusions can we draw?
+
+### Rapid Application Development with true visual design
+Properties, Methods and Events allow complex UI to be defined in a very minmimalist fashion, which is A Good Thing.
+There are many camps on this topic, but demonstrated above, the system supported fully visual development, all the way from specified in the designer to fully defined in code and all the waypoints between, and cleanly.  
+That was a strength - not all apps need to be coded the same way, or need the same level of complexity.
+
+### Strong typing is fine for RAD
+Caveat: with the right level of compiler and runtime co-operation.  
+Personally, I enjoyed debugging in Delphi, as it seemed that faults tended to be more reproducible and more easily reasoned through that some other languages.
+
+### Modules are awesome
+When the programmer needs to employ a unit from another unit, they really only need to choose whether they want to add it to the interface or not - not was typically better as it implied the code was better factored.  
+In some cases one could simply add a reference to a different module to a code file in order to modify / patch the programs' behaviour.
+
+How many of these concerns sound familiar even today?
+I suspect we can learn much from the design precepts of the previous glory days and take some lessons forward for the next iteration of our tools.
+
+References
+-----------
 
 Working Code referred to in the article can be found at https://github.com/patrickmmartin/Brute
-
-
 
 [embarcadero2019-1] https://www.embarcadero.com/products/delphi  
 [wikipedia2019-1] https://en.wikipedia.org/wiki/Delphi_(IDE)  
