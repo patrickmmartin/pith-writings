@@ -21,7 +21,7 @@ First, some History
 -----
 
 The product has been through a number of owners and a large number of point releases.
-Typically there would be a highly (for once I employ  understatement) compatible update to the component classes and improvements to the internals and new components and functionality.
+Typically there would be a (for once I employ understatement) highly compatible update to the component classes and improvements to the internals and new components and functionality.
 
 | Year | Release | Supports | Significant changes
 |--- |--- |---  |---  
@@ -52,17 +52,17 @@ Typically there would be a highly (for once I employ  understatement) compatible
 | 2018 | Embarcadero Delphi 10.2 Tokyo | Win32, Win64 |  
 | 2018 | Embarcadero Delphi 10.3 Rio | Win32, Win64 |  
 
-### brief diversion - What's a GPF
+The initial release caused quite a stir - fast compiled in a Rapid Application Development model. 
 
-If we divide the pointer size in use by 2, then 2 again, so 64-bit -> 32-bit -> 16-bit we get to the days of Windows 3.x - finding any evidence of this era is becoming tricky but there is a picture here [farhni2018].
-Essentially, an exception where a bad address is dereferenced would "always" lead to a system dialogue pointing the finger at the offending module. _Or so we thought_ - from [oracleatdelphi2005] we have some reminiscences - and I quote:
+A brief diversion - What's a GPF? - in the days of 16 bit programming under Windows 3.x, these were dreaded error dialogues, usually the harbinger of doom for some poor application.  
+Finding any evidence of this era is becoming tricky but there is a picture here [farhni2018] and from [oracleatdelphi2005] we have some reminiscences - and I quote:
 
 >When Anders referenced that nil PChar, there was a literal hush in the room, and when it didn't crash, putting up an exception instead, the place went crazy. 
 
 ### Prior Art
 
 Amusingly I found an Overload article from December 1998, which from our look-up table we can see is circa the Delphi 3 era [accu1998].  
-Hence almost 20 years ago the feature set was reviewed for that Delphi; version 3 was the second 32-bit release - so no references to GPFs in the article (hooray).  
+Hence almost 20 years ago the feature set was reviewed for that Delphi; version 3 was the second 32-bit release - so no references to GPFs in that article (hooray).  
 In my opinion, the feature set reviewed is a good selection. However there are some lacunae which are still relevant today that conveniently overlap with some of my observations to follow.
 
 _Full disclosure_: as with most mature professional products, the full Delphi feature set is quite massive, so one has to make choices as to what to omit - I approciate the other authors had to do this and I will also be selecting highlights.
@@ -85,8 +85,9 @@ Accepted.
 This is my central thesis:
 
 In 1999, I could fire up the IDE, load a form connected to, say a database and see and navigate records fetched from the database live in the designer.
-The development environment was quick and effective to work in, and I had access to the source - which for me, helped to teach me a lot about the engineering of a coherent architecture.
-And for those prepared to take the time to investigate, it had a cornucopia of treasures to uncover under the super user friendly surface.
+The development environment was quick and effective to work in, and I had access to the source for debugging and simply reading the code.  
+That feauture just on its own, helped to teach me a lot about the engineering of a coherent architecture.
+And for those prepared to take the time to investigate, it had a cornucopia of treasures to uncover beyond the super user friendly surface.
 
 
 ### Example: how the ability to read and _debug into_ the source make a difference
@@ -109,6 +110,7 @@ In Delphi I could study the built-in in components, or follow the tutorials and 
 * linking so fast some people did not believe (true story) the system produced linked binaries - this was in 1999 -> imagine that on a SSD nowadays
 
 ### The Language
+* Delphi strongly encouraged code modules
 * single inheritance chain for base classes - TODO(PMM) corollaries
 * properties as a first class language feature 
 * fully integrated exception handling solution - classes only and the component library had a standard approach to reporting error conditions  which was leveraged strongly - we'll come to that. We'll also come back to this w.r.t. the advantages in debugging of the singly rooted class hierarchy
@@ -132,13 +134,12 @@ In Delphi I could study the built-in in components, or follow the tutorials and 
 
 Key things:
 
-- built in concept of _interface_ and _implementation_ 
+- concept of _interface_ and _implementation_  of modules
 
-- hey, that super trendy _"no copy constructor"_ concept again! TODO(PMM) reference Rust
-
-RTTI that *worked*
+- RTTI that *worked*
 
 - the language, well you either love it or you don't  
+*then*
 ```pascal
 procedure Proc
 var
@@ -151,22 +152,12 @@ begin
 end;
 ```
 
-- cite recent rant on state of affairs in C++
-- NO_MACROS!
-```pascal
-$IFDEF _ 
-$ENDIF
-```
-  - yup, no ```#define private public``` ...
-
 - blindingly fast compilation
   You'll have to just take my word for it
 
 - a really good string type right out of the box: "c and c++ - don't think I can't see you in the corner - don't even start, ok?"
  language supports concatentation, reference counted, string length stored as part of the string, fully compatible with C char arrays 
   - note the modernised version of Delphi cunningly stores the encoding 
-
-- Char and Byte are not the same type
 
 - integer types and subrange stypes
   
@@ -468,32 +459,11 @@ Note this happens when updating the single unit, not the ```program``` code, whi
 
 TODO(PMM) - was used a lot in the VCL to ensure adding a module "would Do The Right Thing (TM)"
 
-from
+see the description in
 
 http://docwiki.embarcadero.com/RADStudio/Rio/en/Programs_and_Units_(Delphi)
 
-
->The Initialization Section
->The initialization section is optional. It begins with the reserved word initialization and continues until the beginning of the finalization section or, if there is no finalization section, until the end of the unit. The initialization section contains statements that are executed, in the order in which they appear, on program start-up. So, for example, if you have defined data structures that need to be initialized, you can do this in the initialization section.
->
->For units in the interface uses list, the initialization sections of the units used by a client are executed in the order in which the units appear in the client's uses clause.
->
->The older "begin ... end." syntax still functions. Basically, the reserved word "begin" can be used in place of initialization followed by zero or more execution statements. Code using the older "begin ... end." syntax cannot specify a finalization section. In this case, finalization is accomplished by providing a procedure to the ExitProc variable. This method is not recommended for code going forward, but you might see it used in older source code.
->
->The Finalization Section
->The finalization section is optional and can appear only in units that have an initialization section. The finalization section begins with the reserved word finalization and continues until the end of the unit. It contains statements that are executed when the main program terminates (unless the Halt procedure is used to terminate the program). Use the finalization section to free resources that are allocated in the initialization section.
->
->Finalization sections are executed in the opposite order from initialization sections. For example, if your application initializes units A, B, and C, in that order, it will finalize them in the order C, B, and A.
->
->Once a unit's initialization code starts to execute, the corresponding finalization section is guaranteed to execute when the application shuts down. The finalization section must therefore be able to handle incompletely initialized data, since, if a runtime error occurs, the initialization code might not execute completely.
-
-
-
 ### interfaces are the only multiple inheritance route (i.e. Java, there isn't one)
-
-TODO(PMM) example
-
-### NewInstance, CreateInstance if you really want to go that route
 
 TODO(PMM) example
 
@@ -555,41 +525,6 @@ That's the power of a unified and usable approach to exception handling.
 
 ![And how it looks in the app](appnope.png)
 
-
-# interfaces are the only multiple inheritance route (i.e. Java, there isn't one)
- - which if we're honest with ourselves if probably what we really wanted all along
-TODO(PMM) code samples
-
-# NewInstance, CreateInstance if you really want to go that route
-TODO(PMM) code samples
-
-
-
-## singly rooted class hierarchy
-
-## RTTI
-Almost as rich and dynamic as say, Java, allowing the composition of UI (and other) classes, driven effectively by data  
-
-## Property syntax
-### read-write - with getters /setters | direct access | a mixture
-### read only properties discoverable at runtime using RTTI
-### indexed properties 
-### write only properties
-
-
-## more compile-time gurantees 
-- initialization
-  
-- finalization
-
-## pretty decent set of application classes
-
-
-## pretty decent set of windowing clases
-- handled ownership and parenting and all that good stuff in a manageable manner
-
-## strong component design methodology and support
-- interesting, component model from the days of yore, which was part of the then thriving component market 
 
 
 
