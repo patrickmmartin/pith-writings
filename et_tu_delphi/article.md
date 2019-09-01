@@ -1,290 +1,179 @@
 `I come here not to bury Delphi, but to praise it.`
 ====
 
+But first what is Delphi?
+---------------
 
+>It is a riddle, wrapped in a mystery, inside an enigma
 
-`Making Hyperbole Great Again` (Thesis)
---- 
+### And why write about it?
 
+It's not a controversial statement that Delphi is not what it once was in its heydey.
+I think it's worth reviewing what might have formed part of the secret sauce that was part of the success back then.
+Now the current version supports building 64-bit projects across the 3 main desktop platforms, to pick one are of evolution of the product.  
+And, the original key aspects are still there, if not even better than before.
 
+### Non goals and Own Goals
 
-TODOs
----
+Thereany  many things I will not be discussing in this article. 
+For example, there is always _Much To Discuss_ when it comes to choice of programming language, I am told, but I will be steering well clear of that quagmire.  
+Comparing laundry lists of features between languages in some kind of checklist knockout tournament is certainly not the aim here.
+Instead, I want to recall - or perhaps eulogise - a rich seam of features of the tool that - for me - made Delphi the game changer that it was then...  
+Back when I used it full time these were what made it so productive and fun to work with, and I humbly submit that there are few tools that come close to touching it even now.
 
-* see previous article for features from 20 YEARS AGO
+First, A Quick Review
+----------------
 
+Delphi is a commercial product for developing software - [embarcadero2019-1], [wikipedia2019-1], with a proprietary IDE and version of Object Pascal [wikipedia2019-2] that integrates tightly with the solution [embarcaderodocs2019-1] . There is even a free version you can download from [embarcadero2019-2], and if you can puzzle your way past the registration djinns, you can have it installed and up and running in a few minutes.
 
-prior overload article
-https://accu.org/index.php/journals/565
+A heavily abridged table of releases with release for some key milestones
 
-covers:
+ Year | Release | Supports | Significant changes
+|--- |--- |---  |---  
+| 1993 | Delphi 1.0 | Win16 | From out of nowhere, handling a GPF
+| 1996 | Borland Delphi 2 | Win32 | first win32 compiler
+| 1998 | Inprise Delphi 4 | Win32 | last version allowing 16-bit development
+| 2003 | Borland Delphi 8 | Win32 | .NET
+| 2005 | Borland Delphi 2005 | Win32 |
+| 2011 | Embarcadero Delphi XE2 | Win32, Win64 | first version producing 64-bit binaries
+| 2012 | Embarcadero Delphi XE3 | Win32, Win64 | last version with .NET support
+| 2018 | Embarcadero Delphi 10.3 Rio | Win32, Win64 | current day
 
-RTTI
-Exception handling (can't throw 99!)
-properties
-TEvents
-Typelib and IDispatch COM access
-no multiple inheritance (AND WHAT OF IT) - usefulness of the Exception message and sometimes data
-no MACROS (DEAR GOD WHO NEEDS MACROS)
-class references
+For prior art: there is even an ACCU article  [accu1998] article, and if you want a much funnier, arguably less slightly less technical summary of the early days - try this on for size [stob2002].
 
+Here's five bullet points I've chosen to give a flavour of the system:
 
+### Fast
 
+Compile times were always in the vanguard, currently there are quotes of many thousands of lines per second, and the time from a standing start to a fully linked executable that was ready to go was also very short. In the days of "spinning rust" drives, this really mattered.
 
- * table with the status now and then for Delphi, C++, "web - say node"
- 
- * single inheritance has been rehabiliated?
-  * look at current languages, even C++ recommendations
- 
- * exception handling That Just Worked
-  * comment on how effective the exception handling model was due to SI - strong exception safety in the runtime *and* components
-  * hence a visual editor running your code live and handling exceptions for invalid states live in the IDE
-  * its's unclear whether this was science fiction or alien technology
+### Strongly Typed (mainly*)
+
+For loops could only be Ordinal types. I got over it very quickly and never looked back, to be honest.  
+You could (and should) declare enums and sub-range types. It would then be a compilation and runtime error to assign incorrect values to these types.
+
+```delphi
+type
+// everyone likes cards
+  Suit = (Club, Diamond, Heart, Spade);
+// small things that it's just embarassing to get wrong
+  SmallNumber = -128..127;
+  SomeCaps = 'A'..'Z';
+  Month = 0..11;
+```
+
+### Run Time Type information at all times
+
+One could always identify the type of an object at runtime and it was built into the language - with a little more effort one could browse all the types in the programs' type system. This will come in useful for building up complex objects, as 
+we will see.
+
+### Straightforward dependency management
   
->All objects on the heap
-I can already hear the screeches if the "performance flying monkeys", but it turned out I never really felt the pain over many years.
-Many complaints. But most issues were bad sql, bad file handling or bad algorithm choice
+The language has files called `units` - basically modules, which supported `interface` and `implementation` sections for exported symbols and internal only code. Circular dependencies were a _compile time error_, this strongly encouraged a way of organising one's code in such a way that one only had to really inspect the implementation section of a unit, and then choose whether to make it a dependency in the interface or not. Rinse and repeat for the rest of the program. In addition, the order of initialisation and finalisation of the units was straightforward and robust. _Even if spelled incorrectly._
+
+### Extensible RTL and Visual class libraries exploiting the strengths of the language
+
+Object pascal supports class properties (read/write, write-only, read-only) as a first class feature.
+Objects on the stack are simply not allowed - I suspect eliminating this capability frees Delphi from having to deal with a large class of issues.
+Coupled with the ability to use the RTTI, these work together to support configurability of classes from properties.
+
+* although, there were some funky compiler features that allowed for late-bound function calls, mainly to support scripting OLE objects.
+
+### Source based Component Model
+
+It's worth bearing in mind that the time when Delphi was conceived was the era of the rise of the Component based software model. For example - people could pay (remember paying for software?) a nugatory amount for a component that would emulate Excel and embed it into their software.
+
+https://en.wikipedia.org/wiki/Component-based_software_engineering
+
+In the very first release of Delphi was a thorough guide to writing components, proselytising for the style of authoring components. This was really high quality work and - true story - we kept a copy one of the Delphi 1 guide chapters that didn't survive to later releases around to consult, as it remained relevant. 
+
+Contention: Delphi was inherently very dynamic for its time
+---------------------------
+
+This is my central thesis.
+
+In 1999, I could fire up the IDE, load a form connected to, say a database and see and navigate records fetched from the database live in the designer.
+The development environment was quick and effective to work in, and I had access to the source for debugging and simply reading the code.  
+That feature just on its own, helped to teach me a lot about the engineering of a coherent architecture.
+And for those prepared to take the time to investigate, it had a cornucopia of treasures to uncover beyond the super user friendly surface.
 
 
+### Example: how the ability to read and _debug into_ the source make a difference
 
-Object Pascal as implemented by Borland had reference types for objects
-This meant unlike old style Pascal struct / objects which had to be `New(obj)` to be in a defined state.
+Here's a simple UI app I created in a few clicks with no code. Setting one breakpoint and stepping in using one key combination I see where the application launches the main UI form and then enters the main Windows interactive message loop.
 
-Invoking the constructor explicitly in code RAII OOTB  EVERYWHERE
-This is in exchange for giving up scope managed object lifetime
-  Except ... "with" 
-The natural corrolary is it is now possible for external systems to manage scope
-Therefore dependencyinjection blah blah blah all that good stuff
+![Debugging in the visual runtime with one keypress](debugging.png)
 
+_Sidebar_ 
+> - " remember the 90s were wild, man"
 
-TODO timelines for the various features
+This was the time of the rise of the Component based model - people could pay (remember paying for software?) a nugatory amount for a component that would emulate, say some portion of the Excel spreadsheet editor and embed it into their software [wikipedia2019-3].  
+In Delphi I could study the built-in in components, or follow the tutorials and write my own, if needs be, or figure out how to achieve my aims using the existing functionality.
 
 
-But inception of these ideas larger predates all those concepts as many of the systems they develop plan did not really exist
+### Delphi's Streaming System and Form Design
 
-Now the real killer app for the scope management was the _fully synchronised visual designer_
+Now the real killer app for the app development was the _fully synchronised visual designer_
 
-Let's have a look at some actual code to plug together some hypothetical framework objects
-TODO
+Let's have a look at some actual code to plug together some framework objects.
+Note, this process relies upon the concepts of
+* properties
+* the Delphi closure type (reference to method call on object instance)
+* and RTTI to allow the RTL to work all the magic of wiring up the properties
+* there is also a hint of a framework which defines the ownership from the line 
+   ```delphi
+   TfrmClock.Create(Application);
+   ```
 
 ```pascal
-var
-  frmServers: TfrmServers;
-//  time passes ...
 begin
 
-  frmServers := TfrmServers.Create(Application);
-  tmrLocate := TTimer.Create;
-  tmrLocate.onTimer = tmrLocateTimer;
-  frmServers.AddChild(trmLocate);
+  frmClock := TfrmClock.Create(Application);
+  lblTime := TLabel.Create(frmClock)
+  lblTime.Caption := '...'
+  trmTick := TTimer.Create(frmClock);
+  trmTick.onTimer = trmTickTimer;
+  frmClock.AddChild(tmrTick);
+  // ...
   
 end;  
 ```
 
 And let's have a look at some hypothetical DSL code to describe the moral equivalent of that code
-TODO
+
 
 
 ```dfm
-object frmServers: TfrmServers
-// some properties
-  object tmrLocate: TTimer
-    OnTimer = tmrLocateTimer
+object frmClock: TfrmClock
+  Caption = 'Clock'
+  object lblTime: TLabel
+    Caption = '...'
+  end
+  object trmTick: TTimer
+    OnTimer = trmTickTimer
+  end
+end
 ```    
 
-Full disclosure: of course it's actual real DSL
+Full disclosure: of course it's actual real DSL (edited slightly for space)
 
-* AND THE IDE WOULD GENERATE ALL OF THAT FOR YOU * 
+* The IDE would generate all of that for you * 
 
+Now, with the mere addition of this line:
 
-_Invented in 1994_
-
-Full disclosure there are some caveats
-
-* Number 1 A base level object type is used everywhere in constructor arguments and blue code arguments. so raising the very legitimate concerns about whether one should apply the rule of using the most derived possible virtual type in arguments
-* Objection number 2 of course let the object hierarchy holy wars begin
-  * Callbacks to objects were supported again cplusplus misses this feature and therefore does not have this problem but the considerations of typing arguments equally apply
-  * So as the phrase goes and if it doesn't let me invent it here "things were wild in the 90s" which brings me to 
- * objection number 3 the whole thing was stitched together by wiring up Windows DLLs.
-  *  for those too little to remember the period of time of the *great DLL hell apocalypse* or in fact current times with our massive problems with malware: in many ways this is now frowned upon. Practically of course the issue that you are forcing unwitting users to become expert in writing these DLLs, what creating a system in which deliberate use and misuse of the underlying framework is permitted.
-  * As a sidebar: practically the whole thing worked amazingly well. But. Things could drift into going wrong and then it was very hard to figure out.
- * Objection number 4 _they had to modify the definition of c plus plus and produced their own compiler_
-  * Have I mentioned the 90s were wild yet?
-* Objection number 5: it's Pascal. Apparently in some disciplines it is acceptable, may profitable to be a zealot around the choice of language. 
-* Although, *all the preceding considerations* are language independent concepts
-
-
-
-
-
-
-* Can't create abstract classes in c++/
-* Agenda - can modules be this good ever again?
-* TComponent owner, notify were pretty clever
-* Federation of languages comment
-* Dangling pointers still possible without a coding style to avoid
-* Crashes tend to be more reproducible (why?)
-
-
-
-Disclaimer  TODO(PMM)
-
-If you want a much funnier, longer lived, less overtly technical summary - try this on for size
-
-http://www.theregister.co.uk/2016/05/20/verity_sons_of_khan_witch_of_wookey/
-
-
-``` pascal
-type Foo = type Bar;
+```delphi
+   lblTime.Caption := TimeToStr(Now);
 ```
+We have a clock app!
 
-registration examples
-
-Key things:
-
-- built in concept of _interface_ and _implementation_ 
-
-- hey, that super trendy _"no copy constructor"_ concept again! TODO(PMM) reference Rust
-
-RTTI that *worked*
-
-- the language, well you either love it or you don't  
-```pascal
-procedure Proc
-var
-   i : Integer;
-begin
-   // we can have comments
-   (*
-    in both styles
-   *)
-end;
-```
-
-- cite recent rant on state of affairs in C++
-- NO_MACROS!
-```pascal
-$IFDEF _ 
-$ENDIF
-```
-  - yup, no ```#define private public``` ...
-
-- blindingly fast compilation
-  You'll have to just take my word for it
-
-- a really good string type right out of the box: "c and c++ - don't think I can't see you in the corner - don't even start, ok?"
- language supports concatentation, reference counted, string length stored as part of the string, fully compatible with C char arrays 
-  - note the modernised version of Delphi cunningly stores the encoding 
-
-- Char and Byte are not the same type
-
-- integer types and subrange stypes
-  
-- proper enforced enumerations ( compile time and even runtime for your sneaky sneaky type casters)
-
-- almost perfect dependency management for units (IMHO)
-  TODO(PMM) research
-- incremental, smart linker
-  TODO(PMM) research
-- simple type system (well until generics, anyway)
-  TODO(PMM) research
- - records (heap, stack)
-```pascal
-type TRecord = record
-// fields
-end;
-```
- - classes (heap *only*)
-```pascal
-type TSomeClass = class(TSomeBase, ISomeInterface)
-// fields, methods, properties
-end;
-```
-  - classes had langauge support for inheritance
- - well and also objects, so weird class / record hybrid everyone forgot about
-```pascal
-type TSomeClass = object
-// fields, methods NO constructor / destructor
-end;
-```
- 
-- PROPERTIES
-```pascal
-  property SomeProp read FSomeProp write SetSomeProp;
-```
-- READ ONLY PROPERTIES
-```
-  property SomeProp read FSomeProp;
-```pascal
-- PROPERTIES
- - indexed properties
-```pascal
-  property SomeProp index TODO(PMM) read FSomeProp write SetSomeProp;
-```
-
-- pointer to class method types
-  - pain-free syntax for class callbacks 
-  - also, entirely trivial to stitch together methods to attach behaviour to compose classes
-  - this was used (and sometimes abused) for UI development
-  
-  
-```pascal
-  type TCallBack = procedure (i : Integer) of object;
-  
-  recipient.Callback = handler.CallbackProc;
-  
-  // or even more abstracted....
-  
-  recipient.Callback = handlerRegistry.Lookup(key);
-  
-  
-```
+![the clock app](clock.png)
 
 
-`Making modules great again.` 
----
+_So, that's assembling visual components visually sorted then_
 
-- compilation units: it's just modules all the way down, baby
- - TODO(PMM) research this
- - circular dependencies are a _compiler error_,
-  - not a "way of life" as some people seem to treat it
- - NO LIBS
- - although there were "packages"
-   - TODO(PMM) HOW COULD I HAVE FORGOTTEN ABOUT PACKAGES 
-   - although there were some "horror stories" like key variables in some packages initialised *upon load* by other packages, which foxed the IDE's dependency management (which was otherwise pretty cool)
-   - THE GREAT DELPHI PACKAGE DRIVE-BY FIASCO
- - proper compiler supported initialisation and finalisation
-  - NO STATIC INITIALIZATION FIASCO
-   - although see package abuse if you want to learn how to *re-introduce* this
-  - unless you want to write your own
-- dynamic packages - again something c/ c++ are still yearning for
-- An IDE "that was really good, once"
-- well thought through streaming system 
- - feeding into a well through through form design system
--  truly amazing commitment to compatibility (for this day and age) demo apps from VCL version 1(?) _would load and run upon pressing F9 in VCL version 17_
-- no RAII :P
-- easy FFI interface for "C", COM, c++ with some effort
-- language supported reference counted interfaces - so RAII if you want it :)
-- IDispatch support (freaky, but whatever floats your boat)
-- entire application could be statically linked (with very minimal dependencies) or not, at the "press of a button"
-- Exception handling that "just worked"
-  - related to the singly rooted object hierarchy
-   - no `throw 99` - you know who you are!
- - _finally_ blocks - sometimes cleanup is needed
- - there were some very successful templates which were exploited to produce solutions 
+#### registry singletons done right (TM)
 
-#TODO: break it down
-
-
-# code samples
-
-#  writing a registry
-- factoring out components
-- adding elements into the registry
- - explicitly
- - implicitly
- - finally (ha!) singleton cleanup can be done using _finalization_
-TODO(PMM) code samples
+Here's an example illustrating how deterministic initialisation of modules would allow for very simple, yet robust registration concepts.
 
 ```pascal
   
@@ -294,170 +183,234 @@ program registration;
 
 uses
   SysUtils,
-  SomeRegistry in 'SomeRegistry.pas',
-  SomeProcessor in 'SomeProcessor.pas',
-  AnotherProcessor in 'AnotherProcessor.pas';
+  AnotherProcessor in 'depends\AnotherProcessor.pas',
+  SomeProcessor in 'depends\SomeProcessor.pas',
+  SomeRegistry in 'depends\SomeRegistry.pas';
 
 begin
 
+  try
+    WriteLn('Program starting');
+    WriteLn(PChar('Registration complete'));
+  except
+    on E:Exception do
+      Writeln(E.Classname, ': ', E.Message);
+  end;
+
+  Writeln('Program exiting');
+
+end.
+
+```
+
+```pascal
+unit SomeRegistry;
+
+interface
+
+type
+TSomeRegistry = class
+public
+  procedure RegisterClass(AClass: TClass);
+  procedure DeregisterClass(AClass: TClass);
+end;
+
+function GetSomeRegistry: TSomeRegistry;
+
+implementation
+
+var
+  mSomeRegistry : TSomeRegistry = nil;
+// details omitted
+initialization
+  mSomeRegistry := TSomeRegistry.Create();
+finalization
+  mSomeRegistry.Free;
 end.
   
-  unit SomeRegistry
-  
-  interface ..
-  ...
-  
-  type
-     // one might make this object interfaced for additional complexity
-     TSomeRegistry = class
-        procedure RegisterClass(AClass: TClass);
-        procedure DeregisterClass(AClass: TClass);
-     end;
+```
 
-   // how to expose?
-   // one way that works fine is a getter
-   function GetSomeRegistry : TSomeRegistry;
-   
-   type TSomeRegistryManager
-   private:
-      FSomeRegistry : TSomeRegistry;
-   public    
-      class property SomeRegistry : TSomeRegistry read fSomeRegistry; 
-   end;
-   
-   TODO(PMM)      
-      
-  implementation
-  ...
-  mSomeRegistry : TSomeRegistry = nil;
-  
-  (* implement  RegisterClass,  DeregisterClass *)
+```pascal
+ 
+unit SomeProcessor
 
-  
-  
-  initialization
-    mSomeRegistry := TSomeRegistry.Create();
-    
-  finalization
-    mSomeRegistry.Free;     
-  
-  
-  ...
-  
-   unit SomeProcessor
-   
-   type TSomeProcessor = class
-   ...
-   end;
-   
-   initialization
-   GetSomeRegistry.RegisterClass(TSomeProcessor);
-   
-   unit AnotherProcessor
-   
-   type TAnotherProcessor = class
-   ...
-   end;
-   
-   implementation
-   
-   initialization
-   GetSomeRegistry.RegisterClass(TAnotherProcessor);
+type TSomeProcessor = class
+// details omitted
+end;
+
+initialization
+   GetSomeRegistry.RegisterClass(TSomeProcessor); // register our class
+
+```
+
+```pascal
+
+unit AnotherProcessor
+
+type TAnotherProcessor = class
+// details omitted
+end;
+
+implementation
+
+initialization
+  GetSomeRegistry.RegisterClass(TAnotherProcessor); // register our class
    
 ```
 
 output:
 
 ```
-Adding: TSomeProcessor
-Adding: TAnotherProcessor
-starting
+Registry Adding: TSomeProcessor
+Registry Adding: TAnotherProcessor
+Program starting
 Registration complete
-exiting
-Removing: TAnotherProcessor
-Removing: TSomeProcessor
+Program exiting
+Registry Removing: TAnotherProcessor
+Registry Removing: TSomeProcessor
 ```
 
   - note the initialisation follows the lexical ordering in the program unit _in this case_ (but see later) 
   - note the de-init occurs perfectly in the inverse order
-  - 
-  
-  - also note that adding in a code level dependency re-jigs the initialisation order correctly 
   
 Add this uses directive into SomeProcessor, adding a source level dependency to AnotherProcessor from the SomeProcessor _implementation_
 
 ```pascal
-
 unit SomeProcessor
+...
+interface
 
 uses
-  AnotherProcessor,
+  AnotherProcessor, // <-
   SomeRegistry;
-
+...  
 ```
 
 output:
 
 ```
-Adding: TAnotherProcessor
-Adding: TSomeProcessor
-starting
+Registry Adding: TAnotherProcessor
+Registry Adding: TSomeProcessor
+Program starting
 Registration complete
-exiting
-Removing: TSomeProcessor
-Removing: TAnotherProcessor
+Program exiting
+Registry Removing: TSomeProcessor
+Registry Removing: TAnotherProcessor
 ```
 
-Note this happens when updating the unit, not the ```program``` code, which remains blissfully agnostic of the changes. 
-
-so, 
-# interfaces are the only multiple inheritance route (i.e. Java, there isn't one)
- - which if we're honest with ourselves if probably what we really wanted all along
-TODO(PMM) code samples
-
-# NewInstance, CreateInstance if you really want to go that route
-TODO(PMM) code samples
+Note this happens when updating the implementation of single unit, not the ```program``` code, which remains blissfully agnostic of the changes. 
 
 
+### There are Corollaries
 
-## singly rooted class hierarchy
-
-## RTTI
-Almost as rich and dynamic as say, Java, allowing the composition of UI (and other) classes, driven effectively by data  
-
-## Property syntax
-### read-write - with getters /setters | direct access | a mixture
-### read only properties discoverable at runtime using RTTI
-### indexed properties 
-### write only properties
-
-
-## more compile-time gurantees 
-- initialization
-  
-- finalization
-
-## pretty decent set of application classes
+ 
+* RAII _per se_ is out, although your classes must still behave sensibly
+ - this may have been noted - properties need to have workable defaults (or default behaviour that makes sense)
+ - once you have committed to a property based system for configuring objects, what constructors will you write? Instead the component is plugged into the framework
+* no automatic destruction of class instances
+ - destruction is explicit in Delphi's Object Pascal, and - key point - with the Delphi component framework would be handled for you correctly
+ - coupled with the streaming system's ability to "automagically" find and instantiate the right classes when streaming in a definition, you spend a lot less time worrying about "ownership" - because [a] it's done for you, and [b] if you wanted to do it yourself, you may well get it wrong or find yourself fighting the existing framework every step of the way
+* no objects on the stack, a la c++ 
+ - this may feel like an intolerable constraint, but it happens to fits in well with the concept of dynamic extensibility -> 
+   * The code to construct an object can be supplied, even updated on the fly
+     - essentially, a "plugin" system that is capable of plugging in classes and their type metadata _on the fly_
+     - BTW the IDE does this _every time you rebuild a component package_ you are working on
+* Exceptions can only throw objects, and also, given the singly rooted hierarchy we can always walk our way to the actual instance type if have imported its interface
+   * conveniently an extensible object designer system can simply rollback the stack from the offending starting point
+   * *what is more* if the function was a property setter invoked by the IDE, then the IDE system can simply reject arbitrary failed attempts to set a property _without additional a priori knowledge of the internals of the components that are interacting_
 
 
-## pretty decent set of windowing clases
-- handled ownership and parenting and all that good stuff in a manageable manner
+### Example of design-time and run-time exception handling
 
-## strong component design methodology and support
-- interesting, component model from the days of yore, which was part of the then thriving component market 
+So, let's see an example of the exception handling strategy in action.
+Here is the behaviour when I attempt an operation in the IDE that cannot be fulfilled:
+
+![Example of design-time exception handling](nope.png)
+
+And how that component raised it in the code. Note that same code is run in the IDE, via the component package which can be plugged in via the IDE's extensibility.
+
+![How this is raised in the code](butwhy.png)
+
+In order to investigate this I only had to add this code and hit "Debug" - hence seeing the code by debugging the application, which will generate the same exception. 
+
+```delphi
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  SQLConnection1.Open;
+end;
+```
+
+In the IDE, the property set on the object fails, and the user is notified.  
+In the application, the default exception handler installed for the application is invoked, as I elected to not install my own handler, or write an exception handling block.
+
+That's the power of a unified and usable approach to exception handling.
 
 
-`Building a wall against old tools` (Antithesis)
---- 
+![And how it looks in the app](appnope.png)
 
 
+C'mon it can't have been that perfect, can it?
+-----
+
+Ah, now I have to explain why Delphi is not enjoying the popularity it once did.
+
+### Web applications
+
+Delphi was great for software that would be popped into the post, on a CD.  
+When the web based application revolution came, that became less relevant for new application. 
+I feel the offerings within the Delphi toolbox for web development didn't seem to cut through on the feature set, and of course at the time, everything from the OS to the Development tool needed to be paid for.  
+Given the competition at the time was the LAMP stack Linux + Apache + MySQl + PHP, it was clear how that would work out.
+
+### It was proprietary
+So, a fact of life is: individual companies get in trouble, go off-beam etc. this can be a real concern. For example the 64-bit compiler took a long time to appear, and some companies like to take a very long view on their enterprise applications.
+
+### Cost concerns
+It could end up looking pricey compared to free tools. Yet beware false economies.
+
+### Quality issues
+There were some releases that had surprisingly persistent niggles. This is the kind of thing that worries thoughtful programmers.  
+Another syndrome that I saw which was very sad, is that the marvellous extensible IDE was at risk from poorly programmed component packages. The IDE would be blamed for instability, when in fact, the code that it loaded into its core might well be the cause. With an improved architecture, that might have been mitigated, but not eliminated. And of course, native code is not to be 100% trusted, yet can only be run as 100% trusted.
+
+### Interfacing with code from other systems
+SOme might believe this was not possible, but in fact it was.  
+Of course the interaction with the Windows libraries was via the win32 API, proving the point.  
+And there was nothing preventing the user from making their own integations. These did require some expertise to produce the translation units that could make use of the foreign function interfaces.  
+In fact, one of the long standing issues with Delpih for some people was that the translation units would not be updated quickly enough when new systems or features arrived in Windows.
 
 
-`I've said things` (Synthesis)
---- 
+In retrospect
+---------------
 
+So, in 2019, what conclusions can we draw?
 
+### Rapid Application Development with true visual design
+Properties, Methods and Events allow complex UI to be defined in a very minmimalist fashion, which is A Good Thing.
+There are many camps on this topic, but demonstrated above, the system supported fully visual development, all the way from specified in the designer to fully defined in code and all the waypoints between, and cleanly.  
+That was a strength - not all apps need to be coded the same way, or need the same level of complexity.
 
+### Strong typing is fine for RAD
+Caveat: with the right level of compiler and runtime co-operation.  
+Personally, I enjoyed debugging in Delphi, as it seemed that faults tended to be more reproducible and more easily reasoned through that some other languages.
 
+### Modules are awesome
+When the programmer needs to employ a unit from another unit, they really only need to choose whether they want to add it to the interface or not - not was typically better as it implied the code was better factored.  
+In some cases one could simply add a reference to a different module to a code file in order to modify / patch the programs' behaviour.
 
+How many of these concerns sound familiar even today?
+I suspect we can learn much from the design precepts of the previous glory days and take some lessons forward for the next iteration of our tools.
 
+References
+-----------
+
+Working Code referred to in the article can be found at https://github.com/patrickmmartin/Brute
+
+[embarcadero2019-1] https://www.embarcadero.com/products/delphi  
+[wikipedia2019-1] https://en.wikipedia.org/wiki/Delphi_(IDE)  
+[wikipedia2019-2] https://en.wikipedia.org/wiki/Object_Pascal  
+[embarcaderodocs2019-1] http://docwiki.embarcadero.com/RADStudio/Tokyo/en/Language_Overview  
+[embarcadero2019-2] https://www.embarcadero.com/products/delphi/starter  
+[accu1998] https://accu.org/index.php/journals/565  
+[stob2002] https://www.theregister.co.uk/2012/01/16/verity_stob_sons_of_khan_2011/  
+[wikipedia2019-2] https://en.wikipedia.org/wiki/Component-based_software_engineering  
+[farhni2018] https://iam.fahrni.me/2018/08/12/1858/  
+[oracleatdelphi2005] https://blog.therealoracleatdelphi.com/2005/02/10-years-of-delphi_8.html  
