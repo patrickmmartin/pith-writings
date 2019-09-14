@@ -18,7 +18,7 @@ Furthermore the original aspects that were key for me are not only still there, 
 There are many things I will not be discussing in this article. 
 For example, there is always _Much To Discuss_ when it comes to choice of programming language -  I am told - but I will be attempting to steer clear of controversy of that nature.  
 Comparing laundry lists of features between languages in some kind of checklist knockout tournament is certainly not the aim here.  
-Instead, I want to recall - or if you will eulogise - a rich seam of features of the tool that for me made Delphi the game changer that it was then...  
+Instead, I want to recall - or if you will, eulogise - a rich seam of features of the tool that for me made Delphi the game changer that it was then...  
 Back when I used it full time these techniques were what made it so productive and what's more fun to work with, and I humbly submit that there are few tools that come close to touching it even now.
 
 First, A Quick Review
@@ -30,7 +30,7 @@ A heavily abridged table of releases with release for some key milestones
 
  Year | Release | Supports development for | Notable Enhancement
 |--- |--- |---  |---  
-| 1993 | Delphi 1.0 | Win16 | From out of nowhere, handling a GPF TODO(PMM) what is a GPF?
+| 1993 | Delphi 1.0 | Win16 | From out of nowhere, handling a GPF*  
 | 1996 | Borland Delphi 2 | Win32 | first win32 compiler
 | 1998 | Inprise Delphi 4 | Win32 | last version allowing 16-bit development
 | 2003 | Borland Delphi 8 | Win32 | .NET
@@ -38,6 +38,8 @@ A heavily abridged table of releases with release for some key milestones
 | 2011 | Embarcadero Delphi XE2 | Win32, Win64 | first version producing 64-bit binaries
 | 2012 | Embarcadero Delphi XE3 | Win32, Win64 | last version with .NET support
 | 2018 | Embarcadero Delphi 10.3 Rio | Win32, Win64 | current day
+
+* what is a GPF? [farhni2018]
 
 For prior art: there is even an ACCU article [accu1998] article, and if you want a much funnier, arguably less slightly less technical summary of the early days - try this on for size [stob2002].
 
@@ -71,7 +73,9 @@ One could always identify the type of an object at runtime and it was built into
   
 The language has files called `units` - basically modules, which supported `interface` and `implementation` sections for exported symbols and internal only code.  
 Circular dependencies were a _compile time error_, it's worth taking a second to let that sink in .  
-This required the developer to structure their program as a Directed Acyclic Graph strongly encouraged a way of organising one's code in such a way that one only had to really inspect the implementation section of a unit, and then choose whether to make it a dependency in the interface or not. Rinse and repeat for the rest of the program. In addition, the order of initialisation and finalisation of the units was straightforward and robust (_even if spelled incorrectly_) - see later ;) ).
+This required the developer to structure their program as a Directed Acyclic Graph which strongly encouraged a way of organising one's code in such a way that one really only had to inspect the interface section of a new dependency unit, and then choose whether to make it a dependency in the implementation or not.  
+Rinse and repeat for the rest of the program.  
+In addition, the order of initialisation and finalisation of the units was straightforward and robust (_even if spelled incorrectly_) - see later ;) ).
 
 ### Extensible RTL and Visual class libraries exploiting the strengths of the language
 
@@ -93,8 +97,9 @@ In the very first release of Delphi was a thorough guide to writing components, 
 
 For those minded to do so, the features of a language for the "hard core programmer" were also there: 
 * full access to the FFI of binaries of other languages at link time
-* a range of calling conventions
-* hand-crafted dynamic loading of code modules
+* a range of selectable calling conventions (see [wikipedia2019-3] for details of these)
+* capability to hand-craft dynamic loading of code modules
+* all the usual crazy casting stuff some programmers like to do (rarely needed in Delphi)
 * inline assembly
 
 Contention: Delphi was inherently very dynamic for its time
@@ -117,7 +122,7 @@ Here's a simple UI app I created in a few clicks with no code. Setting one break
 _Sidebar_ 
 > - " remember the 90s were wild, man"
 
-This was the time of the rise of the Component based model - people could pay (remember paying for software?) a nugatory amount for a component that would emulate, say some portion of the Excel spreadsheet editor and embed it into their software [wikipedia2019-3].  
+This was the time of the rise of the Component based model - people could pay (remember paying for software?) a nugatory amount for a component that would emulate, say some portion of the Excel spreadsheet editor and embed it into their software [wikipedia2019-4].  
 In Delphi I could study the built-in in components, or follow the tutorials and write my own if needs be, or figure out how to achieve my aims using the existing functionality.
 
 
@@ -387,9 +392,9 @@ And finally: of course, native code is not to be 100% trusted, yet can only be r
 
 ### Interfacing with code from other systems
 Some might believe this was not possible, but in fact it was.  
-Of course the interaction with the Windows libraries was via the win32 API, proving the point.  
-So, there was nothing preventing the user from making their own integations, however these did require some expertise to produce the translation units that could make use of the foreign function interfaces.  
-In fact, one of the long standing issues with Delpih for some people was that the translation units would not be updated quickly enough when new systems or features arrived in Windows. This resulted in the Delphi programmers either having to roll their own or wait for new Delpi releases.
+Of course the interaction with the Windows libraries was mainly via the win32 API, proving the point.  
+So, there was nothing preventing the user from making their own integations, however these did require some expertise and effort to produce the translation units that could make use of the foreign function interfaces.  
+In fact, one of the long standing issues with Delphi for some people was that the translation units would not be updated quickly enough when new systems or features arrived in Windows. This resulted in the Delphi programmers either having to roll their own or wait for new Delpi releases.
 
 
 In retrospect
@@ -402,7 +407,7 @@ Properties, Methods and Events allow complex UI to be defined in a very minmimal
 There are many camps on this topic, but I hope I demonstrated above, the system supported fully visual development, all the way from specified in the designer to fully defined in code and all the waypoints between, and what is more: cleanly.  
 That was a strength - not all apps need to be coded the same way, or need the same level of complexity.
 
-### Strong typing is fine for RAD
+### Strong typing can actually be fine for RAD
 Caveat: with the right level of compiler and runtime co-operation.  
 Personally, I enjoyed debugging in Delphi, as it seemed that faults tended to be more reproducible and more easily reasoned through that some other languages.
 
@@ -410,7 +415,7 @@ Personally, I enjoyed debugging in Delphi, as it seemed that faults tended to be
 When the programmer needs to employ a unit from another unit, they really only need to choose whether they want to add it to the interface or not - and there is a habit forming effect from the constant gentle reminder that it was preferable to factor your code well such that dependencies could be added in the implementation.  
 In some cases one could simply add a reference to a different module to a code file in order to modify / patch the programs' behaviour - see prior example.
 
-#### How many of these concerns sound familiar even today?
+### How many of these concerns sound familiar even today?
 I suspect we can learn much from the design precepts of the previous glory days of Delphi and take some lessons forward for the next iteration of our tools.
 The observant reader will spot that I mention both compile time and run-time behaviour of a feature quite often.
 This is uppermost in my mind because although a hypothetical rapid development environment may have well tuned strictness and guarantees in the compiler or in the serialisation system, the true art is ensuring that there is the minimum "impedance mismatch" between those two concepts.  
@@ -421,14 +426,15 @@ References
 
 Working Code referred to in the article can be found at https://github.com/patrickmmartin/Brute
 
-[embarcadero2019-1] https://www.embarcadero.com/products/delphi  
-[wikipedia2019-1] https://en.wikipedia.org/wiki/Delphi_(IDE)  
-[wikipedia2019-2] https://en.wikipedia.org/wiki/Object_Pascal  
-[embarcaderodocs2019-1] http://docwiki.embarcadero.com/RADStudio/Tokyo/en/Language_Overview  
-[embarcadero2019-2] https://www.embarcadero.com/products/delphi/starter  
 [accu1998] https://accu.org/index.php/journals/565  
-[stob2002] https://www.theregister.co.uk/2012/01/16/verity_stob_sons_of_khan_2011/  
-[prog2009] https://prog21.dadgum.com/47.html
-[wikipedia2019-2] https://en.wikipedia.org/wiki/Component-based_software_engineering  
+[embarcadero2019-1] https://www.embarcadero.com/products/delphi  
+[embarcadero2019-2] https://www.embarcadero.com/products/delphi/starter  
+[embarcaderodocs2019-1] http://docwiki.embarcadero.com/RADStudio/Tokyo/en/Language_Overview  
 [farhni2018] https://iam.fahrni.me/2018/08/12/1858/  
 [oracleatdelphi2005] https://blog.therealoracleatdelphi.com/2005/02/10-years-of-delphi_8.html  
+[prog2009] https://prog21.dadgum.com/47.html
+[stob2002] https://www.theregister.co.uk/2012/01/16/verity_stob_sons_of_khan_2011/  
+[wikipedia2019-1] https://en.wikipedia.org/wiki/Delphi_(IDE)  
+[wikipedia2019-2] https://en.wikipedia.org/wiki/Object_Pascal  
+[wikipedia2019-3] https://en.wikipedia.org/wiki/Calling_convention
+[wikipedia2019-4] https://en.wikipedia.org/wiki/Component-based_software_engineering  
