@@ -50,7 +50,7 @@ Here's five bullet points I've chosen to give a flavour of the system:
 Compile times were always in the vanguard, currently there are quotes of many thousands of lines per second.  
 The time from a standing start of just source to a fully linked native executable that was ready to go was also very very short. In the days of "spinning rust" drives, this is a feature that really mattered - there is a nice little review here [prog2009].
 
-### Strongly Typed (mainly*)
+### Strongly Typed (mainly ++)
 
 For loops could only be Ordinal types. I got over the shock of not being able to increment a `double` type very quickly and never looked back.  
 You could (and should) declare enums and sub-range types. It would then be a compilation _and runtime_ error to assign incorrect values to these types, if you chose to enable the strict compilation mode, which you almost always should.
@@ -59,7 +59,7 @@ You could (and should) declare enums and sub-range types. It would then be a com
 type
 // everyone likes cards
   Suit = (Club, Diamond, Heart, Spade);
-// small things that it's just embarassing to get wrong
+// small things that it's just embarrassing to get wrong
   SmallNumber = -128..127;
   SomeCaps = 'A'..'Z';
   Month = 0..11;
@@ -72,18 +72,17 @@ One could always identify the type of an object at runtime and it was built into
 ### Straightforward dependency management
   
 The language has files called `units` - basically modules, which supported `interface` and `implementation` sections for exported symbols and internal only code.  
-Circular dependencies were a _compile time error_, it's worth taking a second to let that sink in .  
+Circular dependencies were a _compile time error_, it's worth taking a second to let that sink in.  
 This required the developer to structure their program as a Directed Acyclic Graph which strongly encouraged a way of organising one's code in such a way that one really only had to inspect the interface section of a new dependency unit, and then choose whether to make it a dependency in the implementation or not.  
 Rinse and repeat for the rest of the program.  
-In addition, the order of initialisation and finalisation of the units was straightforward and robust (_even if spelled incorrectly_) - see later ;) ).
+In addition, the order of initialisation and finalisation of the units was straightforward and robust (_even if spelled incorrectly_ - see later ;) ).
 
 ### Extensible RTL and Visual class libraries exploiting the strengths of the language
 
 Object Pascal supports class properties (read/write, write-only, read-only) as a first class feature.
-Objects on the stack are simply not allowed - I suspect eliminating this capability freed Delphi from having to deal with a large class of issues related to runtime use of code.
+Objects on the stack are simply not allowed - I suspect eliminating this capability freed Delphi from having to deal with a large class of issues related to dynamic runtime use of code.
 Coupled with the ability to use the RTTI, these work together to support configurability of classes from properties.
 
-* although, there were some funky compiler features that allowed for late-bound function calls, mainly to support scripting OLE objects.
 
 ### Source based Component Model
 
@@ -101,6 +100,9 @@ For those minded to do so, the features of a language for the "hard core program
 * capability to hand-craft dynamic loading of code modules
 * all the usual crazy casting stuff some programmers like to do (rarely needed in Delphi)
 * inline assembly
+
+++ although, there were some funky compiler features that allowed for late-bound function calls, mainly to support scripting OLE objects.
+
 
 Contention: Delphi was inherently very dynamic for its time
 ---------------------------
@@ -208,7 +210,7 @@ begin
 
   try
     WriteLn('Program starting');
-    WriteLn(PChar('Registration complete'));
+    WriteLn('Registration complete');
   except
     on E:Exception do
       Writeln(E.Classname, ': ', E.Message);
@@ -316,7 +318,7 @@ Registry Removing: TAnotherProcessor
 ```
 
 Note this happens when updating the implementation of single unit, not the ```program``` code, which remains blissfully agnostic of the changes. 
-In this way we have been able to clearly and unambiguously capture a program dependency that was previously not knowable from inpsecting the source.
+In this way we have been able to clearly and unambiguously capture a program dependency that was previously not knowable from inspecting the source.
 
 
 ### There are Corollaries
@@ -393,7 +395,7 @@ And finally: of course, native code is not to be 100% trusted, yet can only be r
 ### Interfacing with code from other systems
 Some might believe this was not possible, but in fact it was.  
 Of course the interaction with the Windows libraries was mainly via the win32 API, proving the point.  
-So, there was nothing preventing the user from making their own integations, however these did require some expertise and effort to produce the translation units that could make use of the foreign function interfaces.  
+So, there was nothing preventing the user from making their own integrations, however these did require some expertise and effort to produce the translation units that could make use of the foreign function interfaces.  
 In fact, one of the long standing issues with Delphi for some people was that the translation units would not be updated quickly enough when new systems or features arrived in Windows. This resulted in the Delphi programmers either having to roll their own or wait for new Delpi releases.
 
 
